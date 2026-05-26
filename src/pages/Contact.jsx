@@ -31,22 +31,30 @@ export default function Contact() {
               <div className="contact-item">
                 <span className="contact-icon">📍</span>
                 <div>
-                  <strong>Address</strong>
-                  <p>123 Industrial Road, Dubai, UAE</p>
+                  <strong>Office Address</strong>
+                  <p>3F-15, Al Rajhi Bldg, Hor Al Anz, Dubai-UAE</p>
+                </div>
+              </div>
+              <div className="contact-item">
+                <span className="contact-icon">📍</span>
+                <div>
+                  <strong>Yard Address</strong>
+                  <p>Yard:10 Industrial Area 13 Sharjah-UAE</p>
                 </div>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">📞</span>
                 <div>
                   <strong>Phone</strong>
-                  <p>+971 4 123 4567</p>
+                  <p>+971 50 919 1004</p>
+                  <p>+971 50 674 9200</p>
                 </div>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">✉️</span>
                 <div>
                   <strong>Email</strong>
-                  <p>info@topcranes.ae</p>
+                  <p>sales@topcranestransport.com</p>
                 </div>
               </div>
               <div className="contact-item">
