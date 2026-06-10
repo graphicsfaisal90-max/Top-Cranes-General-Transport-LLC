@@ -451,8 +451,8 @@
   }
 
   .nav-open {
-    max-height: 10000px;
-    overflow-y: auto;
+    max-height: 100vh;
+    overflow: visible;
   }
 
   .nav a,
