@@ -179,27 +179,38 @@
   position: relative;
 }
 
-.dropdown-btn {
-  display: inline-flex;
+.dropdown-head {
+  display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
 }
 
-.dropdown-btn::after {
-  content: '';
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(45deg);
-  margin-top: -3px;
-  opacity: 0.6;
+.dropdown-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.dropdown-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+  opacity: 0.5;
+  padding: 2px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.dropdown-open .dropdown-arrow {
+  transform: rotate(180deg);
+  opacity: 0.8;
 }
 
 .dropdown-content {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 4px);
   left: 50%;
   transform: translateX(-50%);
   background: #ffffff;
@@ -213,7 +224,8 @@
   z-index: 100;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown-open .dropdown-content {
   opacity: 1;
   visibility: visible;
 }
@@ -456,7 +468,7 @@
   }
 
   .nav a,
-  .nav .dropdown-btn {
+  .nav .dropdown-link {
     padding: 16px 28px;
     border-bottom: 1px solid rgba(255,255,255,0.15);
     color: #fff;
@@ -504,6 +516,41 @@
     flex-direction: column;
   }
 
+  .dropdown-head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .dropdown-head .dropdown-link {
+    flex: 1;
+    border-bottom: none;
+  }
+
+  .dropdown-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    border-left: 1px solid rgba(255,255,255,0.15);
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.7;
+    padding: 16px 20px;
+    transition: transform 0.2s;
+  }
+
+  .dropdown-open .dropdown-arrow {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+
+  .dropdown-open .dropdown-head {
+    background: rgba(255,255,255,0.08);
+  }
+
   .dropdown-content {
     position: static;
     transform: none;
@@ -518,7 +565,7 @@
     transition: max-height 0.3s ease;
   }
 
-  .dropdown-mobile .dropdown-content {
+  .dropdown-open .dropdown-content {
     max-height: 500px;
   }
 
