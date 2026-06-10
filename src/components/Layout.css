@@ -1,4 +1,8 @@
-﻿.layout {
+﻿:root {
+  --announce-height: 44px;
+}
+
+.layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -6,13 +10,91 @@
 
 .main {
   flex: 1;
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) + var(--announce-height));
+}
+
+/* Announcement Bar */
+.announcement-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--announce-height);
+  background: var(--accent);
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+}
+
+.announce-inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 16px;
+}
+
+.announce-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.announce-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.8);
+  transition: color 0.2s;
+}
+
+.announce-social a:hover {
+  color: var(--primary);
+}
+
+.announce-social svg {
+  width: 16px;
+  height: 16px;
+}
+
+.announce-marquee {
+  flex: 1;
+  overflow: hidden;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.85rem;
+}
+
+.announce-marquee marquee {
+  display: block;
+}
+
+.announce-phone {
+  flex-shrink: 0;
+}
+
+.announce-phone a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.announce-phone a:hover {
+  color: var(--primary);
+}
+
+.announce-phone svg {
+  flex-shrink: 0;
 }
 
 /* Header */
 .header {
   position: fixed;
-  top: 0;
+  top: var(--announce-height);
   left: 0;
   right: 0;
   height: var(--header-height);
@@ -353,7 +435,7 @@
 
   .nav {
     position: fixed;
-    top: var(--header-height);
+    top: calc(var(--header-height) + var(--announce-height));
     left: 0;
     right: 0;
     background: var(--primary);
