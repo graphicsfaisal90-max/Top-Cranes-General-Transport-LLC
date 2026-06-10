@@ -38,7 +38,6 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
-  margin-left: 10%;
 }
 
 .announce-social a {
@@ -72,7 +71,6 @@
 
 .announce-phone {
   flex-shrink: 0;
-  margin-right: 10%;
 }
 
 .announce-phone a {
