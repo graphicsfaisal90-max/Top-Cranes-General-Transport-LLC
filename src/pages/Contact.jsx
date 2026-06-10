@@ -4,10 +4,33 @@ import './Pages.css'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError('')
+
+    const form = e.target
+    const data = new FormData(form)
+
+    try {
+      const res = await fetch('/send-email.php', {
+        method: 'POST',
+        body: data,
+      })
+      const result = await res.json()
+      if (result.success) {
+        setSubmitted(true)
+      } else {
+        setError(result.message || 'Something went wrong. Please try again.')
+      }
+    } catch {
+      setError('Network error. Please try again later.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -115,20 +138,20 @@ export default function Contact() {
                   <div className="form-row">
                     <div className="form-group">
                       <label htmlFor="name">Full Name<span className="required">*</span></label>
-                      <input type="text" id="name" required placeholder="Your full name" />
+                      <input type="text" id="name" name="name" required placeholder="Your full name" />
                     </div>
                     <div className="form-group">
                       <label htmlFor="email">Email Address<span className="required">*</span></label>
-                      <input type="email" id="email" required placeholder="your@email.com" />
+                      <input type="email" id="email" name="email" required placeholder="your@email.com" />
                     </div>
                   </div>
                   <div className="form-group">
                     <label htmlFor="phone">Phone Number</label>
-                    <input type="tel" id="phone" placeholder="+971 XX XXX XXXX" />
+                    <input type="tel" id="phone" name="phone" placeholder="+971 XX XXX XXXX" />
                   </div>
                   <div className="form-group">
                     <label htmlFor="service">Service Interested In</label>
-                    <select id="service">
+                    <select id="service" name="service">
                       <option value="">Select a service</option>
                       <option value="crane">Crane Rental</option>
                       <option value="haulage">Heavy Haulage</option>
@@ -139,9 +162,10 @@ export default function Contact() {
                   </div>
                   <div className="form-group">
                     <label htmlFor="message">Message<span className="required">*</span></label>
-                    <textarea id="message" rows="5" required placeholder="Tell us about your project..." />
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..." />
                   </div>
-                  <button type="submit" className="btn btn-primary">Send Message</button>
+                  {error && <div className="form-error">{error}</div>}
+                  <button type="submit" className="btn btn-primary" disabled={loading}>{loading ? 'Sending...' : 'Send Message'}</button>
                 </form>
               )}
             </div>
