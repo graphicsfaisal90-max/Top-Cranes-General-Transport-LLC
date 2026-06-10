@@ -3120,20 +3120,33 @@ equipment-card p {
   }
 
   .forklift-hero {
-    min-height: 70vh;
+    min-height: 75vh;
   }
 
   .forklift-hero-content {
-    margin-left: 20px;
-    padding-right: 20px;
+    margin-left: 0;
+    padding: 80px 24px 40px;
+    text-align: center;
   }
 
   .forklift-hero-content h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
+    line-height: 1.3;
   }
 
   .forklift-hero-content p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none;
+  }
+
+  .forklift-hero-actions {
+    justify-content: center;
+  }
+
+  .forklift-hero-badge {
+    font-size: 0.7rem;
   }
 
   .forklift-services {
