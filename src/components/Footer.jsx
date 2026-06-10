@@ -15,21 +15,13 @@ export default function Footer() {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
           <Link to="/equipment">Equipment</Link>
           <Link to="/about">About Us</Link>
+          <Link to="/faq">FAQ</Link>
           <Link to="/contact">Contact</Link>
         </div>
 
         <div className="footer-links">
-          <h4>Services</h4>
-          <Link to="/services">Crane Rental</Link>
-          <Link to="/services">Heavy Haulage</Link>
-          <Link to="/services">General Transport</Link>
-          <Link to="/services">Logistics</Link>
-        </div>
-
-        <div className="footer-contact">
           <h4>Contact</h4>
           <p className="footer-contact-item">
             <svg viewBox="0 0 24 24" fill="currentColor" className="ficon"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>

@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
-import Services from './pages/Services'
 import Equipment from './pages/Equipment'
 import ForkLift from './pages/ForkLift'
 import Telehandler from './pages/Telehandler'
@@ -12,13 +11,13 @@ import Crane from './pages/Crane'
 import Shovel from './pages/Shovel'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import FAQ from './pages/FAQ'
 
 export default function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="services" element={<Services />} />
         <Route path="equipment" element={<Equipment />} />
         <Route path="equipment/fork-lift" element={<ForkLift />} />
         <Route path="equipment/telehandler" element={<Telehandler />} />
@@ -29,6 +28,7 @@ export default function App() {
         <Route path="equipment/shovel" element={<Shovel />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="faq" element={<FAQ />} />
       </Route>
     </Routes>
   )

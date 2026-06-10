@@ -203,6 +203,17 @@ export default function Home() {
             <div className="ef-grid">
               <div className="ef-card">
                 <div className="ef-card-image">
+                  <img src="/Crane%20Equipment.png" alt="Cranes" />
+                  <div className="ef-card-glow" />
+                </div>
+                <div className="ef-card-body">
+                  <h3>Cranes</h3>
+                  <p>Professional crane rental solutions for lifting, transportation, construction, and industrial operations across the UAE. Our heavy-duty cranes are maintained to the highest safety standards and operated by skilled professionals to handle complex lifting requirements with precision and reliability.</p>
+                  <Link to="/equipment/crane" className="ef-card-btn">View Details</Link>
+                </div>
+              </div>
+              <div className="ef-card">
+                <div className="ef-card-image">
                   <img src="/Fork%20Lifter%20Equipment.png" alt="Forklift" />
                   <div className="ef-card-glow" />
                 </div>
@@ -243,17 +254,6 @@ export default function Home() {
                   <h3>JCB 3CX</h3>
                   <p>Versatile JCB 3CX backhoe loaders designed for excavation, loading, roadwork, utility operations, and construction site activities. Combining power, flexibility, and durability, these machines are ideal for heavy-duty tasks while ensuring operational efficiency and productivity.</p>
                   <Link to="/equipment/jcb-3cx" className="ef-card-btn">View Details</Link>
-                </div>
-              </div>
-              <div className="ef-card">
-                <div className="ef-card-image">
-                  <img src="/Crane%20Equipment.png" alt="Cranes" />
-                  <div className="ef-card-glow" />
-                </div>
-                <div className="ef-card-body">
-                  <h3>Cranes</h3>
-                  <p>Professional crane rental solutions for lifting, transportation, construction, and industrial operations across the UAE. Our heavy-duty cranes are maintained to the highest safety standards and operated by skilled professionals to handle complex lifting requirements with precision and reliability.</p>
-                  <Link to="/equipment/crane" className="ef-card-btn">View Details</Link>
                 </div>
               </div>
               <div className="ef-card">

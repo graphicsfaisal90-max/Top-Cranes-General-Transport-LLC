@@ -1,47 +1,187 @@
 import { Link } from 'react-router-dom'
+import './Pages.css'
 
 export default function ForkLift() {
   return (
     <>
-      <section className="hero-section fork-lift-hero">
+      <section className="forklift-hero">
         <div
-          className="hero-bg active"
+          className="forklift-hero-bg"
           style={{ backgroundImage: 'url(https://i.pinimg.com/originals/18/55/ae/1855aeaf9e78b6588a612ddfdd7bb9a1.jpg)' }}
         />
-        <div className="hero-overlay" />
-        <div className="container hero-content">
-          <span className="hero-badge">Material Handling Solutions</span>
-          <h1>Fork Lift<br />Rental Services</h1>
+        <div className="forklift-hero-overlay" />
+        <div className="container forklift-hero-content">
+          <span className="forklift-hero-badge">Material Handling Solutions</span>
+          <h1>Forklift<br />Rental Services</h1>
           <p>
             Reliable forklifts for warehouse operations, construction sites, and
             industrial material handling. Safety and precision guaranteed.
           </p>
-          <div className="hero-actions">
+          <div className="forklift-hero-actions">
             <Link to="/contact" className="btn btn-primary btn-hero">Request a Quote</Link>
             <Link to="/equipment" className="btn btn-outline btn-hero">All Equipment</Link>
           </div>
         </div>
       </section>
 
-      <section className="section">
-        <div className="container equipment-detail">
-          <div className="equipment-detail-content">
-            <h2>Why Choose Our Forklifts</h2>
+      <section className="forklift-services">
+        <div className="container">
+          <div className="forklift-services-grid">
+            <div className="forklift-services-image">
+              <div className="forklift-services-image-card">
+                <img src="/Forklift About.png" alt="Forklift in operation" />
+                <div className="forklift-services-image-glow" />
+                <div className="forklift-services-image-badge">
+                  <strong>15+</strong>
+                  <span>Years Experience</span>
+                </div>
+              </div>
+            </div>
+            <div className="forklift-services-content">
+              <span className="forklift-services-tagline">Our Forklift Services</span>
+              <h2>Powering Your Projects With Efficiency</h2>
+              <p>
+                We provide reliable and efficient forklift solutions for industrial, warehouse,
+                construction, and logistics operations across the UAE. Our forklifts are
+                well-maintained, operator-ready, and suitable for both short-term and long-term
+                projects.
+              </p>
+              <ul className="forklift-services-list">
+                <li>
+                  <span className="fsl-icon" />
+                  Forklift Rental (With/Without Operator)
+                </li>
+                <li>
+                  <span className="fsl-icon" />
+                  Material Handling & Lifting
+                </li>
+                <li>
+                  <span className="fsl-icon" />
+                  Loading & Unloading Services
+                </li>
+                <li>
+                  <span className="fsl-icon" />
+                  Warehouse & Site Support
+                </li>
+                <li>
+                  <span className="fsl-icon" />
+                  Short-Term & Long-Term Contracts
+                </li>
+              </ul>
+              <Link to="/contact" className="btn btn-primary forklift-services-cta">Get a Quote</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="forklift-fleet">
+        <div className="container">
+          <div className="forklift-fleet-header">
+            <span className="forklift-fleet-tagline">Our Forklift Fleet</span>
+            <h2>Reliable Machines For Every Need</h2>
             <p>
-              Our fleet of forklifts handles materials of all sizes with precision and care,
-              from warehouse operations to construction sites. Each machine is regularly
-              serviced and operated by certified professionals to ensure safety, reliability,
-              and peak performance on every project.
+              We offer a wide range of forklift solutions suitable for warehouses, construction sites,
+              logistics operations, ports, and industrial projects. Our fleet is regularly maintained to
+              ensure safety, performance, and operational efficiency.
             </p>
-            <h3>Key Features</h3>
-            <ul>
-              <li>Various load capacities available (2–25 tons)</li>
-              <li>Electric and diesel options</li>
-              <li>Indoor and outdoor capable</li>
-              <li>Certified operators provided</li>
-              <li>24/7 support and maintenance</li>
-            </ul>
-            <Link to="/contact" className="btn btn-primary">Get a Quote</Link>
+          </div>
+          <div className="forklift-fleet-grid">
+            <div className="fl-card">
+              <div className="fl-card-img">
+                <span className="fl-card-tag">Electric</span>
+                <img src="/electric forklift png.png" alt="Electric Forklift" />
+              </div>
+              <div className="fl-card-body">
+                <h3>Electric Forklift</h3>
+                <div className="fl-card-meta">
+                  <div className="fl-card-cap">
+                    <strong>1.5 Ton</strong>
+                    <span>Capacity</span>
+                  </div>
+                </div>
+                <ul className="fl-card-feats">
+                  <li>Indoor warehouse operations</li>
+                  <li>Smooth &amp; efficient performance</li>
+                </ul>
+              </div>
+            </div>
+            <div className="fl-card">
+              <div className="fl-card-img">
+                <span className="fl-card-tag">Diesel</span>
+                <img src="/diesel forklift png.png" alt="Diesel Forklift" />
+              </div>
+              <div className="fl-card-body">
+                <h3>Diesel Forklift</h3>
+                <div className="fl-card-meta">
+                  <div className="fl-card-cap">
+                    <strong>2.5 Ton</strong>
+                    <span>Capacity</span>
+                  </div>
+                </div>
+                <ul className="fl-card-feats">
+                  <li>Outdoor heavy-duty work</li>
+                  <li>Reliable powerful lifting</li>
+                </ul>
+              </div>
+            </div>
+            <div className="fl-card">
+              <div className="fl-card-img">
+                <span className="fl-card-tag">Heavy Duty</span>
+                <img src="/heavy duty forklift png.png" alt="Heavy Duty Forklift" />
+              </div>
+              <div className="fl-card-body">
+                <h3>Heavy Duty Forklift</h3>
+                <div className="fl-card-meta">
+                  <div className="fl-card-cap">
+                    <strong>5 Ton</strong>
+                    <span>Capacity</span>
+                  </div>
+                </div>
+                <ul className="fl-card-feats">
+                  <li>Industrial &amp; construction use</li>
+                  <li>Strong handling capability</li>
+                </ul>
+              </div>
+            </div>
+            <div className="fl-card">
+              <div className="fl-card-img">
+                <span className="fl-card-tag">High Capacity</span>
+                <img src="/Png industrial fork lift.png" alt="High Capacity Forklift" />
+              </div>
+              <div className="fl-card-body">
+                <h3>High Capacity Forklift</h3>
+                <div className="fl-card-meta">
+                  <div className="fl-card-cap">
+                    <strong>10 Ton</strong>
+                    <span>Capacity</span>
+                  </div>
+                </div>
+                <ul className="fl-card-feats">
+                  <li>Oversized &amp; bulk loads</li>
+                  <li>Maximum lifting strength</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="forklift-fleet-footer">
+            <Link to="/equipment" className="btn btn-primary forklift-fleet-btn">View Full Fleet</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="forklift-support">
+        <div className="container">
+          <div className="forklift-support-box">
+            <div className="forklift-support-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div className="forklift-support-text">
+              <h3>24/7 Support</h3>
+              <p>We are always ready to support your operations with reliable equipment and quick assistance.</p>
+            </div>
+            <Link to="/contact" className="btn btn-primary forklift-support-btn">Contact Us</Link>
           </div>
         </div>
       </section>
