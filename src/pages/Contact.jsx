@@ -15,9 +15,10 @@ export default function Contact() {
     const data = new FormData(form)
 
     try {
-      const res = await fetch('/send-email.php', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        body: data,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(data.entries())),
       })
       const result = await res.json()
       if (result.success) {

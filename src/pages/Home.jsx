@@ -31,7 +31,7 @@ const reviews = [
 ]
 
 const heroSlides = [
-  { image: '/crane-hero.jpg', badge: 'TRUSTED ACROSS THE UAE', heading: 'Professional Crane Rental &\nHeavy Lifting Solutions', text: 'Top Cranes General Transport provides reliable crane rental services for construction, industrial and commercial projects across the UAE.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Cranes', link: '/equipment/crane' } },
+  { image: '/crane-hero.jpg', badge: 'TRUSTED ACROSS THE UAE', heading: 'Professional Crane Rental &\nHeavy Lifting Solutions', text: 'Top Cranes Transport is the most reliable heavy equipment rental company in the UAE, catering to multiple crane requirements on site.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Cranes', link: '/equipment/crane' } },
   { image: '/Forklift.jpg', badge: 'MATERIAL HANDLING EXPERTS', heading: 'Forklift Rental &\nWarehouse Solutions', text: 'Efficient forklift rental services for warehouses, factories, construction sites and logistics operations across Dubai and the UAE.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Forklifts', link: '/equipment/fork-lift' } },
   { image: '/excavator-hero.jpg', badge: 'YOUR TRUSTED PARTNER', heading: 'Powerful Excavator &\nEarthmoving Solutions', text: 'Professional excavator rental for construction, demolition, land clearing and heavy earthmoving projects across the UAE.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Excavators', link: '/equipment/excavators' } },
 ]

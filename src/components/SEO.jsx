@@ -5,7 +5,7 @@ const siteUrl = 'https://www.topcranestransport.com'
 
 const pages = {
   '/': {
-    title: 'Top Cranes: Crane Rental & Lifting Services | Dubai, UAE & Sharjah',
+    title: 'Top Cranes: Cranes Rental & Lifting Services Dubai UAE',
     description: 'Top Cranes General Transport provides crane rental, forklift rental, excavator rental, telehandler, JCB, Bobcat and heavy equipment rental services across Dubai, Sharjah and the UAE.',
     keywords: 'heavy equipment rental Dubai, equipment rental UAE, crane rental Dubai, forklift rental Dubai, excavator rental Dubai, construction equipment rental UAE',
   },
