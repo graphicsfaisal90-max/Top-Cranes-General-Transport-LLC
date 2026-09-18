@@ -6,7 +6,7 @@ const siteUrl = 'https://www.topcranestransport.com'
 const pages = {
   '/': {
     title: 'Top Cranes: Cranes Rental & Lifting Services Dubai UAE',
-    description: 'Top Cranes General Transport provides crane rental, forklift rental, excavator rental, telehandler, JCB, Bobcat and heavy equipment rental services across Dubai, Sharjah and the UAE.',
+    description: 'Top Cranes Transport is the most reliable heavy equipment rental company in the UAE, catering to multiple crane requirements on site.',
     keywords: 'heavy equipment rental Dubai, equipment rental UAE, crane rental Dubai, forklift rental Dubai, excavator rental Dubai, construction equipment rental UAE',
   },
   '/equipment': {
