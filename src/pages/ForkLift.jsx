@@ -1,190 +1,241 @@
 import { Link } from 'react-router-dom'
 import './Pages.css'
+import './forklift.css'
+
+const forkliftTypes = [
+  {
+    name: 'Electric Forklift',
+    tag: 'Electric',
+    image: '/electric forklift png.png',
+    capacity: '1.5 - 2.5 Ton',
+    specs: ['Indoor warehouse use', 'Zero emissions', 'Smooth operation'],
+    desc: 'Electric forklifts are ideal for indoor warehouse operations, providing clean and quiet performance with zero emissions.',
+  },
+  {
+    name: 'Diesel Forklift',
+    tag: 'Diesel',
+    image: '/diesel forklift png.png',
+    capacity: '2.5 - 7 Ton',
+    specs: ['Outdoor heavy-duty work', 'Powerful lifting', 'All-weather operation'],
+    desc: 'Diesel forklifts deliver powerful performance for outdoor and heavy-duty applications, handling the toughest material lifting tasks.',
+  },
+  {
+    name: 'Heavy Duty Forklift',
+    tag: 'Heavy Duty',
+    image: '/heavy duty forklift png.png',
+    capacity: '5 - 10 Ton',
+    specs: ['Industrial & construction', 'Strong handling', 'Maximum stability'],
+    desc: 'Heavy duty forklifts are designed for industrial and construction environments requiring maximum lifting capacity and stability.',
+  },
+  {
+    name: 'Container Mass Forklift',
+    tag: 'Container',
+    image: '/Png industrial fork lift.png',
+    capacity: '10 - 25 Ton',
+    specs: ['Container handling', 'Port operations', 'Bulk material movement'],
+    desc: 'Container mass forklifts are specialized for port and container yard operations, handling heavy containers with ease.',
+  },
+]
+
+const forkliftSpecs = [
+  { type: 'Normal Forklifts', capacity: '3, 5, 7 Ton', use: 'General warehouse and site operations' },
+  { type: 'Container Mass Forklifts', capacity: '10, 15, 25 Ton', use: 'Port and container yard operations' },
+  { type: 'Electric Forklifts', capacity: '1.5 - 2.5 Ton', use: 'Indoor warehouse, food industry' },
+  { type: 'Diesel Forklifts', capacity: '2.5 - 7 Ton', use: 'Outdoor, construction sites' },
+  { type: 'Heavy Duty Forklifts', capacity: '5 - 25 Ton', use: 'Industrial, heavy material handling' },
+]
+
+const relatedProducts = [
+  { name: 'Crane', image: '/Crane%20Equipment.png', text: 'Wide selection of crane rentals for high-rise construction and heavy lifting tasks.', link: '/equipment/crane' },
+  { name: 'Telehandler', image: '/Telehandler%20And%20Boombloader%20Equipment%20(1).png', text: 'Top-tier telehandlers facilitating efficient heavy lifting with reliable machinery.', link: '/equipment/telehandler' },
+  { name: 'Excavators', image: '/excavator_%20equpment.png', text: 'Dependable excavator rentals for digging, earthmoving, and demolition projects.', link: '/equipment/excavators' },
+]
+
+const rentSteps = [
+  { num: '01', title: 'Identify Your Requirements', text: 'Determine the type and capacity of forklift needed based on your load weight, operating environment, and project duration.' },
+  { num: '02', title: 'Request a Quote', text: 'Contact our team via phone or website. We will provide detailed information about forklift options and competitive rental rates.' },
+  { num: '03', title: 'Quick Delivery & Setup', text: 'We arrange delivery to your site at your convenience. Our team handles all transportation and provides operator training if needed.' },
+]
 
 export default function ForkLift() {
   return (
-    <>
-      <section className="forklift-hero">
-        <div
-          className="forklift-hero-bg"
-          style={{ backgroundImage: 'url(https://i.pinimg.com/originals/18/55/ae/1855aeaf9e78b6588a612ddfdd7bb9a1.jpg)' }}
-        />
-        <div className="forklift-hero-overlay" />
-        <div className="container forklift-hero-content">
-          <span className="forklift-hero-badge">Material Handling Solutions</span>
-          <h1>Forklift<br />Rental Services</h1>
-          <p>
-            Reliable forklifts for warehouse operations, construction sites, and
-            industrial material handling. Safety and precision guaranteed.
-          </p>
-          <div className="forklift-hero-actions">
-            <Link to="/contact" className="btn btn-primary btn-hero">Request a Quote</Link>
-            <Link to="/equipment" className="btn btn-outline btn-hero">All Equipment</Link>
+    <div className="fl-page">
+      {/* Hero */}
+      <section className="fl-hero">
+        <div className="fl-hero-bg" />
+        <div className="fl-hero-overlay" />
+        <div className="container fl-hero-content">
+          <span className="fl-hero-badge">Material Handling Solutions</span>
+          <h1>Forklift Rental<br />Services Dubai</h1>
+          <p>Almasa Transport LLC specializes in forklift rentals in Dubai, providing flexible and reliable options for any project. Our cost-effective solutions ensure you always have the right forklift for your needs.</p>
+          <div className="fl-hero-actions">
+            <Link to="/contact" className="fl-btn fl-btn-primary">Request a Quote</Link>
+            <a href="#fleet" className="fl-btn fl-btn-outline">View Fleet</a>
           </div>
         </div>
       </section>
 
-      <section className="forklift-services">
+      {/* About */}
+      <section className="fl-about">
         <div className="container">
-          <div className="forklift-services-grid">
-            <div className="forklift-services-image">
-              <div className="forklift-services-image-card">
-                <img src="/Forklift About.png" alt="Forklift in operation" />
-                <div className="forklift-services-image-glow" />
-                <div className="forklift-services-image-badge">
-                  <strong>15+</strong>
-                  <span>Years Experience</span>
-                </div>
+          <div className="fl-about-grid">
+            <div className="fl-about-img">
+              <img src="/Forklift About.png" alt="Forklift operations in Dubai" />
+              <div className="fl-about-badge-card">
+                <span className="fl-about-badge-num">15+</span>
+                <span className="fl-about-badge-text">Years Experience</span>
               </div>
             </div>
-            <div className="forklift-services-content">
-              <span className="forklift-services-tagline">Our Forklift Services</span>
+            <div className="fl-about-content">
+              <span className="fl-section-badge">About Our Forklift Services</span>
               <h2>Powering Your Projects With Efficiency</h2>
-              <p>
-                We provide reliable and efficient forklift solutions for industrial, warehouse,
-                construction, and logistics operations across the UAE. Our forklifts are
-                well-maintained, operator-ready, and suitable for both short-term and long-term
-                projects.
-              </p>
-              <ul className="forklift-services-list">
-                <li>
-                  <span className="fsl-icon" />
-                  Forklift Rental (With/Without Operator)
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Material Handling & Lifting
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Loading & Unloading Services
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Warehouse & Site Support
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Short-Term & Long-Term Contracts
-                </li>
+              <p>We provide reliable and efficient forklift solutions for industrial, warehouse, construction, and logistics operations across the UAE. Our forklifts are well-maintained, operator-ready, and suitable for both short-term and long-term projects.</p>
+              <ul className="fl-about-list">
+                <li>Forklift Rental (With/Without Operator)</li>
+                <li>Material Handling & Lifting</li>
+                <li>Loading & Unloading Services</li>
+                <li>Warehouse & Site Support</li>
+                <li>Container Stuffing & Destuffing</li>
+                <li>Short-Term & Long-Term Contracts</li>
               </ul>
-              <Link to="/contact" className="btn btn-primary forklift-services-cta">Get a Quote</Link>
+              <Link to="/contact" className="fl-btn fl-btn-primary">Get a Quote</Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="forklift-fleet">
+      {/* Fleet */}
+      <section className="fl-fleet" id="fleet">
         <div className="container">
-          <div className="forklift-fleet-header">
-            <span className="forklift-fleet-tagline">Our Forklift Fleet</span>
-            <h2>Reliable Machines For Every Need</h2>
-            <p>
-              We offer a wide range of forklift solutions suitable for warehouses, construction sites,
-              logistics operations, ports, and industrial projects. Our fleet is regularly maintained to
-              ensure safety, performance, and operational efficiency.
-            </p>
+          <div className="fl-fleet-header">
+            <span className="fl-section-badge">Our Forklift Fleet</span>
+            <h2>Wide Range of Forklift Solutions</h2>
+            <p>We offer a comprehensive range of forklift solutions suitable for warehouses, construction sites, logistics operations, ports, and industrial projects across the UAE.</p>
           </div>
-          <div className="forklift-fleet-grid">
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Electric</span>
-                <img src="/electric forklift png.png" alt="Electric Forklift" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Electric Forklift</h3>
-                <div className="fl-card-meta">
+          <div className="fl-fleet-grid">
+            {forkliftTypes.map((fl, i) => (
+              <div className="fl-card" key={i}>
+                <div className="fl-card-img">
+                  <span className="fl-card-tag">{fl.tag}</span>
+                  <img src={fl.image} alt={fl.name} />
+                </div>
+                <div className="fl-card-body">
+                  <h3>{fl.name}</h3>
                   <div className="fl-card-cap">
-                    <strong>1.5 Ton</strong>
+                    <strong>{fl.capacity}</strong>
                     <span>Capacity</span>
                   </div>
+                  <p>{fl.desc}</p>
+                  <ul className="fl-card-feats">
+                    {fl.specs.map((spec, j) => (
+                      <li key={j}>{spec}</li>
+                    ))}
+                  </ul>
+                  <Link to="/contact" className="fl-card-link">Book Now →</Link>
                 </div>
-                <ul className="fl-card-feats">
-                  <li>Indoor warehouse operations</li>
-                  <li>Smooth &amp; efficient performance</li>
-                </ul>
               </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Diesel</span>
-                <img src="/diesel forklift png.png" alt="Diesel Forklift" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Diesel Forklift</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>2.5 Ton</strong>
-                    <span>Capacity</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Outdoor heavy-duty work</li>
-                  <li>Reliable powerful lifting</li>
-                </ul>
-              </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Heavy Duty</span>
-                <img src="/heavy duty forklift png.png" alt="Heavy Duty Forklift" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Heavy Duty Forklift</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>5 Ton</strong>
-                    <span>Capacity</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Industrial &amp; construction use</li>
-                  <li>Strong handling capability</li>
-                </ul>
-              </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">High Capacity</span>
-                <img src="/Png industrial fork lift.png" alt="High Capacity Forklift" />
-              </div>
-              <div className="fl-card-body">
-                <h3>High Capacity Forklift</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>10 Ton</strong>
-                    <span>Capacity</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Oversized &amp; bulk loads</li>
-                  <li>Maximum lifting strength</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="forklift-fleet-footer">
-            <Link to="/equipment" className="btn btn-primary forklift-fleet-btn">View Full Fleet</Link>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="forklift-support">
+      {/* Specs Table */}
+      <section className="fl-specs">
         <div className="container">
-          <div className="forklift-support-box">
-            <div className="forklift-support-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-            </div>
-            <div className="forklift-support-text">
-              <h3>24/7 Support</h3>
-              <p>We are always ready to support your operations with reliable equipment and quick assistance.</p>
-            </div>
-            <Link to="/contact" className="btn btn-primary forklift-support-btn">Contact Us</Link>
+          <div className="fl-specs-header">
+            <span className="fl-section-badge">Forklift Types</span>
+            <h2>Our Forklift Range & Capacities</h2>
+          </div>
+          <div className="fl-specs-table-wrap">
+            <table className="fl-specs-table">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Capacity</th>
+                  <th>Best For</th>
+                </tr>
+              </thead>
+              <tbody>
+                {forkliftSpecs.map((item, i) => (
+                  <tr key={i}>
+                    <td className="fl-specs-type">{item.type}</td>
+                    <td>{item.capacity}</td>
+                    <td>{item.use}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
-    </>
+
+      {/* How to Rent */}
+      <section className="fl-steps">
+        <div className="container">
+          <div className="fl-steps-header">
+            <span className="fl-section-badge">How to Rent</span>
+            <h2>How to Rent a Forklift in Dubai</h2>
+            <p>Renting a forklift from Top Cranes General Transport LLC is a straightforward process designed to get your equipment with minimal hassle.</p>
+          </div>
+          <div className="fl-steps-grid">
+            {rentSteps.map((step, i) => (
+              <div className="fl-step-card" key={i}>
+                <span className="fl-step-num">{step.num}</span>
+                <h3>{step.title}</h3>
+                <p>{step.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Products */}
+      <section className="fl-related">
+        <div className="container">
+          <div className="fl-related-header">
+            <span className="fl-section-badge">Related Equipment</span>
+            <h2>Other Equipment You May Need</h2>
+          </div>
+          <div className="fl-related-grid">
+            {relatedProducts.map((item, i) => (
+              <Link to={item.link} className="fl-related-card" key={i}>
+                <div className="fl-related-img">
+                  <img src={item.image} alt={item.name} />
+                </div>
+                <div className="fl-related-body">
+                  <h3>{item.name}</h3>
+                  <p>{item.text}</p>
+                  <span className="fl-related-link">Read More →</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="fl-cta">
+        <div className="container fl-cta-grid">
+          <div className="fl-cta-text">
+            <h2>Contact Us! We're<br />Available 24/7.</h2>
+            <p>Ready to start your project? Get in touch for a free consultation and forklift rental quote.</p>
+          </div>
+          <div className="fl-cta-contacts">
+            <a href="tel:+971509191004" className="fl-cta-item">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+              <span>+971 50 919 1004</span>
+            </a>
+            <a href="tel:+971506749200" className="fl-cta-item">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+              <span>+971 50 674 9200</span>
+            </a>
+            <a href="mailto:sales@topcranestransport.com" className="fl-cta-item">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>sales@topcranestransport.com</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }

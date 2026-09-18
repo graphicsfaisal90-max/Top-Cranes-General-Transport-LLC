@@ -1,196 +1,65 @@
 import { Link } from 'react-router-dom'
 import './Pages.css'
+import './bobcat.css'
+
+const applications = [
+  { title: 'Construction & Site Preparation', tag: 'Construction', image: '/Bobcat/Construction & Site Preparation.jpg', metric: '900 kg', label: 'Rated Capacity', text: 'Compact power for site grading, levelling, clearing, backfilling, and general construction tasks.', features: ['Site grading and levelling', 'General construction tasks'] },
+  { title: 'Material Handling', tag: 'Handling', image: '/Bobcat/Material Handling.jpg', metric: '1,000 kg', label: 'Rated Capacity', text: 'Move soil, aggregate, pallets, and bulk materials efficiently around your construction or industrial site.', features: ['Load and move bulk materials', 'Stockpile management'] },
+  { title: 'Landscaping & Groundworks', tag: 'Landscaping', image: '/Bobcat/Landscaping & Groundworks.jpg', metric: '600 kg', label: 'Rated Capacity', text: 'Agile equipment for landscape preparation, soil movement, ground shaping, and outdoor improvement projects.', features: ['Precision grading and shaping', 'Soil and aggregate handling'] },
+  { title: 'Demolition & Cleanup', tag: 'Demolition', image: '/Bobcat/Demolition & Cleanup.jpg', metric: '1,200 kg', label: 'Rated Capacity', text: 'Compact access and attachment flexibility for light demolition, debris removal, and site cleanup operations.', features: ['Light demolition work', 'Debris and waste handling'] },
+]
+
+const benefits = [
+  { title: 'Versatile Equipment', text: 'Our Bobcat solutions support construction, landscaping, agriculture, cleanup, and material handling applications.' },
+  { title: 'Custom Rental Solutions', text: 'Choose flexible short-term hires or long-term leases that match your project schedule and operating needs.' },
+  { title: 'Competitive Pricing', text: 'Get dependable compact equipment with clear quotations and cost-effective rental options.' },
+  { title: 'Rapid Delivery', text: 'Our Dubai and Sharjah operations help us coordinate fast delivery and collection across the UAE.' },
+  { title: 'Experienced Support', text: 'Our team can advise you on the best Bobcat model, attachment, and rental plan for your job.' },
+  { title: 'High-Quality Machines', text: 'Every machine is inspected and maintained for safe, efficient, and reliable site performance.' },
+]
+
+const steps = [
+  { num: '01', title: 'Identify Your Needs', text: 'Choose the Bobcat machine and attachment that best fits your project, access conditions, and material requirements.' },
+  { num: '02', title: 'Contact Us', text: 'Reach out through our website, phone, or email. Our team will guide you and provide a detailed quotation.' },
+  { num: '03', title: 'Schedule Delivery', text: 'Once your rental is confirmed, we arrange delivery to your site at a convenient time so work can begin without delay.' },
+]
+
+const related = [
+  { name: 'Crane', image: '/Crane%20Equipment.png', text: 'Reliable crane rentals for construction and heavy lifting tasks.', link: '/equipment/crane' },
+  { name: 'JCB 3CX', image: '/JCB%203CX%20Equipment.png', text: 'Versatile backhoe loaders for excavation, loading, and roadwork.', link: '/equipment/jcb-3cx' },
+  { name: 'Excavators', image: '/excavator_%20equpment.png', text: 'Powerful excavators for earthmoving, demolition, and infrastructure.', link: '/equipment/excavators' },
+  { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.png', text: 'Flexible forklift solutions for warehouses and material handling.', link: '/equipment/fork-lift' },
+]
 
 export default function Bobcat() {
   return (
-    <>
-      <section className="forklift-hero">
-        <div
-          className="forklift-hero-bg"
-          style={{ backgroundImage: 'url(/bobcat-hero.jpg)' }}
-        />
-        <div className="forklift-hero-overlay" style={{ background: 'rgba(0,0,0,0.7)' }} />
-        <div className="container forklift-hero-content">
-          <span className="forklift-hero-badge">Compact Power Solutions</span>
-          <h1>Bobcat Skid-Steer<br />Loader Rental Services</h1>
-          <p>
-            Compact yet powerful Bobcat skid-steer loaders for tight spaces,
-            landscaping, site preparation, and material handling. Agility and
-            reliability on every job.
-          </p>
-          <div className="forklift-hero-actions">
-            <Link to="/contact" className="btn btn-primary btn-hero">Request a Quote</Link>
-            <Link to="/equipment" className="btn btn-outline btn-hero">All Equipment</Link>
-          </div>
+    <div className="bob-page">
+      <section className="bob-hero">
+        <div className="bob-hero-bg" />
+        <div className="bob-hero-overlay" />
+        <div className="container bob-hero-content">
+          <span className="bob-badge">Compact Power Solutions</span>
+          <h1>Bobcat Rental<br />Services Dubai</h1>
+          <p>Reliable Bobcat machines for construction, landscaping, agriculture, site preparation, and material handling projects across the UAE.</p>
+          <div className="bob-actions"><Link to="/contact" className="bob-btn bob-btn-primary">Request a Quote</Link><a href="#fleet" className="bob-btn bob-btn-outline">Explore Fleet</a></div>
         </div>
       </section>
 
-      <section className="forklift-services">
-        <div className="container">
-          <div className="forklift-services-grid">
-            <div className="forklift-services-image">
-              <div className="forklift-services-image-card">
-                <img src="/bobcat-about.jpg" alt="Bobcat in operation" />
-                <div className="forklift-services-image-glow" />
-                <div className="forklift-services-image-badge">
-                  <strong>15+</strong>
-                  <span>Years Experience</span>
-                </div>
-              </div>
-            </div>
-            <div className="forklift-services-content">
-              <span className="forklift-services-tagline">Top Cranes General Transport LLC</span>
-              <h2>Professional Bobcat Services Across the UAE</h2>
-              <p>
-                Top Cranes General Transport LLC provides reliable and efficient Bobcat skid-steer
-                loader solutions for construction sites, landscaping projects, and material handling
-                across the UAE. Our machines are well-maintained, operator-ready, and suitable for
-                both short-term and long-term projects.
-              </p>
-              <ul className="forklift-services-list">
-                <li>
-                  <span className="fsl-icon" />
-                  Bobcat Rental (With/Without Operator)
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Landscaping & Site Cleanup
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Material Handling & Loading
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Grading & Site Preparation
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Short-Term & Long-Term Contracts
-                </li>
-              </ul>
-              <Link to="/contact" className="btn btn-primary forklift-services-cta">Get a Quote</Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section className="bob-intro"><div className="container bob-intro-grid"><div className="bob-intro-image"><img src="/bobcat-about.jpg" alt="Bobcat machine working on a project" /><div className="bob-experience"><strong>15+</strong><span>Years Experience</span></div></div><div className="bob-intro-content"><span className="bob-badge">Your Trusted Bobcat Rental Partner</span><h2>Compact Equipment That Works Hard</h2><p>Top Cranes General Transport LLC provides dependable Bobcat rental services in Dubai and throughout the UAE. Whether you need a skid-steer loader for a construction site, a compact machine for landscaping, or equipment for material handling, our fleet is ready to work.</p><p>Our Bobcat machines are well-maintained, flexible, and available for both short-term and long-term projects.</p><Link to="/contact" className="bob-btn bob-btn-primary">Get a Free Quote</Link></div></div></section>
 
-      <section className="forklift-fleet">
-        <div className="container">
-          <div className="forklift-fleet-header">
-            <span className="forklift-fleet-tagline">Our Bobcat Fleet</span>
-            <h2>Powerful Machines For Every Job</h2>
-            <p>
-              We offer a range of Bobcat skid-steer loader solutions suitable for
-              construction sites, landscaping projects, and material handling operations.
-              Our fleet is regularly maintained to ensure safety, performance, and
-              operational efficiency.
-            </p>
-          </div>
-          <div className="forklift-fleet-grid">
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Construction</span>
-                <img src="/Bobcat/Construction & Site Preparation.jpg" alt="Construction & Site Preparation" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Construction &amp; Site Preparation</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>900 kg</strong>
-                    <span>Rated Capacity</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Site grading & leveling</li>
-                  <li>General construction tasks</li>
-                </ul>
-              </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Handling</span>
-                <img src="/Bobcat/Material Handling.jpg" alt="Material Handling" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Material Handling</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>1,000 kg</strong>
-                    <span>Rated Capacity</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Load & move bulk materials</li>
-                  <li>Efficient stockpile management</li>
-                </ul>
-              </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Landscaping</span>
-                <img src="/Bobcat/Landscaping & Groundworks.jpg" alt="Landscaping & Groundworks" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Landscaping &amp; Groundworks</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>600 kg</strong>
-                    <span>Rated Capacity</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Precision grading & shaping</li>
-                  <li>Soil & aggregate handling</li>
-                </ul>
-              </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Demolition</span>
-                <img src="/Bobcat/Demolition & Cleanup.jpg" alt="Demolition & Cleanup" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Demolition &amp; Cleanup</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>1,200 kg</strong>
-                    <span>Rated Capacity</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Light demolition & debris removal</li>
-                  <li>Site cleanup & waste handling</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="forklift-fleet-footer">
-            <Link to="/equipment" className="btn btn-primary forklift-fleet-btn">View Full Fleet</Link>
-          </div>
-        </div>
-      </section>
+      <section className="bob-fleet" id="fleet"><div className="container"><div className="bob-section-heading"><span className="bob-badge">Explore Our Bobcat Fleet</span><h2>Powerful Machines For Every Job</h2><p>Choose a compact equipment solution suited to your application, site conditions, and project goals.</p></div><div className="bob-fleet-grid">{applications.map((item) => <article className="bob-card" key={item.title}><div className="bob-card-image"><span>{item.tag}</span><img src={item.image} alt={item.title} /></div><div className="bob-card-body"><h3>{item.title}</h3><div className="bob-card-metric"><strong>{item.metric}</strong><small>{item.label}</small></div><p>{item.text}</p><ul>{item.features.map((feature) => <li key={feature}>{feature}</li>)}</ul><Link to="/contact" className="bob-card-link">Book Now &rarr;</Link></div></article>)}</div></div></section>
 
-      <section className="forklift-support">
-        <div className="container">
-          <div className="forklift-support-box">
-            <div className="forklift-support-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-            </div>
-            <div className="forklift-support-text">
-              <h3>24/7 Support</h3>
-              <p>We are always ready to support your operations with reliable equipment and quick assistance.</p>
-            </div>
-            <Link to="/contact" className="btn btn-primary forklift-support-btn">Contact Us</Link>
-          </div>
-        </div>
-      </section>
-    </>
+      <section className="bob-benefits"><div className="container"><div className="bob-section-heading"><span className="bob-badge">Why Choose Top Cranes?</span><h2>Bobcat Rental Made Simple</h2><p>From choosing the right compact machine to delivery at your site, our team supports every stage of your rental.</p></div><div className="bob-benefit-grid">{benefits.map((item, index) => <div className="bob-benefit" key={item.title}><span>0{index + 1}</span><h3>{item.title}</h3><p>{item.text}</p></div>)}</div></div></section>
+
+      <section className="bob-steps"><div className="container"><div className="bob-section-heading"><span className="bob-badge">Easy Steps To Rent</span><h2>How To Rent A Bobcat In Dubai</h2><p>Our straightforward rental process helps you get the right compact equipment without unnecessary delays.</p></div><div className="bob-step-grid">{steps.map((step) => <div className="bob-step" key={step.num}><strong>{step.num}</strong><h3>{step.title}</h3><p>{step.text}</p></div>)}</div></div></section>
+
+      <section className="bob-trusted"><div className="container bob-trusted-grid"><div><span className="bob-badge">Trusted By Industry Professionals</span><h2>Reliable Support For Every Site</h2><p>Top Cranes is committed to providing efficient Bobcat rentals, responsive service, and well-maintained machines for contractors and businesses throughout the UAE.</p><p>Let our compact equipment handle the tough work while our team keeps your rental simple and dependable.</p><Link to="/contact" className="bob-btn bob-btn-primary">Talk To Our Team</Link></div><img src="/Bobcat Equipment.png" alt="Bobcat equipment" /></div></section>
+
+      <section className="bob-quote"><div className="container bob-quote-grid"><div><span className="bob-badge">We Are Here To Help</span><h2>Get A Free Bobcat Rental Quote</h2><p>Tell us about your project, location, and rental period. We will recommend a reliable solution for your work.</p></div><Link to="/contact" className="bob-btn bob-btn-dark">Submit Your Enquiry</Link></div></section>
+
+      <section className="bob-related"><div className="container"><div className="bob-section-heading"><span className="bob-badge">Related Equipment</span><h2>Complete Your Project Fleet</h2></div><div className="bob-related-grid">{related.map((item) => <Link to={item.link} className="bob-related-card" key={item.name}><div><img src={item.image} alt={item.name} /></div><h3>{item.name}</h3><p>{item.text}</p><span>Read More &rarr;</span></Link>)}</div></div></section>
+
+      <section className="bob-cta"><div className="container bob-cta-grid"><div><h2>Contact Us! We're<br />Available 24/7.</h2><p>Ready to start your project? Talk to our team about Bobcat rental today.</p></div><div className="bob-contact-list"><a href="tel:+971509191004">+971 50 919 1004</a><a href="tel:+971506749200">+971 50 674 9200</a><a href="mailto:sales@topcranestransport.com">sales@topcranestransport.com</a></div></div></section>
+    </div>
   )
 }

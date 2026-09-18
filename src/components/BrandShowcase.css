@@ -1,0 +1,10 @@
+.brand-showcase { padding: 68px 0; background: #e86d3d; color: #fff; }
+.brand-showcase-heading { text-align: center; margin-bottom: 36px; }
+.brand-showcase-heading span { display: inline-block; margin-bottom: 10px; color: rgba(255,255,255,.78); font-size: .62rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; }
+.brand-showcase-heading h2 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.3rem); letter-spacing: -1px; }
+.brand-showcase-track { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 26px 44px; }
+.brand-showcase-logo { width: 145px; height: 78px; display: flex; align-items: center; justify-content: center; padding: 12px; background: rgba(255,255,255,.13); border: 1px solid rgba(255,255,255,.22); transition: transform .25s, background .25s; }
+.brand-showcase-logo:hover { transform: translateY(-4px); background: rgba(255,255,255,.22); }
+.brand-showcase-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+@media (max-width: 768px) { .brand-showcase { padding: 52px 0; }.brand-showcase-track { gap: 16px; }.brand-showcase-logo { width: 125px; height: 70px; } }
+@media (max-width: 480px) { .brand-showcase-track { display: grid; grid-template-columns: repeat(2, 1fr); }.brand-showcase-logo { width: auto; } }

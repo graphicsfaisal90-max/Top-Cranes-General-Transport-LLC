@@ -7,34 +7,38 @@
 }
 
 :root {
-  --primary: #F26836;
-  --primary-light: #F47A4D;
-  --accent: #2D4869;
-  --accent-hover: #1C3550;
-  --bg: #ffffff;
-  --bg-alt: #f7fafc;
-  --text: #2d3748;
-  --text-light: #718096;
+  --primary: #e86d3d;
+  --primary-light: #f18a5b;
+  --accent: #17201f;
+  --accent-hover: #27312f;
+  --bg: #f2f0eb;
+  --bg-alt: #e8e5df;
+  --text: #17201f;
+  --text-light: #707774;
   --text-white: #ffffff;
-  --border: #e2e8f0;
+  --border: #d5d2cb;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --radius: 8px;
-  --max-width: 1200px;
+  --radius: 0px;
+  --max-width: 1280px;
   --header-height: 88px;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
   background: var(--bg);
-  line-height: 1.6;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
+
+#root { width: 100%; max-width: 100%; overflow-x: hidden; }
 
 img {
   max-width: 100%;
@@ -56,6 +60,37 @@ ul {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 24px;
+}
+
+/* Align page hero copy to the left third instead of centering it. */
+@media (min-width: 769px) {
+  .am-hero-content,
+  .about-hero-content,
+  .crane-hero-content,
+  .fl-hero-content,
+  .exc-hero-content,
+  .jcb-hero-content,
+  .bob-hero-content,
+  .forklift-hero-content,
+  .page-hero .container,
+  .fleet-hero-content {
+    margin-left: calc(27vw - max(0px, (100vw - var(--max-width)) / 2) - 24px);
+  }
+}
+
+@media (max-width: 768px) {
+  .am-hero-content,
+  .about-hero-content,
+  .crane-hero-content,
+  .fl-hero-content,
+  .exc-hero-content,
+  .jcb-hero-content,
+  .bob-hero-content,
+  .forklift-hero-content,
+  .page-hero .container,
+  .fleet-hero-content {
+    margin-left: 0;
+  }
 }
 
 .section {
@@ -95,7 +130,7 @@ ul {
   border: none;
   cursor: pointer;
   transition: all 0.2s;
-  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn-primary {

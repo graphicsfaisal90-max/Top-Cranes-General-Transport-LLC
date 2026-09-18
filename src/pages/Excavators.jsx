@@ -1,195 +1,125 @@
 import { Link } from 'react-router-dom'
 import './Pages.css'
+import './excavators.css'
+
+const fleet = [
+  { name: 'Crawler Excavators', image: '/Excavators/Crawler Excavators.jpg', tag: 'Heavy Duty', capacity: '12-50 Ton', text: 'Stable, powerful machines for heavy-duty earthmoving, foundations, infrastructure, and rough terrain operations.', features: ['Heavy-duty earthmoving', 'Superior rough-terrain stability', 'Bucket and jackhammer options'] },
+  { name: 'Wheeled Excavators', image: '/Excavators/Wheeled Excavators.jpg', tag: 'Mobile', capacity: '10-25 Ton', text: 'Fast and flexible excavators for urban construction, roadwork, utilities, and projects requiring frequent movement.', features: ['Fast road mobility', 'Urban and paved-surface work', 'Efficient site relocation'] },
+  { name: 'Mini Excavators', image: '/Excavators/Mini Excavators.jpg', tag: 'Compact', capacity: '1-5 Ton', text: 'Compact excavators for landscaping, trenching, utilities, and confined spaces where precision matters.', features: ['Tight access capability', 'Low-impact operation', 'Versatile attachments'] },
+  { name: 'Long Reach Excavators', image: '/Excavators/Long Reach Excavators.jpg', tag: 'Extended Reach', capacity: '20-40 Ton', text: 'Extended-reach equipment for deep excavation, dredging, demolition, slope work, and hard-to-reach areas.', features: ['Extended digging reach', 'Deep excavation', 'Demolition and dredging'] },
+]
+
+const highlights = [
+  { title: 'Versatile Range', text: 'Mini, hydraulic, crawler, wheeled, and long-reach excavators for urban construction, landscaping, and large excavation projects.' },
+  { title: 'Well-Maintained Equipment', text: 'Every machine undergoes regular inspection and maintenance for safe, dependable, and efficient site performance.' },
+  { title: 'Affordable Solutions', text: 'Competitive rental options with clear quotations and flexible terms for short-term and long-term projects.' },
+  { title: 'Dedicated Support', text: 'Our experienced team helps you select the right machine and remains available throughout your rental.' },
+  { title: 'Flexible Rental Periods', text: 'Rent an excavator for a day, a week, or a longer project schedule according to your requirements.' },
+  { title: 'Quick Delivery', text: 'Dubai-based operations allow us to coordinate prompt delivery and collection across the UAE.' },
+]
+
+const related = [
+  { name: 'Crane', image: '/Crane%20Equipment.png', text: 'Reliable crane rentals for high-rise construction and heavy lifting tasks.', link: '/equipment/crane' },
+  { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.png', text: 'Flexible forklift solutions for warehouses, factories, and construction sites.', link: '/equipment/fork-lift' },
+  { name: 'JCB 3CX', image: '/JCB%203CX%20Equipment.png', text: 'Versatile backhoe loaders for excavation, loading, roadwork, and utilities.', link: '/equipment/jcb-3cx' },
+  { name: 'Telehandler', image: '/Telehandler%20And%20Boombloader%20Equipment%20(1).png', text: 'Efficient heavy lifting and material handling with reliable telehandlers.', link: '/equipment/telehandler' },
+]
+
+const reviews = [
+  { name: 'Ahmed Al Maktoum', text: 'The excavator arrived on time and was in excellent condition. The team made the rental process simple and professional.' },
+  { name: 'Sarah Johnson', text: 'Reliable equipment and responsive support throughout our earthmoving project. Highly recommended.' },
+  { name: 'Rashid Al Hashimi', text: 'Top Cranes helped us choose the right excavator for a difficult site. Excellent service from start to finish.' },
+]
 
 export default function Excavators() {
   return (
-    <>
-      <section className="forklift-hero">
-        <div
-          className="forklift-hero-bg"
-          style={{ backgroundImage: 'url(/excavator-hero.jpg)' }}
-        />
-        <div className="forklift-hero-overlay" />
-        <div className="container forklift-hero-content">
-          <span className="forklift-hero-badge">Earthmoving Solutions</span>
-          <h1>Excavator<br />Rental Services</h1>
-          <p>
-            Powerful excavators for construction, demolition, mining, and
-            earthmoving projects. Performance, precision, and reliability guaranteed.
-          </p>
-          <div className="forklift-hero-actions">
-            <Link to="/contact" className="btn btn-primary btn-hero">Request a Quote</Link>
-            <Link to="/equipment" className="btn btn-outline btn-hero">All Equipment</Link>
+    <div className="exc-page">
+      <section className="exc-hero">
+        <div className="exc-hero-bg" />
+        <div className="exc-hero-overlay" />
+        <div className="container exc-hero-content">
+          <span className="exc-badge">Earthmoving Solutions</span>
+          <h1>Excavator Rental<br />Services Dubai</h1>
+          <p>High-quality excavators for construction, demolition, landscaping, infrastructure, and earthmoving projects across the UAE.</p>
+          <div className="exc-actions">
+            <Link to="/contact" className="exc-btn exc-btn-primary">Request a Quote</Link>
+            <a href="#fleet" className="exc-btn exc-btn-outline">View Fleet</a>
           </div>
         </div>
       </section>
 
-      <section className="forklift-services">
-        <div className="container">
-          <div className="forklift-services-grid">
-            <div className="forklift-services-image">
-              <div className="forklift-services-image-card">
-                <img src="/excavator-about.jpg" alt="Excavator in operation" />
-                <div className="forklift-services-image-glow" />
-                <div className="forklift-services-image-badge">
-                  <strong>15+</strong>
-                  <span>Years Experience</span>
-                </div>
-              </div>
-            </div>
-            <div className="forklift-services-content">
-              <span className="forklift-services-tagline">Top Cranes General Transport LLC</span>
-              <h2>Professional Excavator Services Across the UAE</h2>
-              <p>
-                Top Cranes General Transport LLC provides reliable and efficient excavator
-                solutions for construction sites, infrastructure projects, and earthmoving
-                operations across the UAE. Our machines are well-maintained, operator-ready,
-                and suitable for both short-term and long-term projects.
-              </p>
-              <ul className="forklift-services-list">
-                <li>
-                  <span className="fsl-icon" />
-                  Excavator Rental (With/Without Operator)
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Earthmoving & Excavation
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Demolition & Site Clearance
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Trenching & Grading
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Short-Term & Long-Term Contracts
-                </li>
-              </ul>
-              <Link to="/contact" className="btn btn-primary forklift-services-cta">Get a Quote</Link>
-            </div>
+      <section className="exc-intro">
+        <div className="container exc-intro-grid">
+          <div className="exc-intro-image">
+            <img src="/excavator-about.jpg" alt="Excavator working on a UAE construction site" />
+            <div className="exc-experience"><strong>15+</strong><span>Years Experience</span></div>
+          </div>
+          <div className="exc-intro-content">
+            <span className="exc-badge">Your Trusted Excavator Rental Service</span>
+            <h2>Powerful Equipment For Every Excavation Project</h2>
+            <p>Top Cranes General Transport LLC provides dependable excavator rental services in Dubai and across the UAE. Whether you need a mini excavator for a small job or a heavy-duty machine for large-scale operations, our fleet is ready to support your project.</p>
+            <p>Our team helps you choose the right excavator based on your site conditions, digging depth, access requirements, and project duration.</p>
+            <Link to="/contact" className="exc-btn exc-btn-primary">Get a Free Quote</Link>
           </div>
         </div>
       </section>
 
-      <section className="forklift-fleet">
+      <section className="exc-fleet" id="fleet">
         <div className="container">
-          <div className="forklift-fleet-header">
-            <span className="forklift-fleet-tagline">Our Excavator Fleet</span>
-            <h2>Powerful Machines For Every Job</h2>
-            <p>
-              We offer a wide range of excavator solutions suitable for construction sites,
-              infrastructure projects, mining operations, and heavy earthmoving.
-              Our fleet is regularly maintained to ensure safety, performance, and
-              operational efficiency.
-            </p>
+          <div className="exc-section-heading">
+            <span className="exc-badge">Discover Our Excavator Fleet</span>
+            <h2>Machines Built For The Job</h2>
+            <p>Choose from a versatile range of well-maintained excavators for demanding UAE projects.</p>
           </div>
-          <div className="forklift-fleet-grid">
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Crawler</span>
-                <img src="/Excavators/Crawler Excavators.jpg" alt="Crawler Excavator" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Crawler Excavators</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>12-50 Ton</strong>
-                    <span>Weight</span>
-                  </div>
+          <div className="exc-fleet-grid">
+            {fleet.map((item) => (
+              <article className="exc-card" key={item.name}>
+                <div className="exc-card-image"><span>{item.tag}</span><img src={item.image} alt={item.name} /></div>
+                <div className="exc-card-body">
+                  <h3>{item.name}</h3>
+                  <div className="exc-card-cap"><strong>{item.capacity}</strong><small>Operating range</small></div>
+                  <p>{item.text}</p>
+                  <ul>{item.features.map((feature) => <li key={feature}>{feature}</li>)}</ul>
+                  <Link to="/contact" className="exc-card-link">Book Now &rarr;</Link>
                 </div>
-                <ul className="fl-card-feats">
-                  <li>Heavy-duty earthmoving</li>
-                  <li>Superior stability on rough terrain</li>
-                </ul>
-              </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Wheeled</span>
-                <img src="/Excavators/Wheeled Excavators.jpg" alt="Wheeled Excavator" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Wheeled Excavators</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>10-25 Ton</strong>
-                    <span>Weight</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Fast road mobility</li>
-                  <li>Urban & paved surface work</li>
-                </ul>
-              </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Mini</span>
-                <img src="/Excavators/Mini Excavators.jpg" alt="Mini Excavator" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Mini Excavators</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>1-5 Ton</strong>
-                    <span>Weight</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Tight access & confined spaces</li>
-                  <li>Versatile attachment options</li>
-                </ul>
-              </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Long Reach</span>
-                <img src="/Excavators/Long Reach Excavators.jpg" alt="Long Reach Excavator" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Long Reach Excavators</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>20-40 Ton</strong>
-                    <span>Weight</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Extended digging reach</li>
-                  <li>Deep excavation & dredging</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="forklift-fleet-footer">
-            <Link to="/equipment" className="btn btn-primary forklift-fleet-btn">View Full Fleet</Link>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="forklift-support">
+      <section className="exc-highlights">
         <div className="container">
-          <div className="forklift-support-box">
-            <div className="forklift-support-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-            </div>
-            <div className="forklift-support-text">
-              <h3>24/7 Support</h3>
-              <p>We are always ready to support your operations with reliable equipment and quick assistance.</p>
-            </div>
-            <Link to="/contact" className="btn btn-primary forklift-support-btn">Contact Us</Link>
+          <div className="exc-section-heading">
+            <span className="exc-badge">Why Choose Us?</span>
+            <h2>Rental Made Simple</h2>
+            <p>From choosing your machine to delivery at your site, our team keeps every step straightforward.</p>
+          </div>
+          <div className="exc-highlights-grid">
+            {highlights.map((item, index) => <div className="exc-highlight" key={item.title}><span>0{index + 1}</span><h3>{item.title}</h3><p>{item.text}</p></div>)}
           </div>
         </div>
       </section>
-    </>
+
+      <section className="exc-quote">
+        <div className="container exc-quote-grid">
+          <div><span className="exc-badge">We Are Here To Help</span><h2>Get A Free Excavator Rental Quote</h2><p>Tell us about your project and our team will recommend the right machine, rental period, and delivery solution.</p></div>
+          <Link to="/contact" className="exc-btn exc-btn-primary">Submit Your Enquiry</Link>
+        </div>
+      </section>
+
+      <section className="exc-related">
+        <div className="container">
+          <div className="exc-section-heading"><span className="exc-badge">Related Equipment</span><h2>Complete Your Project Fleet</h2></div>
+          <div className="exc-related-grid">{related.map((item) => <Link to={item.link} className="exc-related-card" key={item.name}><div><img src={item.image} alt={item.name} /></div><h3>{item.name}</h3><p>{item.text}</p><span>Read More &rarr;</span></Link>)}</div>
+        </div>
+      </section>
+
+      <section className="exc-testimonials">
+        <div className="container"><div className="exc-section-heading"><span className="exc-badge">Testimonials</span><h2>People Are Talking About Top Cranes</h2></div><div className="exc-review-grid">{reviews.map((review) => <article className="exc-review" key={review.name}><div className="exc-stars">★★★★★</div><p>&quot;{review.text}&quot;</p><strong>{review.name}</strong><small>Project Client</small></article>)}</div></div>
+      </section>
+
+      <section className="exc-cta"><div className="container exc-cta-grid"><div><h2>Contact Us! We're<br />Available 24/7.</h2><p>Ready to start your excavation project? Talk to our team today.</p></div><div className="exc-contact-list"><a href="tel:+971509191004">+971 50 919 1004</a><a href="tel:+971506749200">+971 50 674 9200</a><a href="mailto:sales@topcranestransport.com">sales@topcranestransport.com</a></div></div></section>
+    </div>
   )
 }

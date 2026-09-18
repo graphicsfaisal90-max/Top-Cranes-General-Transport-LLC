@@ -24,10 +24,10 @@ export default function Header() {
 
         <nav className={`nav ${menuOpen ? 'nav-open' : ''}`}>
           <NavLink to="/" end onClick={() => setMenuOpen(false)}>Home</NavLink>
-          <NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink>
+          <NavLink to="/about" onClick={() => setMenuOpen(false)}>Our Company</NavLink>
           <div className={`dropdown ${dropdownOpen ? 'dropdown-open' : ''}`}>
             <div className="dropdown-head">
-              <NavLink to="/equipment" className="dropdown-link" onClick={() => setMenuOpen(false)}>Equipment</NavLink>
+              <NavLink to="/equipment" className="dropdown-link" onClick={() => setMenuOpen(false)}>Services & Fleet</NavLink>
               <button
                 className="dropdown-arrow"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -37,16 +37,16 @@ export default function Header() {
               </button>
             </div>
             <div className="dropdown-content">
-              <Link to="/equipment/crane" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Crane</Link>
-              <Link to="/equipment/fork-lift" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Fork Lift</Link>
-              <Link to="/equipment/telehandler" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Telehandler / Boomloader</Link>
-              <Link to="/equipment/excavators" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Excavators</Link>
+              <Link to="/equipment/crane" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Crane Rental</Link>
+              <Link to="/equipment/fork-lift" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Forklift Rental</Link>
+              <Link to="/equipment/telehandler" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Telehandler & Boom Loader</Link>
+              <Link to="/equipment/excavators" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Excavator Rental</Link>
               <Link to="/equipment/jcb-3cx" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>JCB 3CX</Link>
-              <Link to="/equipment/shovel" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Shovel</Link>
-              <Link to="/equipment/bobcat" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Bobcat</Link>
+              <Link to="/equipment/shovel" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Wheel Loader</Link>
+              <Link to="/equipment/bobcat" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Bobcat Rental</Link>
             </div>
           </div>
-          <NavLink to="/faq" onClick={() => setMenuOpen(false)}>FAQ</NavLink>
+          <NavLink to="/faq" onClick={() => setMenuOpen(false)}>Project FAQ</NavLink>
           <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink>
           <Link to="/contact" className="btn btn-primary header-cta" onClick={() => setMenuOpen(false)}>Get Quote Now</Link>
         </nav>

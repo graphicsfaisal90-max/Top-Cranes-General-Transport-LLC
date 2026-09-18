@@ -1,195 +1,72 @@
 import { Link } from 'react-router-dom'
 import './Pages.css'
+import './jcb3cx.css'
+
+const applications = [
+  { title: 'Excavation & Trenching', tag: 'Excavation', image: '/JCB3CX/Excavation & Trenching.jpg', metric: '14 ft', label: 'Dig Depth', features: ['Precision trenching', 'Deep excavation capability'], text: 'Dig foundations, trenches, drainage channels, and utility lines with dependable control and reach.' },
+  { title: 'Material Loading', tag: 'Loading', image: '/JCB3CX/Material Loading.jpg', metric: '1.0 m3', label: 'Bucket', features: ['Efficient material handling', 'High-capacity loading'], text: 'Move soil, aggregate, rubble, and construction materials quickly with the front loader bucket.' },
+  { title: 'Site Preparation', tag: 'Preparation', image: '/JCB3CX/Site Preparation.jpg', metric: '8 ft', label: 'Working Width', features: ['Grading and levelling', 'Clearing and backfilling'], text: 'Prepare construction sites, level working areas, and complete backfilling with one versatile machine.' },
+  { title: 'Utility & Infrastructure', tag: 'Utility', image: '/JCB3CX/Utility & Infrastructure Works.jpg', metric: 'Multi', label: 'Purpose', features: ['Pipe laying and utilities', 'Road and infrastructure work'], text: 'A dependable solution for roadwork, utility installation, pipe laying, and infrastructure projects.' },
+]
+
+const benefits = [
+  { title: 'Versatile & Powerful', text: 'The JCB 3CX combines a backhoe and loader in one machine, making it ideal for digging, excavation, loading, backfilling, and trenching.' },
+  { title: 'Ready For Any Job Site', text: 'Every unit is regularly inspected and maintained so it can perform reliably under demanding construction conditions.' },
+  { title: 'Flexible Rental Terms', text: 'Choose short-term or long-term rental options based on your project schedule, budget, and equipment requirements.' },
+  { title: 'Expert Support', text: 'Our team can help you select the right machine, arrange delivery, and provide operator support when required.' },
+  { title: 'Competitive Rates', text: 'Get dependable JCB 3CX equipment with clear quotations and cost-effective rental solutions for UAE projects.' },
+  { title: 'Prompt Delivery', text: 'Based in the UAE, we coordinate efficient delivery and collection to help keep your project moving.' },
+]
+
+const steps = [
+  { num: '01', title: 'Contact Us', text: 'Reach out through our website or call our team. We are ready to discuss your JCB 3CX rental requirements.' },
+  { num: '02', title: 'Specify Your Needs', text: 'Tell us your project location, rental duration, operating requirements, and whether you need an operator.' },
+  { num: '03', title: 'Schedule Delivery', text: 'Once confirmed, we arrange delivery of your JCB 3CX backhoe loader to your job site at a convenient time.' },
+]
+
+const related = [
+  { name: 'Crane', image: '/Crane%20Equipment.png', text: 'Reliable crane rentals for construction and heavy lifting tasks.', link: '/equipment/crane' },
+  { name: 'Excavators', image: '/excavator_%20equpment.png', text: 'Powerful excavators for earthmoving, demolition, and infrastructure work.', link: '/equipment/excavators' },
+  { name: 'Shovel', image: '/Shovel%20Loader%20Equipment.png', text: 'Robust shovel loaders for mining, construction, and landscaping.', link: '/equipment/shovel' },
+  { name: 'Telehandler', image: '/Telehandler%20And%20Boombloader%20Equipment%20(1).png', text: 'Efficient material handling and lifting with reliable telehandlers.', link: '/equipment/telehandler' },
+]
 
 export default function JCB3CX() {
   return (
-    <>
-      <section className="forklift-hero">
-        <div
-          className="forklift-hero-bg"
-          style={{ backgroundImage: 'url(/jcb-hero.jpg)' }}
-        />
-        <div className="forklift-hero-overlay" style={{ background: 'rgba(0,0,0,0.6)' }} />
-        <div className="container forklift-hero-content">
-          <span className="forklift-hero-badge">Versatile Earthmoving Solutions</span>
-          <h1>JCB 3CX<br />Backhoe Loader Rental</h1>
-          <p>
-            The iconic JCB 3CX backhoe loader for construction, excavation, and
-            site preparation. Power, versatility, and reliability on every job.
-          </p>
-          <div className="forklift-hero-actions">
-            <Link to="/contact" className="btn btn-primary btn-hero">Request a Quote</Link>
-            <Link to="/equipment" className="btn btn-outline btn-hero">All Equipment</Link>
-          </div>
+    <div className="jcb-page">
+      <section className="jcb-hero">
+        <div className="jcb-hero-bg" />
+        <div className="jcb-hero-overlay" />
+        <div className="container jcb-hero-content">
+          <span className="jcb-badge">Versatile Earthmoving Solutions</span>
+          <h1>JCB 3CX Rental<br />Services Dubai</h1>
+          <p>Reliable JCB 3CX backhoe loaders for construction, excavation, site preparation, roadwork, and infrastructure projects across the UAE.</p>
+          <div className="jcb-actions"><Link to="/contact" className="jcb-btn jcb-btn-primary">Request a Quote</Link><a href="#applications" className="jcb-btn jcb-btn-outline">Explore Services</a></div>
         </div>
       </section>
 
-      <section className="forklift-services">
-        <div className="container">
-          <div className="forklift-services-grid">
-            <div className="forklift-services-image">
-              <div className="forklift-services-image-card">
-                <img src="/jcb-about.jpg" alt="JCB 3CX in operation" />
-                <div className="forklift-services-image-glow" />
-                <div className="forklift-services-image-badge">
-                  <strong>15+</strong>
-                  <span>Years Experience</span>
-                </div>
-              </div>
-            </div>
-            <div className="forklift-services-content">
-              <span className="forklift-services-tagline">Top Cranes General Transport LLC</span>
-              <h2>Professional JCB 3CX Services Across the UAE</h2>
-              <p>
-                Top Cranes General Transport LLC provides reliable and efficient JCB 3CX backhoe
-                loader solutions for construction sites, infrastructure projects, and earthmoving
-                operations across the UAE. Our machines are well-maintained, operator-ready,
-                and suitable for both short-term and long-term projects.
-              </p>
-              <ul className="forklift-services-list">
-                <li>
-                  <span className="fsl-icon" />
-                  JCB 3CX Rental (With/Without Operator)
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Trenching & Excavation
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Loading & Material Handling
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Site Preparation & Grading
-                </li>
-                <li>
-                  <span className="fsl-icon" />
-                  Short-Term & Long-Term Contracts
-                </li>
-              </ul>
-              <Link to="/contact" className="btn btn-primary forklift-services-cta">Get a Quote</Link>
-            </div>
-          </div>
+      <section className="jcb-intro">
+        <div className="container jcb-intro-grid">
+          <div className="jcb-intro-image"><img src="/jcb-about.jpg" alt="JCB 3CX backhoe loader in operation" /><div className="jcb-experience"><strong>15+</strong><span>Years Experience</span></div></div>
+          <div className="jcb-intro-content"><span className="jcb-badge">Your Trusted JCB Rental Partner</span><h2>Power, Versatility, And Reliability On Every Job</h2><p>Top Cranes General Transport LLC provides JCB 3CX backhoe loader rental services for construction sites, infrastructure projects, utilities, and earthmoving operations throughout Dubai and the UAE.</p><p>The JCB 3CX is a highly versatile machine that combines excavation and loading capabilities, helping your team complete more tasks with less equipment movement.</p><Link to="/contact" className="jcb-btn jcb-btn-primary">Get a Free Quote</Link></div>
         </div>
       </section>
 
-      <section className="forklift-fleet">
-        <div className="container">
-          <div className="forklift-fleet-header">
-            <span className="forklift-fleet-tagline">Our JCB 3CX Fleet</span>
-            <h2>Powerful Machines For Every Job</h2>
-            <p>
-              We offer a range of JCB 3CX backhoe loader solutions suitable for construction sites,
-              infrastructure projects, and earthmoving operations.
-              Our fleet is regularly maintained to ensure safety, performance, and
-              operational efficiency.
-            </p>
-          </div>
-          <div className="forklift-fleet-grid">
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Excavation</span>
-                <img src="/JCB3CX/Excavation & Trenching.jpg" alt="Excavation & Trenching" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Excavation &amp; Trenching</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>14 ft</strong>
-                    <span>Dig Depth</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Precision trenching</li>
-                  <li>Deep excavation capability</li>
-                </ul>
-              </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Loading</span>
-                <img src="/JCB3CX/Material Loading.jpg" alt="Material Loading" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Material Loading</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>1.0 m³</strong>
-                    <span>Bucket</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Efficient material handling</li>
-                  <li>High-capacity loading</li>
-                </ul>
-              </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Preparation</span>
-                <img src="/JCB3CX/Site Preparation.jpg" alt="Site Preparation" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Site Preparation</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>8 ft</strong>
-                    <span>Width</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Grading & leveling</li>
-                  <li>Site clearing & backfilling</li>
-                </ul>
-              </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
-                <span className="fl-card-tag">Utility</span>
-                <img src="/JCB3CX/Utility & Infrastructure Works.jpg" alt="Utility & Infrastructure" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Utility &amp; Infrastructure</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>Multi</strong>
-                    <span>Purpose</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>Pipe laying & utilities</li>
-                  <li>Road & infrastructure work</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="forklift-fleet-footer">
-            <Link to="/equipment" className="btn btn-primary forkllift-fleet-btn">View Full Fleet</Link>
-          </div>
-        </div>
+      <section className="jcb-applications" id="applications">
+        <div className="container"><div className="jcb-section-heading"><span className="jcb-badge">Explore Our JCB 3CX Services</span><h2>One Machine. Multiple Applications.</h2><p>From digging and trenching to loading and grading, our JCB 3CX machines are ready for demanding project work.</p></div><div className="jcb-app-grid">{applications.map((item) => <article className="jcb-card" key={item.title}><div className="jcb-card-image"><span>{item.tag}</span><img src={item.image} alt={item.title} /></div><div className="jcb-card-body"><h3>{item.title}</h3><div className="jcb-card-metric"><strong>{item.metric}</strong><small>{item.label}</small></div><p>{item.text}</p><ul>{item.features.map((feature) => <li key={feature}>{feature}</li>)}</ul><Link to="/contact" className="jcb-card-link">Book Now &rarr;</Link></div></article>)}</div></div>
       </section>
 
-      <section className="forklift-support">
-        <div className="container">
-          <div className="forklift-support-box">
-            <div className="forklift-support-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-            </div>
-            <div className="forklift-support-text">
-              <h3>24/7 Support</h3>
-              <p>We are always ready to support your operations with reliable equipment and quick assistance.</p>
-            </div>
-            <Link to="/contact" className="btn btn-primary forklift-support-btn">Contact Us</Link>
-          </div>
-        </div>
-      </section>
-    </>
+      <section className="jcb-benefits"><div className="container"><div className="jcb-section-heading"><span className="jcb-badge">Why Choose Top Cranes?</span><h2>Built For Your Project Requirements</h2><p>We provide more than equipment. Our team helps you get the right machine, support, and rental terms for your project.</p></div><div className="jcb-benefit-grid">{benefits.map((item, index) => <div className="jcb-benefit" key={item.title}><span>0{index + 1}</span><h3>{item.title}</h3><p>{item.text}</p></div>)}</div></div></section>
+
+      <section className="jcb-steps"><div className="container"><div className="jcb-section-heading"><span className="jcb-badge">How To Rent</span><h2>How To Rent A JCB 3CX In Dubai</h2><p>Our rental process is simple, transparent, and designed to get your machine to site without unnecessary delays.</p></div><div className="jcb-step-grid">{steps.map((step) => <div className="jcb-step" key={step.num}><strong>{step.num}</strong><h3>{step.title}</h3><p>{step.text}</p></div>)}</div></div></section>
+
+      <section className="jcb-trusted"><div className="container jcb-trusted-grid"><div><span className="jcb-badge">Trusted By Professionals</span><h2>A Dependable Partner For UAE Projects</h2><p>From small site preparation jobs to large infrastructure work, Top Cranes supports contractors with reliable equipment, experienced assistance, and responsive service.</p><p>Every JCB 3CX is prepared for safe and efficient operation before it reaches your project site.</p><Link to="/contact" className="jcb-btn jcb-btn-primary">Talk To Our Team</Link></div><img src="/JCB 3CX Equipment.png" alt="JCB 3CX equipment" /></div></section>
+
+      <section className="jcb-quote"><div className="container jcb-quote-grid"><div><span className="jcb-badge">We Are Here To Help</span><h2>Get A Free JCB 3CX Rental Quote</h2><p>Tell us about your project, location, and rental period. We will help you choose the right solution.</p></div><Link to="/contact" className="jcb-btn jcb-btn-dark">Submit Your Enquiry</Link></div></section>
+
+      <section className="jcb-related"><div className="container"><div className="jcb-section-heading"><span className="jcb-badge">Related Equipment</span><h2>Complete Your Project Fleet</h2></div><div className="jcb-related-grid">{related.map((item) => <Link to={item.link} className="jcb-related-card" key={item.name}><div><img src={item.image} alt={item.name} /></div><h3>{item.name}</h3><p>{item.text}</p><span>Read More &rarr;</span></Link>)}</div></div></section>
+
+      <section className="jcb-cta"><div className="container jcb-cta-grid"><div><h2>Contact Us! We're<br />Available 24/7.</h2><p>Ready to start your next project? Speak to our team about JCB 3CX rental today.</p></div><div className="jcb-contact-list"><a href="tel:+971509191004">+971 50 919 1004</a><a href="tel:+971506749200">+971 50 674 9200</a><a href="mailto:sales@topcranestransport.com">sales@topcranestransport.com</a></div></div></section>
+    </div>
   )
 }

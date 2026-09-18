@@ -1,6 +1,8 @@
 import { Outlet } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
+import BrandShowcase from './BrandShowcase'
+import SEO from './SEO'
 import './Layout.css'
 
 const waNumber = '971506749200'
@@ -9,6 +11,7 @@ const callNumber = '+971506749200'
 export default function Layout() {
   return (
     <div className="layout">
+      <SEO />
       <div className="announcement-bar">
         <div className="container announce-inner">
           <div className="announce-social">
@@ -23,7 +26,7 @@ export default function Layout() {
             </a>
           </div>
           <div className="announce-marquee">
-            <marquee>Top Cranes General Transport LLC — Professional heavy equipment rental, crane services, forklift, telehandler, excavator, JCB, shovel, and bobcat solutions across the UAE. Safe, reliable, and efficient service for all your construction and industrial needs.</marquee>
+            <span>Top Cranes General Transport LLC - Professional heavy equipment rental and transport solutions across the UAE.</span>
           </div>
           <div className="announce-phone">
             <a href={`tel:${callNumber}`}>
@@ -37,6 +40,7 @@ export default function Layout() {
       <main className="main">
         <Outlet />
       </main>
+      <BrandShowcase />
       <Footer />
       <a
         href={`https://wa.me/${waNumber}`}

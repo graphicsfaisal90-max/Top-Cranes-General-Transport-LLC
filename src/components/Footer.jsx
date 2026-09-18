@@ -7,18 +7,28 @@ export default function Footer() {
         <div className="footer-brand">
           <img src="/Top%20Cranes%20logo.svg" alt="Top Cranes" className="footer-logo" />
           <p>
-            Your trusted partner for heavy lifting and general transport services.
-            Safety, reliability, and excellence in every job.
+            UAE heavy equipment rental and general transport for construction,
+            infrastructure, logistics and industrial projects. Safe equipment,
+            skilled operators and dependable delivery.
           </p>
         </div>
 
         <div className="footer-links">
-          <h4>Quick Links</h4>
+          <h4>Explore</h4>
           <Link to="/">Home</Link>
-          <Link to="/equipment">Equipment</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/faq">FAQ</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/about">Our Company</Link>
+          <Link to="/equipment">Services & Fleet</Link>
+          <Link to="/contact">Request a Quote</Link>
+          <Link to="/faq">Project FAQ</Link>
+        </div>
+
+        <div className="footer-links">
+          <h4>Services</h4>
+          <Link to="/equipment/crane">Crane Rental UAE</Link>
+          <Link to="/equipment/fork-lift">Forklift Rental</Link>
+          <Link to="/equipment/excavators">Excavator Rental</Link>
+          <Link to="/equipment/telehandler">Telehandler Rental</Link>
+          <Link to="/equipment/bobcat">Bobcat Rental</Link>
         </div>
 
         <div className="footer-links">
