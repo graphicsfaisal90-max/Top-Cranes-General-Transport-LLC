@@ -6,6 +6,7 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <img src="/Top%20Cranes%20logo.svg" alt="Top Cranes" className="footer-logo" />
+          <h3 className="footer-company-name">Top Cranes General Transport LLC</h3>
           <p>
             UAE heavy equipment rental and general transport for construction,
             infrastructure, logistics and industrial projects. Safe equipment,
