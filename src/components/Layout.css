@@ -128,6 +128,10 @@
   display: block;
 }
 
+.mobile-company-name {
+  display: none;
+}
+
 .nav {
   display: flex;
   gap: 28px;
@@ -262,7 +266,7 @@
   top: calc(100% + 4px);
   left: 50%;
   transform: translateX(-50%);
-  background: #ffffff;
+  background: #000000;
   min-width: 220px;
   border-radius: var(--radius);
   box-shadow: var(--shadow-lg);
@@ -283,8 +287,8 @@
   display: block;
   padding: 10px 20px !important;
   font-size: 0.9rem !important;
-  color: var(--text) !important;
-  opacity: 0.75 !important;
+  color: #ffffff !important;
+  opacity: 0.9 !important;
   border: none !important;
   white-space: nowrap;
   transition: background 0.2s, opacity 0.2s;
@@ -292,7 +296,7 @@
 }
 
 .dropdown-content a:hover {
-  background: var(--bg-alt);
+  background: #1f1f1f;
   opacity: 1 !important;
 }
 
@@ -673,6 +677,20 @@
   .logo-img {
     height: 46px;
     max-width: 190px;
+  }
+
+  .mobile-company-name {
+    display: block;
+    flex: 1;
+    margin: 0 10px;
+    color: var(--text);
+    font-size: .76rem;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: .35px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateY(2px);
   }
 
   .hamburger {

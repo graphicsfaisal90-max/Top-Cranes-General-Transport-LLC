@@ -11,6 +11,7 @@ export default function Header() {
         <Link to="/" className="logo">
           <img src="/Top%20Cranes%20logo.svg" alt="Top Cranes" className="logo-img" />
         </Link>
+        <span className="mobile-company-name">TOP CRANES GENERAL TRANSPORT LLC</span>
 
         <button
           className={`hamburger ${menuOpen ? 'open' : ''}`}
@@ -38,8 +39,8 @@ export default function Header() {
             </div>
             <div className="dropdown-content">
               <Link to="/equipment/crane" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Crane Rental</Link>
-              <Link to="/equipment/fork-lift" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Forklift Rental</Link>
               <Link to="/equipment/telehandler" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Telehandler & Boom Loader</Link>
+              <Link to="/equipment/fork-lift" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Forklift Rental</Link>
               <Link to="/equipment/excavators" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Excavator Rental</Link>
               <Link to="/equipment/jcb-3cx" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>JCB 3CX</Link>
               <Link to="/equipment/shovel" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Wheel Loader</Link>

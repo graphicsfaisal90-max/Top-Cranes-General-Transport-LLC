@@ -3,7 +3,7 @@
 
 /* --- Hero --- */
 .crane-hero { position: relative; min-height: 520px; display: flex; align-items: center; background: #111817; color: #fff; overflow: hidden; }
-.crane-hero-bg { position: absolute; inset: 0; background: url('/crane-hero.jpg') center / cover no-repeat; filter: saturate(.5); }
+.crane-hero-bg { position: absolute; inset: 0; background: url('/Cranes%20U.png') center / cover no-repeat; filter: saturate(.5); }
 .crane-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(12,17,16,.95) 0%, rgba(12,17,16,.65) 50%, rgba(12,17,16,.2) 100%); }
 .crane-hero-content { position: relative; z-index: 1; max-width: 680px; padding: 60px 0; }
 .crane-hero-badge { display: inline-block; font-size: .58rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--primary); border-left: 3px solid var(--primary); padding: 5px 14px; background: rgba(242,104,54,.08); margin-bottom: 24px; }

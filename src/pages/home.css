@@ -135,6 +135,7 @@
   .am-rental-row { grid-template-columns: 1fr; gap: 25px; }
   .am-rental-reverse { direction: ltr; }
   .am-rental-img img { height: 240px; }
+  .am-rental-content .am-btn { width: 100%; }
   .am-testimonials { padding: 70px 0; }
   .am-test-card { width: min(82vw, 320px); }
   .am-cta-grid { grid-template-columns: 1fr; gap: 35px; }
@@ -143,7 +144,8 @@
 
 @media (max-width: 480px) {
   .am-hero { padding: 80px 0 50px; }
-  .am-hero-actions { flex-direction: column; align-items: flex-start; }
+  .am-hero-actions { flex-direction: column; align-items: stretch; }
+  .am-hero-actions .am-btn { width: 100%; }
   .am-eq-card { width: 250px; }
   .am-eq-card-img { height: 160px; }
   .am-test-card { width: min(80vw, 290px); padding: 24px 20px; }

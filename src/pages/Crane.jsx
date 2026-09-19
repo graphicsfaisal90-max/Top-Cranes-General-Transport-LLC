@@ -12,14 +12,6 @@ const craneTypes = [
     desc: 'Our mobile cranes offer exceptional versatility for construction sites, industrial projects, and infrastructure development across the UAE.',
   },
   {
-    name: 'Tower Cranes',
-    tag: 'Tower',
-    image: '/Crane/Tower Cranes.jpg',
-    capacity: '8-20 Ton',
-    specs: ['High-rise construction', 'Exceptional lift height', 'Continuous operation'],
-    desc: 'Tower cranes are essential for high-rise construction projects, providing maximum lifting height and reach for efficient material handling.',
-  },
-  {
     name: 'Crawler Cranes',
     tag: 'Crawler',
     image: '/Crane/Crawler Cranes.jpg',
@@ -72,7 +64,7 @@ export default function Crane() {
         <div className="container">
           <div className="crane-about-grid">
             <div className="crane-about-img">
-              <img src="/crane-about.jpg" alt="Crane operations in Dubai" />
+              <img src="/Cranes%20U.png" alt="Crane operations in Dubai" />
               <div className="crane-about-badge-card">
                 <span className="crane-about-badge-num">15+</span>
                 <span className="crane-about-badge-text">Years Experience</span>
