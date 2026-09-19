@@ -18,11 +18,15 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Contact Form Email
 
-The contact form sends enquiries to `sales@topcranestransport.com` through the Vercel `/api/contact` function and Resend.
+The contact form sends enquiries to `sales@topcranestransport.com` through the Vercel `/api/contact` function and Nodemailer using Hostinger SMTP.
 
 Configure these Vercel environment variables before deploying:
 
-- `RESEND_API_KEY`: API key from Resend
-- `CONTACT_FROM_EMAIL`: a sender address from a domain verified in Resend, for example `Top Cranes Website <website@topcranestransport.com>`
+- `SMTP_HOST`: Hostinger SMTP host, normally `smtp.hostinger.com`
+- `SMTP_PORT`: `465` for SSL/TLS, or `587` for STARTTLS
+- `SMTP_SECURE`: `true` for port `465`; use `false` for port `587`
+- `SMTP_USER`: the full Hostinger mailbox address
+- `SMTP_PASSWORD`: the Hostinger mailbox password
+- `CONTACT_FROM_EMAIL`: optional sender address; use the same mailbox as `SMTP_USER`
 
-Keep the Resend API key server-side. Do not add it to a `VITE_` variable or commit it to the repository.
+Keep SMTP credentials server-side. Do not add them to `VITE_` variables or commit them to the repository.

@@ -38,7 +38,7 @@ export default function Header() {
               </button>
             </div>
             <div className="dropdown-content">
-              <Link to="/equipment/crane" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Crane Rental</Link>
+              <Link to="/equipment/crane" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Cranes Rental</Link>
               <Link to="/equipment/telehandler" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Telehandler & Boom Loader</Link>
               <Link to="/equipment/fork-lift" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Forklift Rental</Link>
               <Link to="/equipment/excavators" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Excavator Rental</Link>

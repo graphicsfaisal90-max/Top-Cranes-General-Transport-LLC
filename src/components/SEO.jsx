@@ -7,7 +7,7 @@ const pages = {
   '/': {
     title: 'TOP CRANES TRANSPORT: Cranes Rental & Lifting Services Dubai UAE',
     description: 'Top Cranes General Transport LLC is the most reliable heavy equipment rental companies in UAE, which can cater to multiple Cranes requirements on site.',
-    keywords: 'heavy equipment rental Dubai, equipment rental UAE, crane rental Dubai, forklift rental Dubai, excavator rental Dubai, construction equipment rental UAE',
+    keywords: 'heavy equipment rental Dubai, equipment rental UAE, cranes rental Dubai, forklift rental Dubai, excavator rental Dubai, construction equipment rental UAE',
   },
   '/equipment': {
     title: 'Heavy Equipment Rental Dubai | Construction Equipment UAE',
@@ -15,9 +15,9 @@ const pages = {
     keywords: 'heavy equipment rental Dubai, construction equipment rental UAE, machinery rental Dubai, equipment hire UAE, lifting equipment rental',
   },
   '/equipment/crane': {
-    title: 'Crane Rental Services Dubai | Mobile Crane Hire UAE',
-    description: 'Top Cranes provides mobile crane rental, tower crane, crawler crane and rough terrain crane hire for construction and heavy lifting projects across Dubai and the UAE.',
-    keywords: 'crane rental Dubai, mobile crane rental UAE, tower crane hire Dubai, crawler crane rental UAE, rough terrain crane rental, heavy lifting services Dubai',
+    title: 'Cranes Rental Services Dubai | Mobile Cranes Hire UAE',
+    description: 'Top Cranes provides mobile cranes rental, tower cranes, crawler cranes and rough terrain cranes hire for construction and heavy lifting projects across Dubai and the UAE.',
+    keywords: 'cranes rental Dubai, mobile cranes rental UAE, tower cranes hire Dubai, crawler cranes rental UAE, rough terrain cranes rental, heavy lifting services Dubai',
   },
   '/equipment/fork-lift': {
     title: 'Forklift Rental Services Dubai | Forklift Hire UAE',
@@ -52,17 +52,17 @@ const pages = {
   '/about': {
     title: 'About Top Cranes General Transport | Equipment Rental UAE',
     description: 'Learn about Top Cranes General Transport LLC, a Dubai-based heavy equipment rental and general transport company serving construction and industrial projects across the UAE since 2009.',
-    keywords: 'Top Cranes General Transport Dubai, heavy equipment company UAE, equipment rental company Dubai, crane company UAE, transport company Sharjah',
+    keywords: 'Top Cranes General Transport Dubai, heavy equipment company UAE, equipment rental company Dubai, cranes company UAE, transport company Sharjah',
   },
   '/contact': {
     title: 'Contact Top Cranes | Equipment Rental Quote Dubai UAE',
-    description: 'Contact Top Cranes General Transport for crane rental, forklift rental, excavator hire, telehandler, JCB, Bobcat and heavy equipment rental quotes across the UAE.',
-    keywords: 'equipment rental quote Dubai, crane rental contact UAE, heavy machinery rental enquiry, Top Cranes phone number, construction equipment hire UAE',
+    description: 'Contact Top Cranes General Transport for cranes rental, forklift rental, excavator hire, telehandler, JCB, Bobcat and heavy equipment rental quotes across the UAE.',
+    keywords: 'equipment rental quote Dubai, cranes rental contact UAE, heavy machinery rental enquiry, Top Cranes phone number, construction equipment hire UAE',
   },
   '/faq': {
-    title: 'Equipment Rental FAQ | Crane and Machinery Hire UAE',
-    description: 'Find answers about crane rental, forklift hire, excavator rental, operators, delivery, rental periods and heavy equipment services from Top Cranes in the UAE.',
-    keywords: 'equipment rental FAQ UAE, crane rental questions Dubai, forklift hire FAQ, excavator rental information, machinery rental terms UAE',
+    title: 'Equipment Rental FAQ | Cranes and Machinery Hire UAE',
+    description: 'Find answers about cranes rental, forklift hire, excavator rental, operators, delivery, rental periods and heavy equipment services from Top Cranes in the UAE.',
+    keywords: 'equipment rental FAQ UAE, cranes rental questions Dubai, forklift hire FAQ, excavator rental information, machinery rental terms UAE',
   },
 }
 
@@ -131,7 +131,7 @@ export default function SEO() {
       telephone: ['+971509191004', '+971506749200'],
       email: 'sales@topcranestransport.com',
       areaServed: ['Dubai', 'Sharjah', 'Abu Dhabi', 'United Arab Emirates'],
-      serviceType: ['Crane rental', 'Heavy equipment rental', 'General transport'],
+      serviceType: ['Cranes rental', 'Heavy equipment rental', 'General transport'],
     })
   }, [pathname])
 

@@ -25,7 +25,7 @@ export default function Footer() {
 
         <div className="footer-links">
           <h4>Services</h4>
-          <Link to="/equipment/crane">Crane Rental UAE</Link>
+          <Link to="/equipment/crane">Cranes Rental UAE</Link>
           <Link to="/equipment/fork-lift">Forklift Rental</Link>
           <Link to="/equipment/excavators">Excavator Rental</Link>
           <Link to="/equipment/telehandler">Telehandler Rental</Link>

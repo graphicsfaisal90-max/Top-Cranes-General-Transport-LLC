@@ -25,7 +25,7 @@ const steps = [
 ]
 
 const related = [
-  { name: 'Crane', image: '/Crane%20Equipment.png', text: 'Reliable crane rentals for construction and heavy lifting tasks.', link: '/equipment/crane' },
+  { name: 'Cranes', image: '/Crane%20Equipment.png', text: 'Reliable cranes rentals for construction and heavy lifting tasks.', link: '/equipment/crane' },
   { name: 'Excavators', image: '/excavator_%20equpment.png', text: 'Powerful excavators for earthmoving, demolition, and infrastructure work.', link: '/equipment/excavators' },
   { name: 'Shovel', image: '/Shovel%20Loader%20Equipment.png', text: 'Robust shovel loaders for mining, construction, and landscaping.', link: '/equipment/shovel' },
   { name: 'Telehandler', image: '/Telehandler%20And%20Boombloader%20Equipment%20(1).png', text: 'Efficient material handling and lifting with reliable telehandlers.', link: '/equipment/telehandler' },

@@ -36,9 +36,9 @@ const relatedProducts = [
 ]
 
 const rentSteps = [
-  { num: '01', title: 'Assess Your Needs', text: 'Identify the type and size of crane required for your project. Our team can help determine the most suitable options based on load requirements and site conditions.' },
-  { num: '02', title: 'Get in Touch', text: 'Contact us via our website or phone. Our customer service team will discuss your needs and provide detailed information about crane options and rental rates.' },
-  { num: '03', title: 'Schedule & Delivery', text: 'Once you have chosen your crane, we arrange delivery to your site at your convenience. We handle all transportation and setup, ensuring the crane is ready to go.' },
+  { num: '01', title: 'Assess Your Needs', text: 'Identify the type and size of cranes required for your project. Our team can help determine the most suitable options based on load requirements and site conditions.' },
+  { num: '02', title: 'Get in Touch', text: 'Contact us via our website or phone. Our customer service team will discuss your needs and provide detailed information about cranes options and rental rates.' },
+  { num: '03', title: 'Schedule & Delivery', text: 'Once you have chosen your cranes, we arrange delivery to your site at your convenience. We handle all transportation and setup, ensuring the cranes are ready to go.' },
 ]
 
 export default function Crane() {
@@ -50,8 +50,8 @@ export default function Crane() {
         <div className="crane-hero-overlay" />
         <div className="container crane-hero-content">
           <span className="crane-hero-badge">Heavy Lifting Solutions</span>
-          <h1>Crane Rental<br />Services Dubai</h1>
-          <p>Welcome to Top Cranes General Transport LLC, your trusted partner for comprehensive crane rental services in Dubai. We provide a wide range of crane hire solutions tailored to meet your specific requirements.</p>
+          <h1>Cranes Rental<br />Services Dubai</h1>
+          <p>Welcome to Top Cranes General Transport LLC, your trusted partner for comprehensive cranes rental services in Dubai. We provide a wide range of cranes hire solutions tailored to meet your specific requirements.</p>
           <div className="crane-hero-actions">
             <Link to="/contact" className="crane-btn crane-btn-primary">Request a Quote</Link>
             <a href="#fleet" className="crane-btn crane-btn-outline">View Fleet</a>
@@ -64,18 +64,18 @@ export default function Crane() {
         <div className="container">
           <div className="crane-about-grid">
             <div className="crane-about-img">
-              <img src="/Cranes%20U.png" alt="Crane operations in Dubai" />
+              <img src="/Cranes%20U.png" alt="Cranes operations in Dubai" />
               <div className="crane-about-badge-card">
                 <span className="crane-about-badge-num">15+</span>
                 <span className="crane-about-badge-text">Years Experience</span>
               </div>
             </div>
             <div className="crane-about-content">
-              <span className="crane-section-badge">About Our Crane Services</span>
-              <h2>Professional Crane Solutions Across the UAE</h2>
-              <p>Top Cranes General Transport LLC provides reliable and efficient crane solutions for construction sites, industrial facilities, and infrastructure projects across the UAE. Our cranes are well-maintained, operator-ready, and suitable for both short-term and long-term projects.</p>
+              <span className="crane-section-badge">About Our Cranes Services</span>
+              <h2>Professional Cranes Solutions Across the UAE</h2>
+              <p>Top Cranes General Transport LLC provides reliable and efficient cranes solutions for construction sites, industrial facilities, and infrastructure projects across the UAE. Our cranes are well-maintained, operator-ready, and suitable for both short-term and long-term projects.</p>
               <ul className="crane-about-list">
-                <li>Crane Rental (With/Without Operator)</li>
+                <li>Cranes Rental (With/Without Operator)</li>
                 <li>Heavy Lifting & Placement</li>
                 <li>Rigging & Engineering Support</li>
                 <li>Site Survey & Planning</li>
@@ -91,9 +91,9 @@ export default function Crane() {
       <section className="crane-fleet" id="fleet">
         <div className="container">
           <div className="crane-fleet-header">
-            <span className="crane-section-badge">Our Crane Fleet</span>
+            <span className="crane-section-badge">Our Cranes Fleet</span>
             <h2>Wide Range of Heavy Lifting Equipment</h2>
-            <p>We offer a comprehensive range of crane solutions suitable for construction sites, industrial projects, infrastructure development, and heavy lifting operations.</p>
+            <p>We offer a comprehensive range of cranes solutions suitable for construction sites, industrial projects, infrastructure development, and heavy lifting operations.</p>
           </div>
           <div className="crane-fleet-grid">
             {craneTypes.map((crane, i) => (
@@ -127,8 +127,8 @@ export default function Crane() {
         <div className="container">
           <div className="crane-steps-header">
             <span className="crane-section-badge">How to Rent</span>
-            <h2>How to Rent a Crane in Dubai</h2>
-            <p>Renting a crane from Top Cranes General Transport LLC is a straightforward process designed to get your equipment to you with minimal hassle.</p>
+            <h2>How to Rent Cranes in Dubai</h2>
+            <p>Renting cranes from Top Cranes General Transport LLC is a straightforward process designed to get your equipment to you with minimal hassle.</p>
           </div>
           <div className="crane-steps-grid">
             {rentSteps.map((step, i) => (
@@ -171,7 +171,7 @@ export default function Crane() {
         <div className="container crane-cta-grid">
           <div className="crane-cta-text">
             <h2>Contact Us! We're<br />Available 24/7.</h2>
-            <p>Ready to start your project? Get in touch for a free consultation and crane rental quote.</p>
+            <p>Ready to start your project? Get in touch for a free consultation and cranes rental quote.</p>
           </div>
           <div className="crane-cta-contacts">
             <a href="tel:+971509191004" className="crane-cta-item">

@@ -386,7 +386,7 @@
 }
 
 /* Final shared theme pass */
-.page-hero { min-height: 360px; display: flex; align-items: flex-end; text-align: left; padding: 72px 0 58px; background: linear-gradient(90deg, rgba(17,24,23,.96), rgba(17,24,23,.72)), url('/crane-hero.jpg') center / cover; }
+.page-hero { min-height: 360px; display: flex; align-items: flex-end; text-align: left; padding: 72px 0 58px; background: linear-gradient(90deg, rgba(17,24,23,.96), rgba(17,24,23,.72)), url('/Cranes%20U.png') center / cover; }
 .page-hero h1 { font-size: clamp(3rem, 7vw, 6rem); letter-spacing: -4px; line-height: .9; }
 .page-hero p { margin: 20px 0 0; color: rgba(255,255,255,.62); max-width: 560px; font-size: .95rem; }
 .forklift-hero { min-height: 570px; }
@@ -439,7 +439,7 @@
   align-items: flex-end;
   text-align: left;
   padding: 72px 0 58px;
-  background: linear-gradient(90deg, rgba(17,24,23,.96), rgba(17,24,23,.72)), url('/crane-hero.jpg') center / cover;
+  background: linear-gradient(90deg, rgba(17,24,23,.96), rgba(17,24,23,.72)), url('/Cranes%20U.png') center / cover;
 }
 .page-hero h1 { font-size: clamp(3rem, 7vw, 6rem); letter-spacing: -4px; line-height: .9; text-transform: none; }
 .page-hero p { margin: 20px 0 0; color: rgba(255,255,255,.62); max-width: 560px; font-size: .95rem; }
@@ -3694,7 +3694,7 @@ equipment-card p {
 }
 
 /* Keep the shared interior language consistent after legacy component rules. */
-.page-hero { background: linear-gradient(90deg, rgba(17,24,23,.96), rgba(17,24,23,.72)), url('/crane-hero.jpg') center / cover; text-align: left; }
+.page-hero { background: linear-gradient(90deg, rgba(17,24,23,.96), rgba(17,24,23,.72)), url('/Cranes%20U.png') center / cover; text-align: left; }
 .page-hero h1, .forklift-hero-content h1 { font-family: Arial, Helvetica, sans-serif; letter-spacing: -3px; }
 .forklift-hero-overlay { background: linear-gradient(90deg, rgba(17,24,23,.95), rgba(17,24,23,.35)) !important; }
 .forklift-hero-badge, .about-premium-badge, .contact-info-badge { border-radius: 0; background: transparent; border-left: 2px solid var(--primary); border-top: 0; border-right: 0; border-bottom: 0; padding: 5px 12px; }

@@ -2,12 +2,13 @@ import { useLocation } from 'react-router-dom'
 import './BrandShowcase.css'
 
 const brands = [
-  '/Top%20Equipment%20brands%20we%20have/1-3-1%20(1).svg',
   '/Top%20Equipment%20brands%20we%20have/1-3-1.svg',
   '/Top%20Equipment%20brands%20we%20have/1-3-2.svg',
   '/Top%20Equipment%20brands%20we%20have/1-3-3.svg',
   '/Top%20Equipment%20brands%20we%20have/1-3-4.svg',
   '/Top%20Equipment%20brands%20we%20have/1-3-5.svg',
+  '/tadano-logo-2048x426.png',
+  '/xcmg-logo.png',
 ]
 
 export default function BrandShowcase() {

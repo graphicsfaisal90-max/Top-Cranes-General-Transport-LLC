@@ -1,3 +1,5 @@
+import nodemailer from 'nodemailer'
+
 const recipient = 'sales@topcranestransport.com'
 
 function clean(value, maxLength) {
@@ -34,12 +36,28 @@ export default async function handler(request, response) {
     return response.status(400).json({ success: false, message: 'Please enter a valid email address.' })
   }
 
-  if (!process.env.RESEND_API_KEY) {
-    console.error('RESEND_API_KEY is not configured.')
+  if (!process.env.SMTP_USER || !process.env.SMTP_PASSWORD) {
+    console.error('SMTP_USER or SMTP_PASSWORD is not configured.')
     return response.status(500).json({ success: false, message: 'Email service is not configured yet.' })
   }
 
-  const from = process.env.CONTACT_FROM_EMAIL || 'Top Cranes Website <onboarding@resend.dev>'
+  const smtpPort = Number(process.env.SMTP_PORT || 465)
+  if (![465, 587].includes(smtpPort)) {
+    console.error('SMTP_PORT must be 465 or 587.')
+    return response.status(500).json({ success: false, message: 'Email service configuration is invalid.' })
+  }
+
+  const transporter = nodemailer.createTransport({
+    host: process.env.SMTP_HOST || 'smtp.hostinger.com',
+    port: smtpPort,
+    secure: process.env.SMTP_SECURE ? process.env.SMTP_SECURE === 'true' : smtpPort === 465,
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASSWORD,
+    },
+  })
+
+  const from = process.env.CONTACT_FROM_EMAIL || process.env.SMTP_USER
   const html = `
     <div style="font-family:Arial,sans-serif;max-width:680px;padding:24px;color:#17201f">
       <h2 style="color:#e86d3d">New Top Cranes Website Enquiry</h2>
@@ -52,23 +70,16 @@ export default async function handler(request, response) {
       </table>
     </div>`
 
-  const resendResponse = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
+  try {
+    await transporter.sendMail({
       from,
-      to: [recipient],
-      reply_to: safeEmail,
+      to: recipient,
+      replyTo: safeEmail,
       subject: `New Contact Form Inquiry - ${safeName}`,
       html,
-    }),
-  })
-
-  if (!resendResponse.ok) {
-    console.error('Resend API error:', await resendResponse.text())
+    })
+  } catch (error) {
+    console.error('SMTP email error:', error)
     return response.status(502).json({ success: false, message: 'Unable to send your message right now. Please try again.' })
   }
 

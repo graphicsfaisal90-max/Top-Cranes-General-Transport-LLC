@@ -20,14 +20,20 @@ export default function Contact() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(Object.fromEntries(data.entries())),
       })
-      const result = await res.json()
+      const contentType = res.headers.get('content-type') || ''
+      const result = contentType.includes('application/json')
+        ? await res.json()
+        : { success: false, message: `Server error (${res.status}). Please try again later.` }
       if (result.success) {
         setSubmitted(true)
       } else {
         setError(result.message || 'Something went wrong. Please try again.')
       }
-    } catch {
-      setError('Network error. Please try again later.')
+    } catch (submitError) {
+      console.error('Contact form submission error:', submitError)
+      setError(submitError instanceof TypeError
+        ? 'Unable to connect to the email service. Please try again later.'
+        : 'Unable to process your request. Please try again later.')
     } finally {
       setLoading(false)
     }
@@ -112,7 +118,7 @@ export default function Contact() {
                   </div>
                   <div className="contact-item-content">
                     <strong>Working Hours</strong>
-                    <p>Sat - Thu: 7:00 AM - 6:00 PM</p>
+                    <p>Sat - Thu: 8:00 AM - 8:00 PM</p>
                   </div>
                 </div>
               </div>
@@ -153,11 +159,13 @@ export default function Contact() {
                     <label htmlFor="service">Service Interested In</label>
                     <select id="service" name="service">
                       <option value="">Select a service</option>
-                      <option value="crane">Crane Rental</option>
-                      <option value="haulage">Heavy Haulage</option>
-                      <option value="transport">General Transport</option>
-                      <option value="logistics">Logistics Solutions</option>
-                      <option value="other">Other</option>
+                      <option value="crane">Cranes Rental</option>
+                      <option value="telehandler">Telehandler &amp; Boom Loader</option>
+                      <option value="forklift">Forklift Rental</option>
+                      <option value="excavator">Excavator Rental</option>
+                      <option value="jcb-3cx">JCB 3CX</option>
+                      <option value="wheel-loader">Wheel Loader</option>
+                      <option value="bobcat">Bobcat Rental</option>
                     </select>
                   </div>
                   <div className="form-group">

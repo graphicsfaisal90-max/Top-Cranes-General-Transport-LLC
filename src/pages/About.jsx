@@ -3,12 +3,10 @@ import './Pages.css'
 import './about.css'
 
 const expertise = [
-  'Road transport within the UAE',
+  'Mobile Cranes Rental in Dubai and All Over the UAE',
   'Supply of specialized forklifts with different range & container mass',
   'Route surveying & site preparation',
   'Supply of low beds, low deck, extra long trailers, cranes, boom loaders and pick ups',
-  'Packing and shifting of household goods & office machinery',
-  'Concrete cutting, demolishing',
   'Heavy lifts consultant',
   'Maintenance & repairing services of all lifting/construction equipments & cranes',
 ]
@@ -24,15 +22,14 @@ const equipmentList = [
   { sr: 8, desc: 'Shovel: 950 & 966' },
   { sr: 9, desc: 'Flat Bed: 12 & 15 Meter' },
   { sr: 10, desc: 'Low Bed: 12, 15, 18 up to 35 Meter' },
-  { sr: 11, desc: 'Pick Up: 1, 3, 5, 7 & 10 Ton' },
 ]
 
 const milestones = [
-  { year: '2009', event: 'Company founded with a single crane in Dubai, UAE' },
+  { year: '2009', event: 'Company founded with cranes in Dubai, UAE' },
   { year: '2013', event: 'Expanded fleet to 15 vehicles and opened second depot' },
   { year: '2017', event: 'Opened operations in Abu Dhabi, serving major projects' },
-  { year: '2020', event: 'Handled 100th major project milestone across the UAE' },
-  { year: '2024', event: 'Fleet expanded to 50+ vehicles, serving top contractors' },
+  { year: '2021', event: 'Handled 100th major project milestone across the UAE' },
+  { year: '2026', event: 'Fleet expanded to 50+ vehicles, serving top contractors' },
 ]
 
 export default function About() {
@@ -117,7 +114,7 @@ export default function About() {
         <div className="container">
           <div className="about-timeline-header">
             <span className="about-section-badge">Our Journey</span>
-            <h2>From a Single Crane to 50+ Vehicles</h2>
+            <h2>From Cranes to 50+ Vehicles</h2>
           </div>
           <div className="about-timeline-track">
             {milestones.map((m, i) => (
