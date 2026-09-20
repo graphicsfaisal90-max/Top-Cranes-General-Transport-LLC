@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './Pages.css'
 
 const fleet = [
-  { id: 'crane', name: 'Cranes Rental', eyebrow: 'Lift / place / install', image: '/crane-hero.jpg', path: '/equipment/crane', text: 'Mobile and industrial cranes solutions for safe lifting, positioning and site support across the UAE.' },
+  { id: 'crane', name: 'Mobile Cranes Rental', eyebrow: 'Lift / place / install', image: '/Cranes%20U.png', path: '/equipment/crane', text: 'Mobile and industrial cranes solutions for safe lifting, positioning and site support across the UAE.' },
   { id: 'fork-lift', name: 'Forklift Rental', eyebrow: 'Load / unload / move', image: '/Forklift.jpg', path: '/equipment/fork-lift', text: 'Reliable forklifts for warehouses, logistics yards, factories, cargo handling and construction sites.' },
   { id: 'telehandler', name: 'Telehandler & Boom Loader', eyebrow: 'Reach / handle / build', image: '/telehandler-hero.webp', path: '/equipment/telehandler', text: 'High-reach material handling equipment for construction, industrial and infrastructure operations.' },
   { id: 'excavators', name: 'Excavator Rental', eyebrow: 'Dig / clear / develop', image: '/excavator-hero.jpg', path: '/equipment/excavators', text: 'Powerful excavators for earthmoving, trenching, demolition, land clearing and site development.' },

@@ -6,7 +6,6 @@ import './home.css'
 const brands = [
   '/Top%20Equipment%20brands%20we%20have/1-3-1.svg',
   '/Top%20Equipment%20brands%20we%20have/1-3-2.svg',
-  '/Top%20Equipment%20brands%20we%20have/1-3-3.svg',
   '/Top%20Equipment%20brands%20we%20have/1-3-4.svg',
   '/Top%20Equipment%20brands%20we%20have/1-3-5.svg',
   '/tadano-logo-2048x426.png',
@@ -15,8 +14,8 @@ const brands = [
 
 const equipment = [
   { name: 'Mobile Cranes', image: '/Cranes%20U.png', heroImage: '/Cranes%20U.png', text: 'Wide selection of cranes rentals in Dubai, tailored for high-rise construction and heavy lifting tasks. Our cranes deliver exceptional strength and reliability.', link: '/equipment/crane' },
-  { name: 'Rough Terrain Cranes', image: '/IMG_8363.jpg', heroImage: '/IMG_8363.jpg', text: 'Reliable rough terrain cranes rentals designed for demanding construction sites and uneven ground conditions. Powerful lifting performance with excellent mobility and stability.', link: '/equipment/crane' },
-  { name: 'Telehandler / Boom Loader', image: '/Telehandler%20And%20Boombloader%20Equipment%20(1).png', heroImage: '/telehandler-boom-loader.jpg', text: 'Top-tier telehandlers facilitating efficient heavy lifting solutions with reliable machinery. Versatility and top performance for efficient operations.', link: '/equipment/telehandler' },
+   { name: 'Rough Terrain Cranes', image: '/Rough%20Terrarain%20Cranes.png', heroImage: '/Rough%20Terrarain%20Cranes.png', text: 'Reliable rough terrain cranes rentals designed for demanding construction sites and uneven ground conditions. Powerful lifting performance with excellent mobility and stability.', link: '/equipment/crane' },
+   { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png', heroImage: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png', text: 'Top-tier telehandlers facilitating efficient heavy lifting solutions with reliable machinery. Versatility and top performance for efficient operations.', link: '/equipment/telehandler' },
   { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.png', heroImage: '/Forklift.jpg', text: 'Flexible and reliable forklift rental options for any project. Cost-effective solutions ensuring you always have the right forklift for your needs.', link: '/equipment/fork-lift' },
   { name: 'Excavators', image: '/excavator_%20equpment.png', heroImage: '/excavator-hero.jpg', text: 'Dependable excavator rentals suitable for digging and earthmoving projects. Efficiency and durability for demanding construction environments.', link: '/equipment/excavators' },
   { name: 'JCB 3CX', image: '/JCB%203CX%20Equipment.png', heroImage: '/jcb-hero.jpg', text: 'Versatile JCB 3CX backhoe loaders combining efficiency and durability. A top choice for excavation, loading, roadwork and utility operations.', link: '/equipment/jcb-3cx' },

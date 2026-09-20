@@ -7,7 +7,7 @@ export default function Telehandler() {
       <section className="forklift-hero">
         <div
           className="forklift-hero-bg"
-          style={{ backgroundImage: 'url(/telehandler-hero.webp)' }}
+           style={{ backgroundImage: 'url(/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png)' }}
         />
         <div className="forklift-hero-overlay" style={{ background: 'rgba(0,0,0,0.6)' }} />
         <div className="container forklift-hero-content">
@@ -29,7 +29,7 @@ export default function Telehandler() {
           <div className="forklift-services-grid">
             <div className="forklift-services-image">
               <div className="forklift-services-image-card">
-                <img src="/telehandler-about.webp" alt="Telehandler in operation" />
+                 <img src="/telehandler-about.webp" alt="Telehandler in operation" />
                 <div className="forklift-services-image-glow" />
                 <div className="forklift-services-image-badge">
                   <strong>15+</strong>
@@ -90,7 +90,7 @@ export default function Telehandler() {
             <div className="fl-card">
               <div className="fl-card-img">
                 <span className="fl-card-tag">Material Handling</span>
-                <img src="/Telehandler/Material Handling Telehandlers.jpg" alt="Material Handling Telehandler" />
+                  <img src="/Telehandler/Material%20Handling%20Telehandlers.jpg" alt="Material Handling Telehandler" />
                 <div className="fl-card-img-overlay" />
               </div>
               <div className="fl-card-body">
@@ -109,28 +109,8 @@ export default function Telehandler() {
             </div>
             <div className="fl-card">
               <div className="fl-card-img">
-                <span className="fl-card-tag">Rotating Boom</span>
-                <img src="/Telehandler/Rotating Boom Loaders.jpg" alt="Rotating Boom Loader" />
-                <div className="fl-card-img-overlay" />
-              </div>
-              <div className="fl-card-body">
-                <h3>Rotating Boom Loaders</h3>
-                <div className="fl-card-meta">
-                  <div className="fl-card-cap">
-                    <strong>5-7 Ton</strong>
-                    <span>Capacity</span>
-                  </div>
-                </div>
-                <ul className="fl-card-feats">
-                  <li>360-degree rotation</li>
-                  <li>Versatile positioning</li>
-                </ul>
-              </div>
-            </div>
-            <div className="fl-card">
-              <div className="fl-card-img">
                 <span className="fl-card-tag">Heavy Lift</span>
-                <img src="/Telehandler/Heavy Lift Telehandlers.jpg" alt="Heavy Lift Telehandler" />
+                  <img src="/Telehandler/Heavy%20Lift%20Telehandlers.jpg" alt="Heavy Lift Telehandler" />
                 <div className="fl-card-img-overlay" />
               </div>
               <div className="fl-card-body">
@@ -150,7 +130,7 @@ export default function Telehandler() {
             <div className="fl-card">
               <div className="fl-card-img">
                 <span className="fl-card-tag">Compact Access</span>
-                <img src="/Telehandler/Compact Access Telehandlers.jpg" alt="Compact Access Telehandler" />
+                  <img src="/Telehandler/Compact%20Access%20Telehandlers.jpg" alt="Compact Access Telehandler" />
                 <div className="fl-card-img-overlay" />
               </div>
               <div className="fl-card-body">

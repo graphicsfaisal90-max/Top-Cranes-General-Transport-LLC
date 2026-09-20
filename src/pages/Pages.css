@@ -3182,42 +3182,49 @@ equipment-card p {
 
 .forklift-fleet-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
   position: relative;
   z-index: 1;
 }
 
 /* — Individual Card — */
 .fl-card {
-  background: var(--bg);
-  border-radius: 14px;
+  background: #fff;
+  border-radius: 0;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(17,24,23,.06);
   border: 1px solid var(--border);
 }
 
 .fl-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 48px rgba(0,0,0,0.08);
-  border-color: rgba(242,104,54,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(17,24,23,.12);
+  border-color: rgba(242,104,54,.35);
 }
 
 /* — Image area — */
 .fl-card-img {
   position: relative;
-  height: 220px;
+  height: 250px;
   overflow: hidden;
+  width: 100%;
+  padding: 0;
 }
 
 .fl-card-img img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  display: block;
   object-fit: cover;
-  position: relative;
+  object-position: center;
   z-index: 1;
   transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -3230,42 +3237,42 @@ equipment-card p {
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.6));
+  background: linear-gradient(180deg, rgba(17,24,23,.04) 40%, rgba(17,24,23,.68));
   pointer-events: none;
 }
 
 .fl-card-tag {
   position: absolute;
-  top: 14px;
-  left: 14px;
+  top: 0;
+  left: 0;
   z-index: 2;
   font-size: 0.68rem;
   font-weight: 700;
   color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  background: rgba(255,255,255,0.9);
-  backdrop-filter: blur(4px);
-  padding: 4px 12px;
-  border-radius: 6px;
-  border: 1px solid rgba(242,104,54,0.15);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  background: var(--primary);
+  padding: 7px 12px;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 5px 14px rgba(0,0,0,.16);
 }
 
 /* — Body content — */
 .fl-card-body {
-  padding: 18px 20px 22px;
+  padding: 26px 24px 28px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 18px;
   flex: 1;
+  border-top: 3px solid var(--primary);
 }
 
 .fl-card-body h3 {
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--text);
-  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.3;
 }
 
@@ -3278,10 +3285,10 @@ equipment-card p {
   display: inline-flex;
   align-items: baseline;
   gap: 6px;
-  background: linear-gradient(135deg, rgba(242,104,54,0.08), rgba(242,104,54,0.03));
-  border: 1px solid rgba(242,104,54,0.12);
-  border-radius: 8px;
-  padding: 6px 14px;
+  background: #f4f1eb;
+  border-left: 3px solid var(--primary);
+  border-radius: 0;
+  padding: 8px 12px;
 }
 
 .fl-card-cap strong {
@@ -3303,12 +3310,14 @@ equipment-card p {
 .fl-card-feats {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 9px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
   margin: 0;
 }
 
 .fl-card-feats li {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--text-light);
   line-height: 1.5;
   padding-left: 20px;
@@ -3708,7 +3717,7 @@ equipment-card p {
 /* Fleet catalogue */
 .fleet-page { background: var(--bg); }
 .fleet-hero { min-height: 600px; position: relative; display: flex; align-items: center; color: #fff; overflow: hidden; }
-.fleet-hero-image { position: absolute; inset: 0; background: url('/crane-hero.jpg') center / cover; filter: saturate(.65); }
+.fleet-hero-image { position: absolute; inset: 0; background: url('/Cranes%20U.png') center / cover; filter: saturate(.65); }
 .fleet-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(17,24,23,.95), rgba(17,24,23,.35)); }
 .fleet-hero-content { position: relative; z-index: 1; padding-top: 45px; }
 .fleet-hero h1 { margin: 20px 0 25px; font-size: clamp(3.5rem, 8vw, 7rem); line-height: .86; letter-spacing: -5px; }
