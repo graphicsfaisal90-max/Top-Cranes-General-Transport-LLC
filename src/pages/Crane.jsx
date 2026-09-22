@@ -15,7 +15,7 @@ const craneTypes = [
     name: 'Rough Terrain Cranes',
     tag: 'Rough Terrain',
     image: '/Rough%20Terrarain%20Cranes.png',
-    capacity: '90 Ton',
+    capacity: '30-130 Ton',
     specs: ['All-terrain capability', 'Off-road mobility', 'Quick deployment'],
     desc: 'Designed for off-road operations, rough terrain cranes deliver reliable performance on uneven surfaces and challenging construction sites.',
   },

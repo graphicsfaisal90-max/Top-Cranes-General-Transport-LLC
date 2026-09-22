@@ -41,7 +41,7 @@ export default function About() {
         <div className="about-hero-overlay" />
         <div className="container about-hero-content">
           <span className="about-hero-badge">About Us</span>
-          <h1>About Top Cranes<br />General Transport</h1>
+          <h1>About Top Cranes<br />General Transport LLC</h1>
           <p>We offer expertise, technology, and controlled operations, specialized in transportation and heavy equipment rental across the UAE.</p>
         </div>
       </section>
