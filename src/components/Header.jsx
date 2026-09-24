@@ -11,7 +11,6 @@ export default function Header() {
         <Link to="/" className="logo">
           <img src="/Top%20Cranes%20logo.svg" alt="Top Cranes" className="logo-img" />
         </Link>
-        <span className="mobile-company-name">TOP CRANES GENERAL TRANSPORT LLC</span>
 
         <button
           className={`hamburger ${menuOpen ? 'open' : ''}`}

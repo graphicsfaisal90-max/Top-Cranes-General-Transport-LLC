@@ -28,7 +28,7 @@ const related = [
   { name: 'Cranes', image: '/Crane%20Equipment.png', text: 'Reliable cranes rentals for construction and heavy lifting tasks.', link: '/equipment/crane' },
   { name: 'Excavators', image: '/excavator_%20equpment.png', text: 'Powerful excavators for earthmoving, demolition, and infrastructure work.', link: '/equipment/excavators' },
   { name: 'Shovel', image: '/Shovel%20Loader%20Equipment.png', text: 'Robust shovel loaders for mining, construction, and landscaping.', link: '/equipment/shovel' },
-  { name: 'Telehandler', image: '/Telehandler%20And%20Boombloader%20Equipment%20(1).png', text: 'Efficient material handling and lifting with reliable telehandlers.', link: '/equipment/telehandler' },
+  { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png', text: 'Efficient material handling and lifting with reliable telehandlers.', link: '/equipment/telehandler' },
 ]
 
 export default function JCB3CX() {

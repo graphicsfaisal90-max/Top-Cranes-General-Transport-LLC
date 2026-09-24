@@ -28,7 +28,7 @@ export default function Footer() {
           <Link to="/equipment/crane">Cranes Rental UAE</Link>
           <Link to="/equipment/fork-lift">Forklift Rental</Link>
           <Link to="/equipment/excavators">Excavator Rental</Link>
-          <Link to="/equipment/telehandler">Telehandler Rental</Link>
+          <Link to="/equipment/telehandler">Telehandler / Boom Loader Rental</Link>
           <Link to="/equipment/bobcat">Bobcat Rental</Link>
         </div>
 

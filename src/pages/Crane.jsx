@@ -23,7 +23,7 @@ const craneTypes = [
 
 const relatedProducts = [
   { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.png', text: 'Flexible and reliable forklift rental options for warehouses, factories, and construction sites.', link: '/equipment/fork-lift' },
-  { name: 'Telehandler', image: '/Telehandler%20And%20Boombloader%20Equipment%20(1).png', text: 'Top-tier telehandlers facilitating efficient heavy lifting with reliable machinery.', link: '/equipment/telehandler' },
+  { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png', text: 'Top-tier telehandlers facilitating efficient heavy lifting with reliable machinery.', link: '/equipment/telehandler' },
   { name: 'Excavators', image: '/excavator_%20equpment.png', text: 'Dependable excavator rentals for digging, earthmoving, and demolition projects.', link: '/equipment/excavators' },
 ]
 
