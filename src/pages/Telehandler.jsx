@@ -7,7 +7,7 @@ export default function Telehandler() {
       <section className="forklift-hero">
         <div
           className="forklift-hero-bg"
-           style={{ backgroundImage: 'url(/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png)' }}
+           style={{ backgroundImage: 'url(/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp)' }}
         />
         <div className="forklift-hero-overlay" style={{ background: 'rgba(0,0,0,0.6)' }} />
         <div className="container forklift-hero-content">
@@ -90,7 +90,7 @@ export default function Telehandler() {
             <div className="fl-card">
               <div className="fl-card-img">
                 <span className="fl-card-tag">Material Handling</span>
-                  <img src="/Telehandler/Material%20Handling%20Telehandlers.jpg" alt="Material Handling Telehandler" />
+                  <img src="/Telehandler/Material%20Handling%20Telehandlers.webp" alt="Material Handling Telehandler" />
                 <div className="fl-card-img-overlay" />
               </div>
               <div className="fl-card-body">
@@ -110,7 +110,7 @@ export default function Telehandler() {
             <div className="fl-card">
               <div className="fl-card-img">
                 <span className="fl-card-tag">Heavy Lift</span>
-                  <img src="/Telehandler/Heavy%20Lift%20Telehandlers.jpg" alt="Heavy Lift Telehandler" />
+                  <img src="/Telehandler/Heavy%20Lift%20Telehandlers.webp" alt="Heavy Lift Telehandler" />
                 <div className="fl-card-img-overlay" />
               </div>
               <div className="fl-card-body">
@@ -130,7 +130,7 @@ export default function Telehandler() {
             <div className="fl-card">
               <div className="fl-card-img">
                 <span className="fl-card-tag">Compact Access</span>
-                  <img src="/Telehandler/Compact%20Access%20Telehandlers.jpg" alt="Compact Access Telehandler" />
+                  <img src="/Telehandler/Compact%20Access%20Telehandlers.webp" alt="Compact Access Telehandler" />
                 <div className="fl-card-img-overlay" />
               </div>
               <div className="fl-card-body">

@@ -6,7 +6,7 @@ const forkliftTypes = [
   {
     name: 'Electric Forklift',
     tag: 'Electric',
-    image: '/electric forklift png.png',
+    image: '/electric forklift png.webp',
     capacity: '1.5 - 2.5 Ton',
     specs: ['Indoor warehouse use', 'Zero emissions', 'Smooth operation'],
     desc: 'Electric forklifts are ideal for indoor warehouse operations, providing clean and quiet performance with zero emissions.',
@@ -14,7 +14,7 @@ const forkliftTypes = [
   {
     name: 'Diesel Forklift',
     tag: 'Diesel',
-    image: '/diesel forklift png.png',
+    image: '/diesel forklift png.webp',
     capacity: '2.5 - 7 Ton',
     specs: ['Outdoor heavy-duty work', 'Powerful lifting', 'All-weather operation'],
     desc: 'Diesel forklifts deliver powerful performance for outdoor and heavy-duty applications, handling the toughest material lifting tasks.',
@@ -22,7 +22,7 @@ const forkliftTypes = [
   {
     name: 'Heavy Duty Forklift',
     tag: 'Heavy Duty',
-    image: '/heavy duty forklift png.png',
+    image: '/heavy duty forklift png.webp',
     capacity: '5 - 10 Ton',
     specs: ['Industrial & construction', 'Strong handling', 'Maximum stability'],
     desc: 'Heavy duty forklifts are designed for industrial and construction environments requiring maximum lifting capacity and stability.',
@@ -30,7 +30,7 @@ const forkliftTypes = [
   {
     name: 'Container Mass Forklift',
     tag: 'Container',
-    image: '/Png industrial fork lift.png',
+    image: '/Png industrial fork lift.webp',
     capacity: '10 - 25 Ton',
     specs: ['Container handling', 'Port operations', 'Bulk material movement'],
     desc: 'Container mass forklifts are specialized for port and container yard operations, handling heavy containers with ease.',
@@ -46,9 +46,9 @@ const forkliftSpecs = [
 ]
 
 const relatedProducts = [
-  { name: 'Cranes', image: '/Crane%20Equipment.png', text: 'Wide selection of cranes rentals for high-rise construction and heavy lifting tasks.', link: '/equipment/crane' },
-  { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png', text: 'Top-tier telehandlers facilitating efficient heavy lifting with reliable machinery.', link: '/equipment/telehandler' },
-  { name: 'Excavators', image: '/excavator_%20equpment.png', text: 'Dependable excavator rentals for digging, earthmoving, and demolition projects.', link: '/equipment/excavators' },
+  { name: 'Cranes', image: '/Crane%20Equipment.webp', text: 'Wide selection of cranes rentals for high-rise construction and heavy lifting tasks.', link: '/equipment/crane' },
+  { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', text: 'Top-tier telehandlers facilitating efficient heavy lifting with reliable machinery.', link: '/equipment/telehandler' },
+  { name: 'Excavators', image: '/excavator_%20equpment.webp', text: 'Dependable excavator rentals for digging, earthmoving, and demolition projects.', link: '/equipment/excavators' },
 ]
 
 const rentSteps = [
@@ -67,7 +67,7 @@ export default function ForkLift() {
         <div className="container fl-hero-content">
           <span className="fl-hero-badge">Material Handling Solutions</span>
           <h1>Forklift Rental<br />Services Dubai</h1>
-          <p>Almasa Transport LLC specializes in forklift rentals in Dubai, providing flexible and reliable options for any project. Our cost-effective solutions ensure you always have the right forklift for your needs.</p>
+          <p>Top Cranes General Transport LLC specializes in forklift rentals in Dubai, providing flexible and reliable options for any project. Our cost-effective solutions ensure you always have the right forklift for your needs.</p>
           <div className="fl-hero-actions">
             <Link to="/contact" className="fl-btn fl-btn-primary">Request a Quote</Link>
             <a href="#fleet" className="fl-btn fl-btn-outline">View Fleet</a>
@@ -80,7 +80,7 @@ export default function ForkLift() {
         <div className="container">
           <div className="fl-about-grid">
             <div className="fl-about-img">
-              <img src="/Forklift About.png" alt="Forklift operations in Dubai" />
+              <img src="/Forklift About.webp" alt="Forklift operations in Dubai" />
               <div className="fl-about-badge-card">
                 <span className="fl-about-badge-num">15+</span>
                 <span className="fl-about-badge-text">Years Experience</span>

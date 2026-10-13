@@ -7,7 +7,7 @@ export default function Shovel() {
       <section className="forklift-hero">
         <div
           className="forklift-hero-bg"
-          style={{ backgroundImage: 'url(/shovel-hero.jpg)' }}
+          style={{ backgroundImage: 'url(/shovel-hero.webp)' }}
         />
         <div className="forklift-hero-overlay" style={{ background: 'rgba(0,0,0,0.6)' }} />
         <div className="container forklift-hero-content">
@@ -29,7 +29,7 @@ export default function Shovel() {
           <div className="forklift-services-grid">
             <div className="forklift-services-image">
               <div className="forklift-services-image-card">
-                <img src="/shovel-about.jpg" alt="Wheel loader in operation" />
+                <img src="/shovel-about.webp" alt="Wheel loader in operation" />
                 <div className="forklift-services-image-glow" />
                 <div className="forklift-services-image-badge">
                   <strong>15+</strong>
@@ -90,7 +90,7 @@ export default function Shovel() {
             <div className="fl-card">
               <div className="fl-card-img">
                 <span className="fl-card-tag">Compact</span>
-                <img src="/Shovel/Compact Wheel Loaders.jpg" alt="Compact Wheel Loader" />
+                <img src="/Shovel/Compact Wheel Loaders.webp" alt="Compact Wheel Loader" />
                 <div className="fl-card-img-overlay" />
               </div>
               <div className="fl-card-body">
@@ -110,7 +110,7 @@ export default function Shovel() {
             <div className="fl-card">
               <div className="fl-card-img">
                 <span className="fl-card-tag">Medium</span>
-                <img src="/Shovel/Medium Wheel Loaders.jpg" alt="Medium Wheel Loader" />
+                <img src="/Shovel/Medium Wheel Loaders.webp" alt="Medium Wheel Loader" />
                 <div className="fl-card-img-overlay" />
               </div>
               <div className="fl-card-body">
@@ -130,7 +130,7 @@ export default function Shovel() {
             <div className="fl-card">
               <div className="fl-card-img">
                 <span className="fl-card-tag">Heavy-Duty</span>
-                <img src="/Shovel/Heavy-Duty Wheel Loaders.jpg" alt="Heavy-Duty Wheel Loader" />
+                <img src="/Shovel/Heavy-Duty Wheel Loaders.webp" alt="Heavy-Duty Wheel Loader" />
                 <div className="fl-card-img-overlay" />
               </div>
               <div className="fl-card-body">
@@ -150,7 +150,7 @@ export default function Shovel() {
             <div className="fl-card">
               <div className="fl-card-img">
                 <span className="fl-card-tag">High-Lift</span>
-                <img src="/Shovel/High-Lift Wheel Loaders.jpg" alt="High-Lift Wheel Loader" />
+                <img src="/Shovel/High-Lift Wheel Loaders.webp" alt="High-Lift Wheel Loader" />
                 <div className="fl-card-img-overlay" />
               </div>
               <div className="fl-card-body">

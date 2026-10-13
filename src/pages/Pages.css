@@ -1,7 +1,7 @@
 ﻿/* ===== OLD LANDING PAGE (kept for inner pages) ===== */
 .landing-page { background: var(--bg); color: var(--text); overflow: hidden; }
 .landing-hero { min-height: 690px; height: calc(100vh - 132px); max-height: 850px; position: relative; display: flex; align-items: center; background: #202826; color: #fff; }
-.landing-hero-image { position: absolute; inset: 0; background: url('/crane-hero.jpg') center 58% / cover; filter: saturate(.7); }
+.landing-hero-image { position: absolute; inset: 0; background: url('/crane-hero.webp') center 58% / cover; filter: saturate(.7); }
 .landing-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(13,20,19,.92) 0%, rgba(13,20,19,.7) 43%, rgba(13,20,19,.15) 100%), linear-gradient(0deg, rgba(13,20,19,.65), transparent 35%); }
 .landing-hero-content { position: relative; z-index: 2; padding-top: 25px; }
 .hero-kicker, .eyebrow { color: var(--primary); font-size: .7rem; font-weight: 700; letter-spacing: 2.4px; text-transform: uppercase; }
@@ -386,7 +386,7 @@
 }
 
 /* Final shared theme pass */
-.page-hero { min-height: 360px; display: flex; align-items: flex-end; text-align: left; padding: 72px 0 58px; background: linear-gradient(90deg, rgba(17,24,23,.96), rgba(17,24,23,.72)), url('/Cranes%20U.png') center / cover; }
+.page-hero { min-height: 360px; display: flex; align-items: flex-end; text-align: left; padding: 72px 0 58px; background: linear-gradient(90deg, rgba(17,24,23,.96), rgba(17,24,23,.72)), url('/Cranes%20U.webp') center / cover; }
 .page-hero h1 { font-size: clamp(3rem, 7vw, 6rem); letter-spacing: -4px; line-height: .9; }
 .page-hero p { margin: 20px 0 0; color: rgba(255,255,255,.62); max-width: 560px; font-size: .95rem; }
 .forklift-hero { min-height: 570px; }
@@ -439,7 +439,7 @@
   align-items: flex-end;
   text-align: left;
   padding: 72px 0 58px;
-  background: linear-gradient(90deg, rgba(17,24,23,.96), rgba(17,24,23,.72)), url('/Cranes%20U.png') center / cover;
+  background: linear-gradient(90deg, rgba(17,24,23,.96), rgba(17,24,23,.72)), url('/Cranes%20U.webp') center / cover;
 }
 .page-hero h1 { font-size: clamp(3rem, 7vw, 6rem); letter-spacing: -4px; line-height: .9; text-transform: none; }
 .page-hero p { margin: 20px 0 0; color: rgba(255,255,255,.62); max-width: 560px; font-size: .95rem; }
@@ -1028,7 +1028,7 @@
 .wcu-image-bg {
   position: absolute;
   inset: -6px;
-  background-image: url('/Why%20you%20choose%20us%20image.jpeg');
+  background-image: url('/Why%20you%20choose%20us%20image.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2033,7 +2033,7 @@
 .ap-image-card-bg {
   position: absolute;
   inset: -8px;
-  background-image: url('/Cranes%20About%20us%20section%20image.jpg');
+  background-image: url('/Cranes%20About%20us%20section%20image.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3703,7 +3703,7 @@ equipment-card p {
 }
 
 /* Keep the shared interior language consistent after legacy component rules. */
-.page-hero { background: linear-gradient(90deg, rgba(17,24,23,.96), rgba(17,24,23,.72)), url('/Cranes%20U.png') center / cover; text-align: left; }
+.page-hero { background: linear-gradient(90deg, rgba(17,24,23,.96), rgba(17,24,23,.72)), url('/Cranes%20U.webp') center / cover; text-align: left; }
 .page-hero h1, .forklift-hero-content h1 { font-family: Arial, Helvetica, sans-serif; letter-spacing: -3px; }
 .forklift-hero-overlay { background: linear-gradient(90deg, rgba(17,24,23,.95), rgba(17,24,23,.35)) !important; }
 .forklift-hero-badge, .about-premium-badge, .contact-info-badge { border-radius: 0; background: transparent; border-left: 2px solid var(--primary); border-top: 0; border-right: 0; border-bottom: 0; padding: 5px 12px; }
@@ -3717,7 +3717,7 @@ equipment-card p {
 /* Fleet catalogue */
 .fleet-page { background: var(--bg); }
 .fleet-hero { min-height: 600px; position: relative; display: flex; align-items: center; color: #fff; overflow: hidden; }
-.fleet-hero-image { position: absolute; inset: 0; background: url('/Cranes%20U.png') center / cover; filter: saturate(.65); }
+.fleet-hero-image { position: absolute; inset: 0; background: url('/Cranes%20U.webp') center / cover; filter: saturate(.65); }
 .fleet-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(17,24,23,.95), rgba(17,24,23,.35)); }
 .fleet-hero-content { position: relative; z-index: 1; padding-top: 45px; }
 .fleet-hero h1 { margin: 20px 0 25px; font-size: clamp(3.5rem, 8vw, 7rem); line-height: .86; letter-spacing: -5px; }

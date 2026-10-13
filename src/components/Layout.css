@@ -126,9 +126,12 @@
 }
 
 .logo-img {
-  height: 100px;
+  height: 120px;
   width: auto;
   display: block;
+  max-width: none;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.08));
 }
 
 .mobile-company-name {
@@ -207,7 +210,7 @@
 @media (min-width: 769px) {
   .header-inner { gap: 18px; }
   .logo { flex: 0 0 auto; }
-  .logo-img { height: 88px; }
+  .logo-img { height: 108px; }
   .nav { flex: 1; align-items: center; justify-content: flex-end; gap: clamp(14px, 1.7vw, 26px); min-width: 0; height: 100%; }
   .nav > a,
   .nav .dropdown-head,
@@ -227,7 +230,7 @@
   .nav { gap: 10px; }
   .nav a { font-size: .55rem; letter-spacing: .5px; }
   .header-cta { padding: 11px 12px !important; font-size: .54rem !important; border-radius: 7px !important; }
-.logo-img { height: 74px; }
+.logo-img { height: 94px; }
 }
 
 /* Dropdown */
@@ -665,7 +668,7 @@
 @media (max-width: 768px) {
   :root {
     --announce-height: 36px;
-    --header-height: 110px;
+    --header-height: 118px;
   }
 
   .main {
@@ -696,8 +699,9 @@
   }
 
 .logo-img {
-    height: 84px;
-    max-width: 260px;
+    height: 102px;
+    max-width: none;
+    object-fit: contain;
   }
 
   .mobile-company-name {

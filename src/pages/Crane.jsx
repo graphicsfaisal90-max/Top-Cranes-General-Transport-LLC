@@ -6,7 +6,7 @@ const craneTypes = [
   {
     name: 'Mobile Cranes',
     tag: 'Mobile',
-    image: '/Crane/Mobile Cranes.jpg',
+    image: '/Crane/Mobile Cranes.webp',
     capacity: '25-250 Ton',
     specs: ['Highway mobility', 'Quick setup', 'Versatile lifting'],
     desc: 'Our mobile cranes offer exceptional versatility for construction sites, industrial projects, and infrastructure development across the UAE.',
@@ -14,7 +14,7 @@ const craneTypes = [
   {
     name: 'Rough Terrain Cranes',
     tag: 'Rough Terrain',
-    image: '/Rough%20Terrarain%20Cranes.png',
+    image: '/Rough%20Terrarain%20Cranes.webp',
     capacity: '30-130 Ton',
     specs: ['All-terrain capability', 'Off-road mobility', 'Quick deployment'],
     desc: 'Designed for off-road operations, rough terrain cranes deliver reliable performance on uneven surfaces and challenging construction sites.',
@@ -22,9 +22,9 @@ const craneTypes = [
 ]
 
 const relatedProducts = [
-  { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.png', text: 'Flexible and reliable forklift rental options for warehouses, factories, and construction sites.', link: '/equipment/fork-lift' },
-  { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png', text: 'Top-tier telehandlers facilitating efficient heavy lifting with reliable machinery.', link: '/equipment/telehandler' },
-  { name: 'Excavators', image: '/excavator_%20equpment.png', text: 'Dependable excavator rentals for digging, earthmoving, and demolition projects.', link: '/equipment/excavators' },
+  { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.webp', text: 'Flexible and reliable forklift rental options for warehouses, factories, and construction sites.', link: '/equipment/fork-lift' },
+  { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', text: 'Top-tier telehandlers facilitating efficient heavy lifting with reliable machinery.', link: '/equipment/telehandler' },
+  { name: 'Excavators', image: '/excavator_%20equpment.webp', text: 'Dependable excavator rentals for digging, earthmoving, and demolition projects.', link: '/equipment/excavators' },
 ]
 
 const rentSteps = [
@@ -56,7 +56,7 @@ export default function Crane() {
         <div className="container">
           <div className="crane-about-grid">
             <div className="crane-about-img">
-              <img src="/Cranes%20U.png" alt="Cranes operations in Dubai" />
+              <img src="/Cranes%20U.webp" alt="Cranes operations in Dubai" />
               <div className="crane-about-badge-card">
                 <span className="crane-about-badge-num">15+</span>
                 <span className="crane-about-badge-text">Years Experience</span>

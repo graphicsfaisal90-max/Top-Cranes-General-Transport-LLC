@@ -4,23 +4,23 @@ import './Pages.css'
 import './home.css'
 
 const brands = [
-  '/tadano-logo-2048x426.png',
-  '/Liebherrr.png?v=2',
+  '/tadano-logo-2048x426.webp',
+  '/Liebherrr.webp?v=2',
   '/Sanyyyy.svg',
-  '/xcmg-logo.png',
-  '/JCB-Logo.png',
-  '/Grove-Logo.png',
+  '/xcmg-logo.webp',
+  '/JCB-Logo.webp',
+  '/Grove-Logo.webp',
 ]
 
 const equipment = [
-  { name: 'Mobile Cranes', image: '/Cranes%20U.png', heroImage: '/Cranes%20U.png', text: 'Wide selection of cranes rentals in Dubai, tailored for high-rise construction and heavy lifting tasks. Our cranes deliver exceptional strength and reliability.', link: '/equipment/crane' },
-   { name: 'Rough Terrain Cranes', image: '/Rough%20Terrarain%20Cranes.png', heroImage: '/Rough%20Terrarain%20Cranes.png', text: 'Reliable rough terrain cranes rentals designed for demanding construction sites and uneven ground conditions. Powerful lifting performance with excellent mobility and stability.', link: '/equipment/crane' },
-   { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png', heroImage: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png', text: 'Top-tier telehandlers facilitating efficient heavy lifting solutions with reliable machinery. Versatility and top performance for efficient operations.', link: '/equipment/telehandler' },
-  { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.png', heroImage: '/Forklift.jpg', text: 'Flexible and reliable forklift rental options for any project. Cost-effective solutions ensuring you always have the right forklift for your needs.', link: '/equipment/fork-lift' },
-  { name: 'Excavators', image: '/excavator_%20equpment.png', heroImage: '/excavator-hero.jpg', text: 'Dependable excavator rentals suitable for digging and earthmoving projects. Efficiency and durability for demanding construction environments.', link: '/equipment/excavators' },
-  { name: 'JCB 3CX', image: '/JCB%203CX%20Equipment.png', heroImage: '/jcb-hero.jpg', text: 'Versatile JCB 3CX backhoe loaders combining efficiency and durability. A top choice for excavation, loading, roadwork and utility operations.', link: '/equipment/jcb-3cx' },
-  { name: 'Shovel', image: '/Shovel%20Loader%20Equipment.png', heroImage: '/shovel-hero.jpg', text: 'Robust shovel rentals perfect for mining, construction and landscaping projects. High-quality equipment offering reliability and performance.', link: '/equipment/shovel' },
-  { name: 'Bobcat', image: '/Bobcat%20Equipment.png', heroImage: '/bobcat-hero.jpg', text: 'Versatile Bobcat machinery rentals ideal for construction, landscaping and agricultural tasks. Renowned for durability and ease of operation.', link: '/equipment/bobcat' },
+  { name: 'Mobile Cranes', image: '/Cranes%20U.webp', heroImage: '/Cranes%20U.webp', text: 'Wide selection of cranes rentals in Dubai, tailored for high-rise construction and heavy lifting tasks. Our cranes deliver exceptional strength and reliability.', link: '/equipment/crane' },
+   { name: 'Rough Terrain Cranes', image: '/Rough%20Terrarain%20Cranes.webp', heroImage: '/Rough%20Terrarain%20Cranes.webp', text: 'Reliable rough terrain cranes rentals designed for demanding construction sites and uneven ground conditions. Powerful lifting performance with excellent mobility and stability.', link: '/equipment/crane' },
+   { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', heroImage: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', text: 'Top-tier telehandlers facilitating efficient heavy lifting solutions with reliable machinery. Versatility and top performance for efficient operations.', link: '/equipment/telehandler' },
+  { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.webp', heroImage: '/Forklift.webp', text: 'Flexible and reliable forklift rental options for any project. Cost-effective solutions ensuring you always have the right forklift for your needs.', link: '/equipment/fork-lift' },
+  { name: 'Excavators', image: '/excavator_%20equpment.webp', heroImage: '/excavator-hero.webp', text: 'Dependable excavator rentals suitable for digging and earthmoving projects. Efficiency and durability for demanding construction environments.', link: '/equipment/excavators' },
+  { name: 'JCB 3CX', image: '/JCB%203CX%20Equipment.webp', heroImage: '/jcb-hero.webp', text: 'Versatile JCB 3CX backhoe loaders combining efficiency and durability. A top choice for excavation, loading, roadwork and utility operations.', link: '/equipment/jcb-3cx' },
+  { name: 'Shovel', image: '/Shovel%20Loader%20Equipment.webp', heroImage: '/shovel-hero.webp', text: 'Robust shovel rentals perfect for mining, construction and landscaping projects. High-quality equipment offering reliability and performance.', link: '/equipment/shovel' },
+  { name: 'Bobcat', image: '/Bobcat%20Equipment.webp', heroImage: '/bobcat-hero.webp', text: 'Versatile Bobcat machinery rentals ideal for construction, landscaping and agricultural tasks. Renowned for durability and ease of operation.', link: '/equipment/bobcat' },
 ]
 
 const reviews = [
@@ -32,9 +32,9 @@ const reviews = [
 ]
 
 const heroSlides = [
-  { image: '/Cranes%20U.png', badge: 'TRUSTED ACROSS THE UAE', heading: 'Professional Cranes Rental &\nHeavy Lifting Solutions', text: 'Top Cranes Transport is the most reliable heavy equipment rental company in the UAE, catering to multiple cranes requirements on site.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Cranes', link: '/equipment/crane' } },
-  { image: '/Forklift.jpg', badge: 'MATERIAL HANDLING EXPERTS', heading: 'Forklift Rental &\nWarehouse Solutions', text: 'Efficient forklift rental services for warehouses, factories, construction sites and logistics operations across Dubai and the UAE.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Forklifts', link: '/equipment/fork-lift' } },
-  { image: '/excavator-hero.jpg', badge: 'YOUR TRUSTED PARTNER', heading: 'Powerful Excavator &\nEarthmoving Solutions', text: 'Professional excavator rental for construction, demolition, land clearing and heavy earthmoving projects across the UAE.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Excavators', link: '/equipment/excavators' } },
+  { image: '/Cranes%20U.webp', badge: 'TRUSTED ACROSS THE UAE', heading: 'Professional Cranes Rental &\nHeavy Lifting Solutions', text: 'Top Cranes Transport is the most reliable heavy equipment rental company in the UAE, catering to multiple cranes requirements on site.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Cranes', link: '/equipment/crane' } },
+  { image: '/Forklift.webp', badge: 'MATERIAL HANDLING EXPERTS', heading: 'Forklift Rental &\nWarehouse Solutions', text: 'Efficient forklift rental services for warehouses, factories, construction sites and logistics operations across Dubai and the UAE.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Forklifts', link: '/equipment/fork-lift' } },
+  { image: '/excavator-hero.webp', badge: 'YOUR TRUSTED PARTNER', heading: 'Powerful Excavator &\nEarthmoving Solutions', text: 'Professional excavator rental for construction, demolition, land clearing and heavy earthmoving projects across the UAE.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Excavators', link: '/equipment/excavators' } },
 ]
 
 export default function Home() {

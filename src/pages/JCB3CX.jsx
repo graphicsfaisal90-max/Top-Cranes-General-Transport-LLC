@@ -3,10 +3,10 @@ import './Pages.css'
 import './jcb3cx.css'
 
 const applications = [
-  { title: 'Excavation & Trenching', tag: 'Excavation', image: '/JCB3CX/Excavation & Trenching.jpg', metric: '14 ft', label: 'Dig Depth', features: ['Precision trenching', 'Deep excavation capability'], text: 'Dig foundations, trenches, drainage channels, and utility lines with dependable control and reach.' },
-  { title: 'Material Loading', tag: 'Loading', image: '/JCB3CX/Material Loading.jpg', metric: '1.0 m3', label: 'Bucket', features: ['Efficient material handling', 'High-capacity loading'], text: 'Move soil, aggregate, rubble, and construction materials quickly with the front loader bucket.' },
-  { title: 'Site Preparation', tag: 'Preparation', image: '/JCB3CX/Site Preparation.jpg', metric: '8 ft', label: 'Working Width', features: ['Grading and levelling', 'Clearing and backfilling'], text: 'Prepare construction sites, level working areas, and complete backfilling with one versatile machine.' },
-  { title: 'Utility & Infrastructure', tag: 'Utility', image: '/JCB3CX/Utility & Infrastructure Works.jpg', metric: 'Multi', label: 'Purpose', features: ['Pipe laying and utilities', 'Road and infrastructure work'], text: 'A dependable solution for roadwork, utility installation, pipe laying, and infrastructure projects.' },
+  { title: 'Excavation & Trenching', tag: 'Excavation', image: '/JCB3CX/Excavation & Trenching.webp', metric: '14 ft', label: 'Dig Depth', features: ['Precision trenching', 'Deep excavation capability'], text: 'Dig foundations, trenches, drainage channels, and utility lines with dependable control and reach.' },
+  { title: 'Material Loading', tag: 'Loading', image: '/JCB3CX/Material Loading.webp', metric: '1.0 m3', label: 'Bucket', features: ['Efficient material handling', 'High-capacity loading'], text: 'Move soil, aggregate, rubble, and construction materials quickly with the front loader bucket.' },
+  { title: 'Site Preparation', tag: 'Preparation', image: '/JCB3CX/Site Preparation.webp', metric: '8 ft', label: 'Working Width', features: ['Grading and levelling', 'Clearing and backfilling'], text: 'Prepare construction sites, level working areas, and complete backfilling with one versatile machine.' },
+  { title: 'Utility & Infrastructure', tag: 'Utility', image: '/JCB3CX/Utility & Infrastructure Works.webp', metric: 'Multi', label: 'Purpose', features: ['Pipe laying and utilities', 'Road and infrastructure work'], text: 'A dependable solution for roadwork, utility installation, pipe laying, and infrastructure projects.' },
 ]
 
 const benefits = [
@@ -25,10 +25,10 @@ const steps = [
 ]
 
 const related = [
-  { name: 'Cranes', image: '/Crane%20Equipment.png', text: 'Reliable cranes rentals for construction and heavy lifting tasks.', link: '/equipment/crane' },
-  { name: 'Excavators', image: '/excavator_%20equpment.png', text: 'Powerful excavators for earthmoving, demolition, and infrastructure work.', link: '/equipment/excavators' },
-  { name: 'Shovel', image: '/Shovel%20Loader%20Equipment.png', text: 'Robust shovel loaders for mining, construction, and landscaping.', link: '/equipment/shovel' },
-  { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png', text: 'Efficient material handling and lifting with reliable telehandlers.', link: '/equipment/telehandler' },
+  { name: 'Cranes', image: '/Crane%20Equipment.webp', text: 'Reliable cranes rentals for construction and heavy lifting tasks.', link: '/equipment/crane' },
+  { name: 'Excavators', image: '/excavator_%20equpment.webp', text: 'Powerful excavators for earthmoving, demolition, and infrastructure work.', link: '/equipment/excavators' },
+  { name: 'Shovel', image: '/Shovel%20Loader%20Equipment.webp', text: 'Robust shovel loaders for mining, construction, and landscaping.', link: '/equipment/shovel' },
+  { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', text: 'Efficient material handling and lifting with reliable telehandlers.', link: '/equipment/telehandler' },
 ]
 
 export default function JCB3CX() {
@@ -47,7 +47,7 @@ export default function JCB3CX() {
 
       <section className="jcb-intro">
         <div className="container jcb-intro-grid">
-          <div className="jcb-intro-image"><img src="/jcb-about.jpg" alt="JCB 3CX backhoe loader in operation" /><div className="jcb-experience"><strong>15+</strong><span>Years Experience</span></div></div>
+          <div className="jcb-intro-image"><img src="/jcb-about.webp" alt="JCB 3CX backhoe loader in operation" /><div className="jcb-experience"><strong>15+</strong><span>Years Experience</span></div></div>
           <div className="jcb-intro-content"><span className="jcb-badge">Your Trusted JCB Rental Partner</span><h2>Power, Versatility, And Reliability On Every Job</h2><p>Top Cranes General Transport LLC provides JCB 3CX backhoe loader rental services for construction sites, infrastructure projects, utilities, and earthmoving operations throughout Dubai and the UAE.</p><p>The JCB 3CX is a highly versatile machine that combines excavation and loading capabilities, helping your team complete more tasks with less equipment movement.</p><Link to="/contact" className="jcb-btn jcb-btn-primary">Get a Free Quote</Link></div>
         </div>
       </section>
@@ -60,7 +60,7 @@ export default function JCB3CX() {
 
       <section className="jcb-steps"><div className="container"><div className="jcb-section-heading"><span className="jcb-badge">How To Rent</span><h2>How To Rent A JCB 3CX In Dubai</h2><p>Our rental process is simple, transparent, and designed to get your machine to site without unnecessary delays.</p></div><div className="jcb-step-grid">{steps.map((step) => <div className="jcb-step" key={step.num}><strong>{step.num}</strong><h3>{step.title}</h3><p>{step.text}</p></div>)}</div></div></section>
 
-      <section className="jcb-trusted"><div className="container jcb-trusted-grid"><div><span className="jcb-badge">Trusted By Professionals</span><h2>A Dependable Partner For UAE Projects</h2><p>From small site preparation jobs to large infrastructure work, Top Cranes supports contractors with reliable equipment, experienced assistance, and responsive service.</p><p>Every JCB 3CX is prepared for safe and efficient operation before it reaches your project site.</p><Link to="/contact" className="jcb-btn jcb-btn-primary">Talk To Our Team</Link></div><img src="/JCB 3CX Equipment.png" alt="JCB 3CX equipment" /></div></section>
+      <section className="jcb-trusted"><div className="container jcb-trusted-grid"><div><span className="jcb-badge">Trusted By Professionals</span><h2>A Dependable Partner For UAE Projects</h2><p>From small site preparation jobs to large infrastructure work, Top Cranes supports contractors with reliable equipment, experienced assistance, and responsive service.</p><p>Every JCB 3CX is prepared for safe and efficient operation before it reaches your project site.</p><Link to="/contact" className="jcb-btn jcb-btn-primary">Talk To Our Team</Link></div><img src="/JCB 3CX Equipment.webp" alt="JCB 3CX equipment" /></div></section>
 
       <section className="jcb-quote"><div className="container jcb-quote-grid"><div><span className="jcb-badge">We Are Here To Help</span><h2>Get A Free JCB 3CX Rental Quote</h2><p>Tell us about your project, location, and rental period. We will help you choose the right solution.</p></div><Link to="/contact" className="jcb-btn jcb-btn-dark">Submit Your Enquiry</Link></div></section>
 

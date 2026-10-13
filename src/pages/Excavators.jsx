@@ -3,10 +3,10 @@ import './Pages.css'
 import './excavators.css'
 
 const fleet = [
-  { name: 'Crawler Excavators', image: '/Excavators/Crawler Excavators.jpg', tag: 'Heavy Duty', capacity: '12-50 Ton', text: 'Stable, powerful machines for heavy-duty earthmoving, foundations, infrastructure, and rough terrain operations.', features: ['Heavy-duty earthmoving', 'Superior rough-terrain stability', 'Bucket and jackhammer options'] },
-  { name: 'Wheeled Excavators', image: '/Excavators/Wheeled Excavators.jpg', tag: 'Mobile', capacity: '10-25 Ton', text: 'Fast and flexible excavators for urban construction, roadwork, utilities, and projects requiring frequent movement.', features: ['Fast road mobility', 'Urban and paved-surface work', 'Efficient site relocation'] },
-  { name: 'Mini Excavators', image: '/Excavators/Mini Excavators.jpg', tag: 'Compact', capacity: '1-5 Ton', text: 'Compact excavators for landscaping, trenching, utilities, and confined spaces where precision matters.', features: ['Tight access capability', 'Low-impact operation', 'Versatile attachments'] },
-  { name: 'Long Reach Excavators', image: '/Excavators/Long Reach Excavators.jpg', tag: 'Extended Reach', capacity: '20-40 Ton', text: 'Extended-reach equipment for deep excavation, dredging, demolition, slope work, and hard-to-reach areas.', features: ['Extended digging reach', 'Deep excavation', 'Demolition and dredging'] },
+  { name: 'Crawler Excavators', image: '/Excavators/Crawler Excavators.webp', tag: 'Heavy Duty', capacity: '12-50 Ton', text: 'Stable, powerful machines for heavy-duty earthmoving, foundations, infrastructure, and rough terrain operations.', features: ['Heavy-duty earthmoving', 'Superior rough-terrain stability', 'Bucket and jackhammer options'] },
+  { name: 'Wheeled Excavators', image: '/Excavators/Wheeled Excavators.webp', tag: 'Mobile', capacity: '10-25 Ton', text: 'Fast and flexible excavators for urban construction, roadwork, utilities, and projects requiring frequent movement.', features: ['Fast road mobility', 'Urban and paved-surface work', 'Efficient site relocation'] },
+  { name: 'Mini Excavators', image: '/Excavators/Mini Excavators.webp', tag: 'Compact', capacity: '1-5 Ton', text: 'Compact excavators for landscaping, trenching, utilities, and confined spaces where precision matters.', features: ['Tight access capability', 'Low-impact operation', 'Versatile attachments'] },
+  { name: 'Long Reach Excavators', image: '/Excavators/Long Reach Excavators.webp', tag: 'Extended Reach', capacity: '20-40 Ton', text: 'Extended-reach equipment for deep excavation, dredging, demolition, slope work, and hard-to-reach areas.', features: ['Extended digging reach', 'Deep excavation', 'Demolition and dredging'] },
 ]
 
 const highlights = [
@@ -19,10 +19,10 @@ const highlights = [
 ]
 
 const related = [
-  { name: 'Cranes', image: '/Crane%20Equipment.png', text: 'Reliable cranes rentals for high-rise construction and heavy lifting tasks.', link: '/equipment/crane' },
-  { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.png', text: 'Flexible forklift solutions for warehouses, factories, and construction sites.', link: '/equipment/fork-lift' },
-  { name: 'JCB 3CX', image: '/JCB%203CX%20Equipment.png', text: 'Versatile backhoe loaders for excavation, loading, roadwork, and utilities.', link: '/equipment/jcb-3cx' },
-  { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png', text: 'Efficient heavy lifting and material handling with reliable telehandlers.', link: '/equipment/telehandler' },
+  { name: 'Cranes', image: '/Crane%20Equipment.webp', text: 'Reliable cranes rentals for high-rise construction and heavy lifting tasks.', link: '/equipment/crane' },
+  { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.webp', text: 'Flexible forklift solutions for warehouses, factories, and construction sites.', link: '/equipment/fork-lift' },
+  { name: 'JCB 3CX', image: '/JCB%203CX%20Equipment.webp', text: 'Versatile backhoe loaders for excavation, loading, roadwork, and utilities.', link: '/equipment/jcb-3cx' },
+  { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', text: 'Efficient heavy lifting and material handling with reliable telehandlers.', link: '/equipment/telehandler' },
 ]
 
 const reviews = [
@@ -51,7 +51,7 @@ export default function Excavators() {
       <section className="exc-intro">
         <div className="container exc-intro-grid">
           <div className="exc-intro-image">
-            <img src="/excavator-about.jpg" alt="Excavator working on a UAE construction site" />
+            <img src="/excavator-about.webp" alt="Excavator working on a UAE construction site" />
             <div className="exc-experience"><strong>15+</strong><span>Years Experience</span></div>
           </div>
           <div className="exc-intro-content">

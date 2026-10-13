@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom'
 import './Pages.css'
 
 const fleet = [
-  { id: 'crane', name: 'Mobile Cranes Rental', eyebrow: 'Lift / place / install', image: '/Cranes%20U.png', path: '/equipment/crane', text: 'Mobile and industrial cranes solutions for safe lifting, positioning and site support across the UAE.' },
-  { id: 'fork-lift', name: 'Forklift Rental', eyebrow: 'Load / unload / move', image: '/Forklift.jpg', path: '/equipment/fork-lift', text: 'Reliable forklifts for warehouses, logistics yards, factories, cargo handling and construction sites.' },
-  { id: 'telehandler', name: 'Telehandler & Boom Loader', eyebrow: 'Reach / handle / build', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.png', path: '/equipment/telehandler', text: 'High-reach material handling equipment for construction, industrial and infrastructure operations.' },
-  { id: 'excavators', name: 'Excavator Rental', eyebrow: 'Dig / clear / develop', image: '/excavator-hero.jpg', path: '/equipment/excavators', text: 'Powerful excavators for earthmoving, trenching, demolition, land clearing and site development.' },
-  { id: 'jcb-3cx', name: 'JCB 3CX', eyebrow: 'Dig / load / prepare', image: '/jcb-hero.jpg', path: '/equipment/jcb-3cx', text: 'Versatile backhoe loaders for utilities, roadwork, excavation and everyday construction support.' },
-  { id: 'shovel', name: 'Wheel Loader', eyebrow: 'Bulk handling / stockpiles', image: '/shovel-hero.jpg', path: '/equipment/shovel', text: 'Heavy-duty wheel loaders for aggregate, earth, stockpile and bulk material handling.' },
-  { id: 'bobcat', name: 'Bobcat Rental', eyebrow: 'Compact / agile / precise', image: '/bobcat-hero.jpg', path: '/equipment/bobcat', text: 'Compact machines for landscaping, cleanup, demolition and tight-access construction work.' },
+  { id: 'crane', name: 'Mobile Cranes Rental', eyebrow: 'Lift / place / install', image: '/Cranes%20U.webp', path: '/equipment/crane', text: 'Mobile and industrial cranes solutions for safe lifting, positioning and site support across the UAE.' },
+  { id: 'fork-lift', name: 'Forklift Rental', eyebrow: 'Load / unload / move', image: '/Forklift.webp', path: '/equipment/fork-lift', text: 'Reliable forklifts for warehouses, logistics yards, factories, cargo handling and construction sites.' },
+  { id: 'telehandler', name: 'Telehandler & Boom Loader', eyebrow: 'Reach / handle / build', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', path: '/equipment/telehandler', text: 'High-reach material handling equipment for construction, industrial and infrastructure operations.' },
+  { id: 'excavators', name: 'Excavator Rental', eyebrow: 'Dig / clear / develop', image: '/excavator-hero.webp', path: '/equipment/excavators', text: 'Powerful excavators for earthmoving, trenching, demolition, land clearing and site development.' },
+  { id: 'jcb-3cx', name: 'JCB 3CX', eyebrow: 'Dig / load / prepare', image: '/jcb-hero.webp', path: '/equipment/jcb-3cx', text: 'Versatile backhoe loaders for utilities, roadwork, excavation and everyday construction support.' },
+  { id: 'shovel', name: 'Wheel Loader', eyebrow: 'Bulk handling / stockpiles', image: '/shovel-hero.webp', path: '/equipment/shovel', text: 'Heavy-duty wheel loaders for aggregate, earth, stockpile and bulk material handling.' },
+  { id: 'bobcat', name: 'Bobcat Rental', eyebrow: 'Compact / agile / precise', image: '/bobcat-hero.webp', path: '/equipment/bobcat', text: 'Compact machines for landscaping, cleanup, demolition and tight-access construction work.' },
 ]
 
 export default function Equipment() {
