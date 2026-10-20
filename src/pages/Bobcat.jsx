@@ -59,7 +59,7 @@ export default function Bobcat() {
 
       <section className="bob-related"><div className="container"><div className="bob-section-heading"><span className="bob-badge">Related Equipment</span><h2>Complete Your Project Fleet</h2></div><div className="bob-related-grid">{related.map((item) => <Link to={item.link} className="bob-related-card" key={item.name}><div><img src={item.image} alt={item.name} /></div><h3>{item.name}</h3><p>{item.text}</p><span>Read More &rarr;</span></Link>)}</div></div></section>
 
-      <section className="bob-cta"><div className="container bob-cta-grid"><div><h2>Contact Us! We're<br />Available 24/7.</h2><p>Ready to start your project? Talk to our team about Bobcat rental today.</p></div><div className="bob-contact-list"><a href="tel:+971509191004">+971 50 919 1004</a><a href="tel:+971506749200">+971 50 674 9200</a><a href="mailto:sales@topcranestransport.com">sales@topcranestransport.com</a></div></div></section>
+      <section className="bob-cta"><div className="container bob-cta-grid"><div><h2>Contact Us! We're<br />Available 24/7.</h2><p>Ready to start your project? Talk to our team about Bobcat rental today.</p></div><div className="bob-contact-list"><a href="tel:+971506749200">+971 50 674 9200</a><a href="tel:+971509191004">+971 50 919 1004</a><a href="mailto:sales@topcranestransport.com">sales@topcranestransport.com</a></div></div></section>
     </div>
   )
 }

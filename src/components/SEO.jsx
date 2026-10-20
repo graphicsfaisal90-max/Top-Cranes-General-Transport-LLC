@@ -128,7 +128,7 @@ export default function SEO() {
       url: siteUrl,
       logo: `${siteUrl}/Top%20Cranes%20logo.svg`,
       description: page.description,
-      telephone: ['+971509191004', '+971506749200'],
+      telephone: ['+971506749200', '+971509191004'],
       email: 'sales@topcranestransport.com',
       areaServed: ['Dubai', 'Sharjah', 'Abu Dhabi', 'United Arab Emirates'],
       serviceType: ['Cranes rental', 'Heavy equipment rental', 'General transport'],

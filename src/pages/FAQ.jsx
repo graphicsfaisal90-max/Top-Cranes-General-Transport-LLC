@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: 'How do I request a quote?',
-    a: 'You can request a quote by filling out the contact form on our website, calling us at +971 50 919 1004, or emailing sales@topcranestransport.com. Our team typically responds within 24 hours.',
+    a: 'You can request a quote by filling out the contact form on our website, calling us at +971 50 674 9200, or emailing sales@topcranestransport.com. Our team typically responds within 24 hours.',
   },
   {
     q: 'What is the minimum rental period?',

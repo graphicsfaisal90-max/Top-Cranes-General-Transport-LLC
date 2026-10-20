@@ -66,7 +66,7 @@ export default function JCB3CX() {
 
       <section className="jcb-related"><div className="container"><div className="jcb-section-heading"><span className="jcb-badge">Related Equipment</span><h2>Complete Your Project Fleet</h2></div><div className="jcb-related-grid">{related.map((item) => <Link to={item.link} className="jcb-related-card" key={item.name}><div><img src={item.image} alt={item.name} /></div><h3>{item.name}</h3><p>{item.text}</p><span>Read More &rarr;</span></Link>)}</div></div></section>
 
-      <section className="jcb-cta"><div className="container jcb-cta-grid"><div><h2>Contact Us! We're<br />Available 24/7.</h2><p>Ready to start your next project? Speak to our team about JCB 3CX rental today.</p></div><div className="jcb-contact-list"><a href="tel:+971509191004">+971 50 919 1004</a><a href="tel:+971506749200">+971 50 674 9200</a><a href="mailto:sales@topcranestransport.com">sales@topcranestransport.com</a></div></div></section>
+      <section className="jcb-cta"><div className="container jcb-cta-grid"><div><h2>Contact Us! We're<br />Available 24/7.</h2><p>Ready to start your next project? Speak to our team about JCB 3CX rental today.</p></div><div className="jcb-contact-list"><a href="tel:+971506749200">+971 50 674 9200</a><a href="tel:+971509191004">+971 50 919 1004</a><a href="mailto:sales@topcranestransport.com">sales@topcranestransport.com</a></div></div></section>
     </div>
   )
 }

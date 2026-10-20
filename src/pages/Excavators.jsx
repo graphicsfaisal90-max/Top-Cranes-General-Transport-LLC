@@ -119,7 +119,7 @@ export default function Excavators() {
         <div className="container"><div className="exc-section-heading"><span className="exc-badge">Testimonials</span><h2>People Are Talking About Top Cranes</h2></div><div className="exc-review-grid">{reviews.map((review) => <article className="exc-review" key={review.name}><div className="exc-stars">★★★★★</div><p>&quot;{review.text}&quot;</p><strong>{review.name}</strong><small>Project Client</small></article>)}</div></div>
       </section>
 
-      <section className="exc-cta"><div className="container exc-cta-grid"><div><h2>Contact Us! We're<br />Available 24/7.</h2><p>Ready to start your excavation project? Talk to our team today.</p></div><div className="exc-contact-list"><a href="tel:+971509191004">+971 50 919 1004</a><a href="tel:+971506749200">+971 50 674 9200</a><a href="mailto:sales@topcranestransport.com">sales@topcranestransport.com</a></div></div></section>
+      <section className="exc-cta"><div className="container exc-cta-grid"><div><h2>Contact Us! We're<br />Available 24/7.</h2><p>Ready to start your excavation project? Talk to our team today.</p></div><div className="exc-contact-list"><a href="tel:+971506749200">+971 50 674 9200</a><a href="tel:+971509191004">+971 50 919 1004</a><a href="mailto:sales@topcranestransport.com">sales@topcranestransport.com</a></div></div></section>
     </div>
   )
 }

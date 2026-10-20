@@ -361,21 +361,18 @@
   display: block;
 }
 
+.footer-wordmark {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  display: block;
+}
+
 .footer-brand {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
-  align-items: end;
+  align-items: center;
   column-gap: 14px;
-}
-
-.footer-company-name {
-  color: #fff;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  font-size: 1.35rem;
-  font-weight: 700;
-  line-height: 1.3;
-  margin: 0;
-  padding-left: 10px;
 }
 
 .footer-brand p {
@@ -783,11 +780,7 @@
   }
 
   .footer-brand {
-    align-items: end;
-  }
-
-  .footer-company-name {
-    font-size: 1.05rem;
+    align-items: center;
   }
 
   .float-btn {

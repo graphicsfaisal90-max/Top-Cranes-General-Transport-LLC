@@ -93,8 +93,8 @@ export default function Contact() {
                   </div>
                   <div className="contact-item-content">
                     <strong>Phone</strong>
-                    <p>+971 50 919 1004</p>
                     <p>+971 50 674 9200</p>
+                    <p>+971 50 919 1004</p>
                   </div>
                 </div>
                 <div className="contact-item">
