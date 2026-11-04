@@ -3730,7 +3730,7 @@ equipment-card p {
 .fleet-catalogue { padding: 90px 0 120px; background: #e9e7e1; }
 .catalogue-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
 .catalogue-card { grid-column: span 4; position: relative; min-height: 395px; overflow: hidden; color: #fff; background: #28302e; }
-.catalogue-card:nth-child(1), .catalogue-card:nth-child(4) { grid-column: span 6; min-height: 470px; }
+.catalogue-card:nth-child(1), .catalogue-card:nth-child(2) { grid-column: span 6; min-height: 470px; }
 .catalogue-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
 .catalogue-card:hover img { transform: scale(1.06); }
 .catalogue-shade { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(12,17,16,.95), rgba(12,17,16,.05) 70%); }
@@ -3749,7 +3749,7 @@ equipment-card p {
   .fleet-intro { padding: 70px 0; }
   .fleet-intro-grid { grid-template-columns: 1fr; gap: 28px; }
   .catalogue-grid { grid-template-columns: 1fr; }
-  .catalogue-card, .catalogue-card:nth-child(1), .catalogue-card:nth-child(4) { grid-column: auto; min-height: 330px; }
+  .catalogue-card, .catalogue-card:nth-child(1), .catalogue-card:nth-child(2) { grid-column: auto; min-height: 330px; }
   .fleet-cta { padding: 70px 0; }
   .fleet-cta-inner { align-items: flex-start; flex-direction: column; }
   .sectors-section { padding: 70px 0; }

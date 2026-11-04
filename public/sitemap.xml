@@ -27,6 +27,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.topcranestransport.com/equipment/mobile-cranes</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.topcranestransport.com/equipment/rough-terrain-cranes</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.topcranestransport.com/equipment/fork-lift</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -59,6 +71,18 @@
   <url>
     <loc>https://www.topcranestransport.com/equipment/bobcat</loc>
     <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.topcranestransport.com/equipment/skid-steer</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.topcranestransport.com/equipment/low-bed-trailers</loc>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

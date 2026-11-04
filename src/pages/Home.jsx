@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useState, useRef } from 'react'
 import './Pages.css'
 import './home.css'
+import Expertise from '../components/Expertise'
 
 const brands = [
   '/tadano-logo-2048x426.webp',
@@ -13,14 +14,15 @@ const brands = [
 ]
 
 const equipment = [
-  { name: 'Mobile Cranes', image: '/Cranes%20U.webp', heroImage: '/Cranes%20U.webp', text: 'Wide selection of cranes rentals in Dubai, tailored for high-rise construction and heavy lifting tasks. Our cranes deliver exceptional strength and reliability.', link: '/equipment/crane' },
-   { name: 'Rough Terrain Cranes', image: '/Rough%20Terrarain%20Cranes.webp', heroImage: '/Rough%20Terrarain%20Cranes.webp', text: 'Reliable rough terrain cranes rentals designed for demanding construction sites and uneven ground conditions. Powerful lifting performance with excellent mobility and stability.', link: '/equipment/crane' },
+  { name: 'Mobile Crane Rental', image: '/MobileCraneRental/50-ton-truck-mounted.webp', heroImage: '/MobileCraneRental/450-ton-all-terrain.webp', text: 'All-terrain and truck-mounted mobile cranes from 50 to 550 tonnes, available with experienced operators for construction, infrastructure and industrial lifts across the UAE.', link: '/equipment/mobile-cranes' },
+   { name: 'Rough Terrain Cranes', image: '/RoughTerrainCranes/60-ton-rough-terrain.webp', heroImage: '/RoughTerrainCranes/rough-terrain-fleet.webp', text: 'Four-wheel-drive rough terrain cranes from 50 to 110 tonnes for uneven ground, tight access and pick-and-carry lifting across the UAE.', link: '/equipment/rough-terrain-cranes' },
    { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', heroImage: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', text: 'Top-tier telehandlers facilitating efficient heavy lifting solutions with reliable machinery. Versatility and top performance for efficient operations.', link: '/equipment/telehandler' },
   { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.webp', heroImage: '/Forklift.webp', text: 'Flexible and reliable forklift rental options for any project. Cost-effective solutions ensuring you always have the right forklift for your needs.', link: '/equipment/fork-lift' },
   { name: 'Excavators', image: '/excavator_%20equpment.webp', heroImage: '/excavator-hero.webp', text: 'Dependable excavator rentals suitable for digging and earthmoving projects. Efficiency and durability for demanding construction environments.', link: '/equipment/excavators' },
-  { name: 'JCB 3CX', image: '/JCB%203CX%20Equipment.webp', heroImage: '/jcb-hero.webp', text: 'Versatile JCB 3CX backhoe loaders combining efficiency and durability. A top choice for excavation, loading, roadwork and utility operations.', link: '/equipment/jcb-3cx' },
+  { name: 'Backhoe Loaders JCB 3CX', image: '/JCB%203CX%20Equipment.webp', heroImage: '/jcb-hero.webp', text: 'Versatile Backhoe Loaders JCB 3CX machines combining efficiency and durability. A top choice for excavation, loading, roadwork and utility operations.', link: '/equipment/jcb-3cx' },
   { name: 'Shovel', image: '/Shovel%20Loader%20Equipment.webp', heroImage: '/shovel-hero.webp', text: 'Robust shovel rentals perfect for mining, construction and landscaping projects. High-quality equipment offering reliability and performance.', link: '/equipment/shovel' },
   { name: 'Bobcat', image: '/Bobcat%20Equipment.webp', heroImage: '/bobcat-hero.webp', text: 'Versatile Bobcat machinery rentals ideal for construction, landscaping and agricultural tasks. Renowned for durability and ease of operation.', link: '/equipment/bobcat' },
+  { name: 'Low Bed Trailers', image: '/LowBedTrailers/lowbed-trailer.webp', heroImage: '/LowBedTrailers/lowbed-title.webp', text: 'Heavy-duty low bed trailers for moving cranes, excavators, loaders and oversized machinery safely across the UAE.', link: '/equipment/low-bed-trailers' },
 ]
 
 const reviews = [
@@ -32,7 +34,7 @@ const reviews = [
 ]
 
 const heroSlides = [
-  { image: '/Cranes%20U.webp', badge: 'TRUSTED ACROSS THE UAE', heading: 'Professional Cranes Rental &\nHeavy Lifting Solutions', text: 'Top Cranes Transport is the most reliable heavy equipment rental company in the UAE, catering to multiple cranes requirements on site.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Cranes', link: '/equipment/crane' } },
+  { image: '/Cranes%20U.webp', badge: 'TRUSTED ACROSS THE UAE', heading: 'Crane Rental &\nHeavy Equipment\nServices in Dubai', text: 'Top Cranes General Transport LLC provides reliable crane rental and heavy equipment rental services across Dubai and the UAE. We support construction, infrastructure, and industrial projects with quality machinery, experienced operators, and dependable lifting solutions.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Our Fleet', link: '/equipment' } },
   { image: '/Forklift.webp', badge: 'MATERIAL HANDLING EXPERTS', heading: 'Forklift Rental &\nWarehouse Solutions', text: 'Efficient forklift rental services for warehouses, factories, construction sites and logistics operations across Dubai and the UAE.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Forklifts', link: '/equipment/fork-lift' } },
   { image: '/excavator-hero.webp', badge: 'YOUR TRUSTED PARTNER', heading: 'Powerful Excavator &\nEarthmoving Solutions', text: 'Professional excavator rental for construction, demolition, land clearing and heavy earthmoving projects across the UAE.', btn1: { text: 'Get a Quote', link: '/contact' }, btn2: { text: 'View Excavators', link: '/equipment/excavators' } },
 ]
@@ -65,14 +67,14 @@ export default function Home() {
   return (
     <div className="am-home">
       {/* 1. Hero Carousel */}
-      <section className="am-hero" key={currentSlide}>
+      <section className="am-hero">
         <div className="am-hero-bg" style={{ backgroundImage: `url(${slide.image})` }} />
         <div className="am-hero-overlay" />
         <button className="am-hero-arrow am-hero-arrow-left" onClick={prev} aria-label="Previous">&#8249;</button>
         <button className="am-hero-arrow am-hero-arrow-right" onClick={next} aria-label="Next">&#8250;</button>
-        <div className="container am-hero-content">
+        <div className="container am-hero-content" key={currentSlide}>
           <span className="am-hero-badge">{slide.badge}</span>
-          <h1>{slide.heading.split('\n').map((line, i) => <span key={i}>{line}{i === 0 && <br />}</span>)}</h1>
+          <h1>{slide.heading.split('\n').map((line, i, lines) => <span key={i}>{line}{i < lines.length - 1 && <br />}</span>)}</h1>
           <p>{slide.text}</p>
           <div className="am-hero-actions">
             <Link to={slide.btn1.link} className="am-btn am-btn-primary">{slide.btn1.text}</Link>
@@ -86,16 +88,19 @@ export default function Home() {
         <div className="container am-about-grid">
           <div className="am-about-left">
             <span className="am-badge">About Us</span>
-            <h2>Round the Clock Availability & Equipment Rental Services</h2>
+            <h2>Trusted Crane Rental Company in Dubai Since 2009</h2>
           </div>
           <div className="am-about-right">
-            <p>Top Cranes General Transport LLC introduces us as one of the leading transport and heavy equipment rental companies established in 2009 in Dubai, United Arab Emirates. Since our inception, we have consistently evolved and advanced our services, emerging as one of the leading equipment rental companies in the UAE.</p>
-            <p>We trade and rent high-quality equipment from the world's best brands, ensuring every project receives dependable machinery backed by experienced operators and dedicated support.</p>
+            <p>Established in 2009, Top Cranes General Transport LLC is a Dubai-based transport and heavy equipment rental company. We provide quality machinery from leading global brands, supported by experienced operators and dedicated service to meet diverse project requirements across the UAE.</p>
+            <Link to="/about" className="am-btn am-btn-primary am-about-cta">Learn More</Link>
           </div>
         </div>
       </section>
 
-      {/* 3. Equipment Carousel */}
+      {/* 3. Our Expertise */}
+      <Expertise />
+
+      {/* 4. Equipment Carousel */}
       <section className="am-equipment">
         <div className="container">
           <div className="am-eq-header">
@@ -125,7 +130,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Equipment Rental Rows */}
+      {/* 5. Equipment Rental Rows */}
       <section className="am-rental">
         <div className="container">
           {equipment.map((item, i) => (
@@ -143,7 +148,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. Testimonials Carousel */}
+      {/* 6. Testimonials Carousel */}
       <section className="am-testimonials">
         <div className="container">
           <div className="am-test-header">
@@ -182,7 +187,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. Brand Logos */}
+      {/* 7. Brand Logos */}
       <section className="am-brands">
         <div className="am-brands-inner">
           <div className="container">
@@ -202,7 +207,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. Contact CTA */}
+      {/* 8. Contact CTA */}
       <section className="am-contact-cta">
         <div className="container am-cta-grid">
           <div className="am-cta-text">

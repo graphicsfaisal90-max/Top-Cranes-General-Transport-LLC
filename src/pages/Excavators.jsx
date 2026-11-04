@@ -21,7 +21,7 @@ const highlights = [
 const related = [
   { name: 'Cranes', image: '/Crane%20Equipment.webp', text: 'Reliable cranes rentals for high-rise construction and heavy lifting tasks.', link: '/equipment/crane' },
   { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.webp', text: 'Flexible forklift solutions for warehouses, factories, and construction sites.', link: '/equipment/fork-lift' },
-  { name: 'JCB 3CX', image: '/JCB%203CX%20Equipment.webp', text: 'Versatile backhoe loaders for excavation, loading, roadwork, and utilities.', link: '/equipment/jcb-3cx' },
+  { name: 'Backhoe Loaders JCB 3CX', image: '/JCB%203CX%20Equipment.webp', text: 'Versatile backhoe loaders for excavation, loading, roadwork, and utilities.', link: '/equipment/jcb-3cx' },
   { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', text: 'Efficient heavy lifting and material handling with reliable telehandlers.', link: '/equipment/telehandler' },
 ]
 

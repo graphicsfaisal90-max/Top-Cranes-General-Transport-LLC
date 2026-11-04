@@ -5,19 +5,29 @@ const siteUrl = 'https://www.topcranestransport.com'
 
 const pages = {
   '/': {
-    title: 'TOP CRANES TRANSPORT: Cranes Rental & Lifting Services Dubai UAE',
-    description: 'Top Cranes General Transport LLC is the most reliable heavy equipment rental companies in UAE, which can cater to multiple Cranes requirements on site.',
-    keywords: 'heavy equipment rental Dubai, equipment rental UAE, cranes rental Dubai, forklift rental Dubai, excavator rental Dubai, construction equipment rental UAE',
+    title: 'Crane Rental Company in Dubai | Top Cranes Transport',
+    description: 'Top Cranes provides crane rental and heavy equipment rental in Dubai, UAE. Explore our fleet of cranes, construction machinery and transport equipment.',
+    keywords: 'crane rental company in Dubai, crane rental Dubai, heavy equipment rental Dubai',
   },
   '/equipment': {
     title: 'Heavy Equipment Rental Dubai | Construction Equipment UAE',
-    description: 'Explore reliable heavy equipment for rent in Dubai and across the UAE, including cranes, forklifts, excavators, telehandlers, JCB 3CX, Bobcat and loaders.',
+    description: 'Explore reliable heavy equipment for rent in Dubai and across the UAE, including cranes, forklifts, excavators, telehandlers, Backhoe Loaders JCB 3CX, Bobcat and loaders.',
     keywords: 'heavy equipment rental Dubai, construction equipment rental UAE, machinery rental Dubai, equipment hire UAE, lifting equipment rental',
   },
   '/equipment/crane': {
     title: 'Cranes Rental Services Dubai | Mobile Cranes Hire UAE',
     description: 'Top Cranes provides mobile cranes rental, tower cranes, crawler cranes and rough terrain cranes hire for construction and heavy lifting projects across Dubai and the UAE.',
     keywords: 'cranes rental Dubai, mobile cranes rental UAE, tower cranes hire Dubai, crawler cranes rental UAE, rough terrain cranes rental, heavy lifting services Dubai',
+  },
+  '/equipment/mobile-cranes': {
+    title: 'Mobile Crane Rental Dubai | 50–550 Ton Crane Hire UAE',
+    description: 'Rent all-terrain and truck-mounted mobile cranes from 50 to 550 tonnes in Dubai and across the UAE. Experienced operators, lift planning and UAE-wide mobilisation.',
+    keywords: 'mobile crane rental Dubai, mobile crane hire UAE, all terrain crane rental Dubai, truck mounted crane rental UAE, 50 ton crane hire Dubai, 500 ton crane rental UAE, heavy lifting services Dubai',
+  },
+  '/equipment/rough-terrain-cranes': {
+    title: 'Rough Terrain Crane Rental Dubai | 50–110 Ton Hire UAE',
+    description: 'Rent 50 to 110 tonne rough terrain cranes in Dubai and across the UAE for construction, infrastructure, industrial, oil & gas and utility projects. Certified operators and UAE-wide mobilisation.',
+    keywords: 'rough terrain crane rental Dubai, rough terrain crane hire UAE, 50 ton rough terrain crane Dubai, 110 ton rough terrain crane UAE, off road crane rental Dubai, pick and carry crane hire UAE',
   },
   '/equipment/fork-lift': {
     title: 'Forklift Rental Services Dubai | Forklift Hire UAE',
@@ -35,14 +45,24 @@ const pages = {
     keywords: 'excavator rental Dubai, excavator hire UAE, mini excavator rental, crawler excavator rental Dubai, long reach excavator hire, earthmoving equipment UAE',
   },
   '/equipment/jcb-3cx': {
-    title: 'JCB 3CX Rental Services Dubai | Backhoe Loader Hire UAE',
-    description: 'Top Cranes offers JCB 3CX backhoe loader rental in Dubai for excavation, trenching, material loading, site preparation, roadwork and infrastructure projects.',
-    keywords: 'JCB 3CX rental Dubai, backhoe loader rental UAE, JCB hire Dubai, JCB 3CX with operator, excavation equipment rental, site preparation equipment UAE',
+    title: 'Backhoe Loaders JCB 3CX Rental Dubai | JCB Hire UAE',
+    description: 'Top Cranes offers Backhoe Loaders JCB 3CX rental in Dubai for excavation, trenching, material loading, site preparation, roadwork and infrastructure projects.',
+    keywords: 'Backhoe Loaders JCB 3CX rental Dubai, backhoe loader rental UAE, JCB hire Dubai, Backhoe Loaders JCB 3CX with operator, excavation equipment rental, site preparation equipment UAE',
   },
   '/equipment/bobcat': {
     title: 'Bobcat Rental Services Dubai | Skid Steer Loader Hire UAE',
     description: 'Reliable Bobcat rental in Dubai for construction, landscaping, groundworks, demolition, cleanup and material handling projects across the UAE.',
     keywords: 'Bobcat rental Dubai, Bobcat hire UAE, skid steer loader rental, compact loader hire Dubai, landscaping equipment rental UAE, Bobcat with operator',
+  },
+  '/equipment/skid-steer': {
+    title: 'Skid Steer Loader Rental Dubai | Skid Steer Hire UAE',
+    description: 'Rent compact skid steer loaders in Dubai and across the UAE for construction, landscaping, material handling and site cleanup. Flexible rental periods with operator support available.',
+    keywords: 'skid steer loader rental Dubai, skid steer hire UAE, compact loader rental Dubai, skid steer with operator, skid steer attachments rental, compact equipment hire UAE',
+  },
+  '/equipment/low-bed-trailers': {
+    title: 'Low Bed Trailer Rental Dubai | Heavy Equipment Transport UAE',
+    description: 'Rent low bed trailers in Dubai for moving cranes, excavators, loaders and oversized machinery. Experienced drivers, route planning and UAE-wide heavy equipment transport.',
+    keywords: 'low bed trailer rental Dubai, lowbed trailer hire UAE, heavy equipment transport Dubai, crane transport UAE, excavator transport Dubai, low bed trailer with driver, heavy haulage UAE',
   },
   '/equipment/shovel': {
     title: 'Wheel Loader Rental Dubai | Shovel Loader Hire UAE',

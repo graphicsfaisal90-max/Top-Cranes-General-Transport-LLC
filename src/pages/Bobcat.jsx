@@ -26,7 +26,7 @@ const steps = [
 
 const related = [
   { name: 'Cranes', image: '/Crane%20Equipment.webp', text: 'Reliable cranes rentals for construction and heavy lifting tasks.', link: '/equipment/crane' },
-  { name: 'JCB 3CX', image: '/JCB%203CX%20Equipment.webp', text: 'Versatile backhoe loaders for excavation, loading, and roadwork.', link: '/equipment/jcb-3cx' },
+  { name: 'Backhoe Loaders JCB 3CX', image: '/JCB%203CX%20Equipment.webp', text: 'Versatile backhoe loaders for excavation, loading, and roadwork.', link: '/equipment/jcb-3cx' },
   { name: 'Excavators', image: '/excavator_%20equpment.webp', text: 'Powerful excavators for earthmoving, demolition, and infrastructure.', link: '/equipment/excavators' },
   { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.webp', text: 'Flexible forklift solutions for warehouses and material handling.', link: '/equipment/fork-lift' },
 ]

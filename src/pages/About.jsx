@@ -1,15 +1,7 @@
 ﻿import { Link } from 'react-router-dom'
 import './Pages.css'
 import './about.css'
-
-const expertise = [
-  'Mobile Cranes Rental in Dubai and All Over the UAE',
-  'Supply of specialized forklifts with different range & container mass',
-  'Route surveying & site preparation',
-  'Supply of low beds, low deck, extra long trailers, cranes, boom loaders and pick ups',
-  'Heavy lifts consultant',
-  'Maintenance & repairing services of all lifting/construction equipments & cranes',
-]
+import Expertise from '../components/Expertise'
 
 const equipmentList = [
   { sr: 1, desc: 'Forklifts: Normal & Container Mass 3, 5, 7, 10, 15 & 25 Ton' },
@@ -63,23 +55,7 @@ export default function About() {
       </section>
 
       {/* Expertise */}
-      <section className="about-expertise">
-        <div className="container">
-          <div className="about-expertise-header">
-            <span className="about-section-badge">Our Expertise</span>
-            <h2>What We Offer</h2>
-            <p>Comprehensive transport and heavy equipment solutions for every project</p>
-          </div>
-          <div className="about-expertise-grid">
-            {expertise.map((item, i) => (
-              <div className="about-expertise-card" key={i}>
-                <div className="about-expertise-num">{String(i + 1).padStart(2, '0')}</div>
-                <p>{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Expertise />
 
       {/* Equipment Table */}
       <section className="about-equipment">

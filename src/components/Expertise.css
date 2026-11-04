@@ -1,0 +1,27 @@
+/* ===== EXPERTISE SECTION (shared by Home + Our Company) ===== */
+.expertise { padding: 95px 0; background: #111817; color: #fff; }
+
+.expertise-header { max-width: 780px; margin: 0 auto 55px; text-align: center; }
+.expertise-badge { display: inline-block; font-size: .58rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--primary); border-left: 3px solid var(--primary); padding: 4px 14px; background: rgba(242,104,54,.12); margin-bottom: 18px; }
+.expertise-header h2 { font-size: clamp(1.9rem, 3.6vw, 2.9rem); line-height: 1.15; letter-spacing: -1.5px; margin-bottom: 14px; }
+.expertise-header p { font-size: .88rem; color: rgba(255,255,255,.6); line-height: 1.8; }
+
+.expertise-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.expertise-card { display: flex; flex-direction: column; padding: 32px 28px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.09); transition: border-color .3s, transform .3s, background .3s; }
+.expertise-card:hover { border-color: rgba(242,104,54,.45); background: rgba(255,255,255,.07); transform: translateY(-4px); }
+.expertise-num { font-size: .68rem; font-weight: 700; letter-spacing: 2px; color: var(--primary); margin-bottom: 16px; }
+.expertise-card h3 { font-size: 1.1rem; font-weight: 700; line-height: 1.3; margin-bottom: 10px; }
+.expertise-card p { font-size: .82rem; color: rgba(255,255,255,.58); line-height: 1.75; }
+
+.expertise-actions { display: flex; justify-content: center; margin-top: 44px; }
+.expertise-cta { display: inline-flex; align-items: center; justify-content: center; padding: 14px 36px; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; background: var(--primary); color: #fff; transition: background .25s, transform .25s; }
+.expertise-cta:hover { background: #d85a2e; transform: translateY(-2px); }
+
+@media (max-width: 900px) {
+  .expertise { padding: 70px 0; }
+  .expertise-header { margin-bottom: 38px; }
+  .expertise-grid { grid-template-columns: 1fr; gap: 16px; }
+  .expertise-card { padding: 26px 24px; }
+  .expertise-actions { margin-top: 34px; }
+  .expertise-cta { width: min(100%, 320px); }
+}

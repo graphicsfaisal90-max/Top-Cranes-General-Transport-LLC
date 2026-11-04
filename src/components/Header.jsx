@@ -38,12 +38,16 @@ export default function Header() {
             </div>
             <div className="dropdown-content">
               <Link to="/equipment/crane" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Cranes Rental</Link>
+              <Link to="/equipment/mobile-cranes" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Mobile Crane Rental</Link>
+              <Link to="/equipment/rough-terrain-cranes" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Rough Terrain Cranes</Link>
               <Link to="/equipment/telehandler" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Telehandler & Boom Loader</Link>
               <Link to="/equipment/fork-lift" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Forklift Rental</Link>
               <Link to="/equipment/excavators" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Excavator Rental</Link>
-              <Link to="/equipment/jcb-3cx" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>JCB 3CX</Link>
+              <Link to="/equipment/jcb-3cx" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Backhoe Loaders JCB 3CX</Link>
               <Link to="/equipment/shovel" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Wheel Loader</Link>
               <Link to="/equipment/bobcat" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Bobcat Rental</Link>
+              <Link to="/equipment/skid-steer" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Skid Steer Loader Rental</Link>
+              <Link to="/equipment/low-bed-trailers" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Low Bed Trailer Rental</Link>
             </div>
           </div>
           <NavLink to="/faq" onClick={() => setMenuOpen(false)}>Project FAQ</NavLink>

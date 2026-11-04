@@ -163,7 +163,7 @@ export default function Contact() {
                       <option value="telehandler">Telehandler &amp; Boom Loader</option>
                       <option value="forklift">Forklift Rental</option>
                       <option value="excavator">Excavator Rental</option>
-                      <option value="jcb-3cx">JCB 3CX</option>
+                      <option value="jcb-3cx">Backhoe Loaders JCB 3CX</option>
                       <option value="wheel-loader">Wheel Loader</option>
                       <option value="bobcat">Bobcat Rental</option>
                     </select>
