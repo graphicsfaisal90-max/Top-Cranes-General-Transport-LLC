@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import Equipment from './pages/Equipment'
@@ -30,7 +30,8 @@ export default function App() {
         <Route path="equipment/bobcat" element={<Bobcat />} />
         <Route path="equipment/low-bed-trailers" element={<LowBedTrailers />} />
         <Route path="equipment/crane" element={<Crane />} />
-        <Route path="equipment/mobile-cranes" element={<MobileCraneRental />} />
+        <Route path="equipment/mobile-cranes-rentals-in-dubai" element={<MobileCraneRental />} />
+        <Route path="equipment/mobile-cranes" element={<Navigate to="/equipment/mobile-cranes-rentals-in-dubai" replace />} />
         <Route path="equipment/hiab-crane" element={<HiabCrane />} />
         <Route path="equipment/rough-terrain-cranes" element={<RoughTerrainCranes />} />
         <Route path="equipment/shovel" element={<Shovel />} />

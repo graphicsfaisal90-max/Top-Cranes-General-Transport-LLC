@@ -38,7 +38,7 @@ export default function Crane() {
     <div className="crane-page">
       {/* Hero */}
       <section className="crane-hero">
-        <div className="crane-hero-bg" />
+        <div className="crane-hero-bg" role="img" aria-label="Mobile crane lifting equipment at a Dubai construction site" />
         <div className="crane-hero-overlay" />
         <div className="container crane-hero-content">
           <span className="crane-hero-badge">Heavy Lifting Solutions</span>
@@ -56,7 +56,7 @@ export default function Crane() {
         <div className="container">
           <div className="crane-about-grid">
             <div className="crane-about-img">
-              <img src="/Cranes%20U.webp" alt="Cranes operations in Dubai" />
+              <img src="/Cranes%20U.webp" alt="Mobile crane lifting equipment at a Dubai construction site" />
               <div className="crane-about-badge-card">
                 <span className="crane-about-badge-num">15+</span>
                 <span className="crane-about-badge-text">Years Experience</span>

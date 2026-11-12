@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "/equipment/mobile-cranes", "destination": "/equipment/mobile-cranes-rentals-in-dubai", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]

@@ -9,7 +9,7 @@ export default function Header() {
     <header className="header">
       <div className="container header-inner">
         <Link to="/" className="logo">
-          <img src="/Top%20Cranes%20logo.svg" alt="Top Cranes" className="logo-img" />
+          <img src="/Top%20Cranes%20logo.svg" alt="Top Cranes General Transport logo" className="logo-img" />
         </Link>
 
         <button
@@ -37,7 +37,7 @@ export default function Header() {
               </button>
             </div>
             <div className="dropdown-content">
-              <Link to="/equipment/mobile-cranes" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Mobile Crane Rental</Link>
+              <Link to="/equipment/mobile-cranes-rentals-in-dubai" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Mobile Crane Rental</Link>
               <Link to="/equipment/rough-terrain-cranes" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Rough Terrain Cranes</Link>
               <Link to="/equipment/hiab-crane" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>HIAB Crane Rental In Dubai</Link>
               <Link to="/equipment/fork-lift" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Forklift Rental</Link>

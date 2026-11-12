@@ -7,6 +7,8 @@ export default function Shovel() {
       <section className="forklift-hero">
         <div
           className="forklift-hero-bg"
+          role="img"
+          aria-label="Wheel loader moving material on a UAE construction site"
           style={{ backgroundImage: 'url(/shovel-hero.webp)' }}
         />
         <div className="forklift-hero-overlay" style={{ background: 'rgba(0,0,0,0.6)' }} />
@@ -29,7 +31,7 @@ export default function Shovel() {
           <div className="forklift-services-grid">
             <div className="forklift-services-image">
               <div className="forklift-services-image-card">
-                <img src="/shovel-about.webp" alt="Wheel loader in operation" />
+                <img src="/shovel-about.webp" alt="Wheel loader moving material on a UAE construction site" />
                 <div className="forklift-services-image-glow" />
                 <div className="forklift-services-image-badge">
                   <strong>15+</strong>

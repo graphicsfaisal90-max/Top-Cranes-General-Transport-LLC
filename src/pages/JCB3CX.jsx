@@ -35,7 +35,7 @@ export default function JCB3CX() {
   return (
     <div className="jcb-page">
       <section className="jcb-hero">
-        <div className="jcb-hero-bg" />
+        <div className="jcb-hero-bg" role="img" aria-label="JCB 3CX backhoe loader working on a UAE construction site" />
         <div className="jcb-hero-overlay" />
         <div className="container jcb-hero-content">
           <span className="jcb-badge">Versatile Earthmoving Solutions</span>
@@ -47,7 +47,7 @@ export default function JCB3CX() {
 
       <section className="jcb-intro">
         <div className="container jcb-intro-grid">
-          <div className="jcb-intro-image"><img src="/jcb-about.webp" alt="Backhoe Loaders JCB 3CX in operation" /><div className="jcb-experience"><strong>15+</strong><span>Years Experience</span></div></div>
+          <div className="jcb-intro-image"><img src="/jcb-about.webp" alt="JCB 3CX backhoe loader working on a UAE construction site" /><div className="jcb-experience"><strong>15+</strong><span>Years Experience</span></div></div>
           <div className="jcb-intro-content"><span className="jcb-badge">Your Trusted Backhoe Loader Partner</span><h2>Power, Versatility, And Reliability On Every Job</h2><p>Top Cranes General Transport LLC provides Backhoe Loaders JCB 3CX rental services for construction sites, infrastructure projects, utilities, and earthmoving operations throughout Dubai and the UAE.</p><p>The Backhoe Loaders JCB 3CX range is highly versatile, combining excavation and loading capabilities so your team can complete more tasks with less equipment movement.</p><Link to="/contact" className="jcb-btn jcb-btn-primary">Get a Free Quote</Link></div>
         </div>
       </section>
@@ -60,7 +60,7 @@ export default function JCB3CX() {
 
       <section className="jcb-steps"><div className="container"><div className="jcb-section-heading"><span className="jcb-badge">How To Rent</span><h2>How To Rent Backhoe Loaders JCB 3CX In Dubai</h2><p>Our rental process is simple, transparent, and designed to get your machine to site without unnecessary delays.</p></div><div className="jcb-step-grid">{steps.map((step) => <div className="jcb-step" key={step.num}><strong>{step.num}</strong><h3>{step.title}</h3><p>{step.text}</p></div>)}</div></div></section>
 
-      <section className="jcb-trusted"><div className="container jcb-trusted-grid"><div><span className="jcb-badge">Trusted By Professionals</span><h2>A Dependable Partner For UAE Projects</h2><p>From small site preparation jobs to large infrastructure work, Top Cranes supports contractors with reliable equipment, experienced assistance, and responsive service.</p><p>Every Backhoe Loaders JCB 3CX unit is prepared for safe and efficient operation before it reaches your project site.</p><Link to="/contact" className="jcb-btn jcb-btn-primary">Talk To Our Team</Link></div><img src="/JCB 3CX Equipment.webp" alt="Backhoe Loaders JCB 3CX equipment" /></div></section>
+      <section className="jcb-trusted"><div className="container jcb-trusted-grid"><div><span className="jcb-badge">Trusted By Professionals</span><h2>A Dependable Partner For UAE Projects</h2><p>From small site preparation jobs to large infrastructure work, Top Cranes supports contractors with reliable equipment, experienced assistance, and responsive service.</p><p>Every Backhoe Loaders JCB 3CX unit is prepared for safe and efficient operation before it reaches your project site.</p><Link to="/contact" className="jcb-btn jcb-btn-primary">Talk To Our Team</Link></div><img src="/JCB 3CX Equipment.webp" alt="JCB 3CX backhoe loader parked on a construction site" /></div></section>
 
       <section className="jcb-quote"><div className="container jcb-quote-grid"><div><span className="jcb-badge">We Are Here To Help</span><h2>Get A Free Backhoe Loaders JCB 3CX Rental Quote</h2><p>Tell us about your project, location, and rental period. We will help you choose the right solution.</p></div><Link to="/contact" className="jcb-btn jcb-btn-dark">Submit Your Enquiry</Link></div></section>
 

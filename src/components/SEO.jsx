@@ -19,10 +19,10 @@ const pages = {
     description: 'Top Cranes provides mobile cranes rental, tower cranes, crawler cranes and rough terrain cranes hire for construction and heavy lifting projects across Dubai and the UAE.',
     keywords: 'cranes rental Dubai, mobile cranes rental UAE, tower cranes hire Dubai, crawler cranes rental UAE, rough terrain cranes rental, heavy lifting services Dubai',
   },
-  '/equipment/mobile-cranes': {
-    title: 'Mobile Crane Rental Dubai | 50–550 Ton Crane Hire UAE',
-    description: 'Rent all-terrain and truck-mounted mobile cranes from 50 to 550 tonnes in Dubai and across the UAE. Experienced operators, lift planning and UAE-wide mobilisation.',
-    keywords: 'mobile crane rental Dubai, mobile crane hire UAE, all terrain crane rental Dubai, truck mounted crane rental UAE, 50 ton crane hire Dubai, 500 ton crane rental UAE, heavy lifting services Dubai',
+  '/equipment/mobile-cranes-rentals-in-dubai': {
+    title: 'Mobile Cranes Rentals in Dubai | 50–550 Ton Crane Hire UAE',
+    description: 'Mobile cranes rentals in Dubai from 50 to 550 tonnes. All-terrain and truck-mounted crane hire across the UAE with experienced operators, lift planning and mobilisation.',
+    keywords: 'mobile cranes rentals in Dubai, mobile crane rental Dubai, mobile crane hire UAE, all terrain crane rental Dubai, truck mounted crane rental UAE, 50 ton crane hire Dubai, 500 ton crane rental UAE, heavy lifting services Dubai',
   },
   '/equipment/hiab-crane': {
     title: '1 to 12 Ton HIAB Crane Rental Dubai | Top Cranes',

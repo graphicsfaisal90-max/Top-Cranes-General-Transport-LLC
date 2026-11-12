@@ -2,12 +2,12 @@ import { useLocation } from 'react-router-dom'
 import './BrandShowcase.css'
 
 const brands = [
-  '/tadano-logo-2048x426.webp',
-  '/Liebherrr.webp?v=2',
-  '/Sanyyyy.svg',
-  '/xcmg-logo.webp',
-  '/JCB-Logo.webp',
-  '/Grove-Logo.webp',
+  { name: 'Tadano', src: '/tadano-logo-2048x426.webp' },
+  { name: 'Liebherr', src: '/Liebherrr.webp?v=2' },
+  { name: 'Sany', src: '/Sanyyyy.svg' },
+  { name: 'XCMG', src: '/xcmg-logo.webp' },
+  { name: 'JCB', src: '/JCB-Logo.webp' },
+  { name: 'Grove', src: '/Grove-Logo.webp' },
 ]
 
 export default function BrandShowcase() {
@@ -23,9 +23,9 @@ export default function BrandShowcase() {
           <h2 id="brand-showcase-title">Top Equipment Brands We Have</h2>
         </div>
         <div className="brand-showcase-track">
-          {brands.map((brand, index) => (
-            <div className="brand-showcase-logo" key={brand}>
-              <img src={brand} alt={`Equipment brand ${index + 1}`} />
+          {brands.map((brand) => (
+            <div className="brand-showcase-logo" key={brand.src}>
+              <img src={brand.src} alt={`${brand.name} logo`} />
             </div>
           ))}
         </div>

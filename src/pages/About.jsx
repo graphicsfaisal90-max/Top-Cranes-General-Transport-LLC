@@ -29,7 +29,7 @@ export default function About() {
     <div className="about-page">
       {/* Hero */}
       <section className="about-hero">
-        <div className="about-hero-bg" />
+        <div className="about-hero-bg" role="img" aria-label="Mobile crane lifting equipment at a Dubai construction site" />
         <div className="about-hero-overlay" />
         <div className="container about-hero-content">
           <span className="about-hero-badge">About Us</span>

@@ -35,7 +35,7 @@ export default function Excavators() {
   return (
     <div className="exc-page">
       <section className="exc-hero">
-        <div className="exc-hero-bg" />
+        <div className="exc-hero-bg" role="img" aria-label="Excavator working on a UAE construction site" />
         <div className="exc-hero-overlay" />
         <div className="container exc-hero-content">
           <span className="exc-badge">Earthmoving Solutions</span>

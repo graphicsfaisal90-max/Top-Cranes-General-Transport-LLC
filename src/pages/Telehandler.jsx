@@ -7,7 +7,9 @@ export default function Telehandler() {
       <section className="forklift-hero">
         <div
           className="forklift-hero-bg"
-           style={{ backgroundImage: 'url(/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp)' }}
+          role="img"
+          aria-label="Telehandler lifting materials on a UAE construction site"
+          style={{ backgroundImage: 'url(/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp)' }}
         />
         <div className="forklift-hero-overlay" style={{ background: 'rgba(0,0,0,0.6)' }} />
         <div className="container forklift-hero-content">
@@ -29,7 +31,7 @@ export default function Telehandler() {
           <div className="forklift-services-grid">
             <div className="forklift-services-image">
               <div className="forklift-services-image-card">
-                 <img src="/telehandler-about.webp" alt="Telehandler in operation" />
+                 <img src="/telehandler-about.webp" alt="Telehandler lifting materials on a UAE construction site" />
                 <div className="forklift-services-image-glow" />
                 <div className="forklift-services-image-badge">
                   <strong>15+</strong>

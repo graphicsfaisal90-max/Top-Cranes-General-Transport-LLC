@@ -131,8 +131,7 @@ export default function RoughTerrainCranes() {
         <img
           className="rtc-hero-bg"
           src="/RoughTerrainCranes/rough-terrain-fleet.webp"
-          alt=""
-          aria-hidden="true"
+          alt="Rough terrain crane operating on a construction site in the UAE"
           fetchPriority="high"
         />
         <div className="rtc-hero-overlay" aria-hidden="true" />

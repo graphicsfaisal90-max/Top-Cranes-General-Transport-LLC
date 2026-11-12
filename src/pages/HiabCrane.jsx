@@ -127,8 +127,7 @@ export default function HiabCrane() {
         <img
           className="hiab-hero-bg"
           src="/HiabCrane/hiab-crane-city.webp"
-          alt=""
-          aria-hidden="true"
+          alt="HIAB crane truck lifting materials at a construction site in Dubai"
           fetchPriority="high"
         />
         <div className="hiab-hero-overlay" aria-hidden="true" />

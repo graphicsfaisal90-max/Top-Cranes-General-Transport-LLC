@@ -106,8 +106,8 @@ export default function MobileCraneRental() {
         <div className="mcr-hero-pattern" aria-hidden="true" />
         <div className="container mcr-hero-grid">
           <div className="mcr-hero-copy">
-            <span className="mcr-badge">Mobile Crane Rental · UAE</span>
-            <h1>Mobile Crane<br /><em>Rental</em></h1>
+            <span className="mcr-badge">Mobile Cranes Rentals · Dubai, UAE</span>
+            <h1>Mobile Cranes Rentals<br /><em>in Dubai</em></h1>
             <p className="mcr-hero-lead">
               All-terrain and truck-mounted cranes from 50 to 550 tonnes. The lifting capacity,
               reach and reliability your project needs, anywhere in the UAE.

@@ -62,7 +62,7 @@ export default function ForkLift() {
     <div className="fl-page">
       {/* Hero */}
       <section className="fl-hero">
-        <div className="fl-hero-bg" />
+        <div className="fl-hero-bg" role="img" aria-label="Forklift moving materials at a Dubai construction site" />
         <div className="fl-hero-overlay" />
         <div className="container fl-hero-content">
           <span className="fl-hero-badge">Material Handling Solutions</span>
@@ -80,7 +80,7 @@ export default function ForkLift() {
         <div className="container">
           <div className="fl-about-grid">
             <div className="fl-about-img">
-              <img src="/Forklift About.webp" alt="Forklift operations in Dubai" />
+              <img src="/Forklift About.webp" alt="Forklift moving materials at a Dubai construction site" />
               <div className="fl-about-badge-card">
                 <span className="fl-about-badge-num">15+</span>
                 <span className="fl-about-badge-text">Years Experience</span>
