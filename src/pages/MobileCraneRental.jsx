@@ -4,21 +4,21 @@ import './Pages.css'
 import './mobilecrane.css'
 
 const cranes = [
-  { tonnage: '550 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/550-ton-all-terrain.webp' },
-  { tonnage: '500 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/500-ton-all-terrain.webp' },
-  { tonnage: '450 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/450-ton-all-terrain.webp' },
-  { tonnage: '400 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/400-ton-all-terrain.webp' },
-  { tonnage: '350 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/350-ton-all-terrain.webp' },
-  { tonnage: 'LTM 1300', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/ltm-1300-all-terrain.webp' },
-  { tonnage: '250 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/250-ton-all-terrain.webp' },
-  { tonnage: '220 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/220-ton-all-terrain.webp' },
-  { tonnage: '200 Ton', type: 'Truck Mounted Crane', category: 'truck-mounted', image: '/MobileCraneRental/200-ton-truck-mounted.webp' },
-  { tonnage: '160 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/160-ton-all-terrain.webp' },
-  { tonnage: '130 Ton', type: 'Truck Mounted Crane', category: 'truck-mounted', image: '/MobileCraneRental/130-ton-truck-mounted.webp' },
-  { tonnage: '110 Ton', type: 'Truck Mounted Crane', category: 'truck-mounted', image: '/MobileCraneRental/110-ton-truck-mounted.webp' },
-  { tonnage: '100 Ton', type: 'Truck Mounted Crane', category: 'truck-mounted', image: '/MobileCraneRental/100-ton-truck-mounted.webp' },
-  { tonnage: '80 Ton', type: 'Truck Mounted Crane', category: 'truck-mounted', image: '/MobileCraneRental/80-ton-truck-mounted.webp' },
-  { tonnage: '50 Ton', type: 'Truck Mounted Crane', category: 'truck-mounted', image: '/MobileCraneRental/50-ton-truck-mounted.webp' },
+  { tonnage: '550 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/mobile-crane-1.webp' },
+  { tonnage: '500 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/mobile-crane-2.webp' },
+  { tonnage: '450 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/mobile-crane-3.webp' },
+  { tonnage: '400 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/mobile-crane-4.webp' },
+  { tonnage: '350 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/mobile-crane-5.webp' },
+  { tonnage: 'LTM 1300', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/mobile-crane-3.webp' },
+  { tonnage: '250 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/mobile-crane-4.webp' },
+  { tonnage: '220 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/mobile-crane-5.webp' },
+  { tonnage: '200 Ton', type: 'Truck Mounted Crane', category: 'truck-mounted', image: '/MobileCraneRental/mobile-crane-6.webp' },
+  { tonnage: '160 Ton', type: 'All Terrain Crane', category: 'all-terrain', image: '/MobileCraneRental/mobile-crane-7.webp' },
+  { tonnage: '130 Ton', type: 'Truck Mounted Crane', category: 'truck-mounted', image: '/MobileCraneRental/mobile-crane-6.webp' },
+  { tonnage: '110 Ton', type: 'Truck Mounted Crane', category: 'truck-mounted', image: '/MobileCraneRental/mobile-crane-7.webp' },
+  { tonnage: '100 Ton', type: 'Truck Mounted Crane', category: 'truck-mounted', image: '/MobileCraneRental/mobile-crane-6.webp' },
+  { tonnage: '80 Ton', type: 'Truck Mounted Crane', category: 'truck-mounted', image: '/MobileCraneRental/mobile-crane-7.webp' },
+  { tonnage: '50 Ton', type: 'Truck Mounted Crane', category: 'truck-mounted', image: '/MobileCraneRental/mobile-crane-6.webp' },
 ]
 
 const filters = [
@@ -122,8 +122,8 @@ export default function MobileCraneRental() {
           <div className="mcr-hero-media">
             <div className="mcr-hero-frame">
               <img
-                src="/MobileCraneRental/50-ton-truck-mounted.webp"
-                alt="50 tonne truck mounted mobile crane ready for a lift"
+                src="/MobileCraneRental/mobile-crane-1.webp"
+                alt="All terrain mobile crane ready for a heavy lift"
               />
             </div>
             <div className="mcr-hero-plate">
@@ -182,8 +182,8 @@ export default function MobileCraneRental() {
 
           <div className="mcr-intro-media">
             <img
-              src="/MobileCraneRental/450-ton-all-terrain.webp"
-              alt="450 tonne all terrain mobile crane at a project site"
+              src="/MobileCraneRental/mobile-crane-2.webp"
+              alt="Liebherr all terrain mobile crane on the road"
             />
             <div className="mcr-experience">
               <strong>15+</strong>

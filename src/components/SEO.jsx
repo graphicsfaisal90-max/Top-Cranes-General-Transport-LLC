@@ -24,6 +24,11 @@ const pages = {
     description: 'Rent all-terrain and truck-mounted mobile cranes from 50 to 550 tonnes in Dubai and across the UAE. Experienced operators, lift planning and UAE-wide mobilisation.',
     keywords: 'mobile crane rental Dubai, mobile crane hire UAE, all terrain crane rental Dubai, truck mounted crane rental UAE, 50 ton crane hire Dubai, 500 ton crane rental UAE, heavy lifting services Dubai',
   },
+  '/equipment/hiab-crane': {
+    title: '1 to 12 Ton HIAB Crane Rental Dubai | Top Cranes',
+    description: 'Hire 1 to 12 ton HIAB cranes in Dubai. Reliable HIAB crane truck rental for construction, machinery lifting, loading and transport. Get a quote today.',
+    keywords: 'HIAB Crane Rental Dubai, HIAB Crane, HIAB Crane Truck, 1 to 12 Ton HIAB Crane, HIAB Crane Hire Dubai, Truck Mounted Crane Rental Dubai, HIAB Crane Rental UAE',
+  },
   '/equipment/rough-terrain-cranes': {
     title: 'Rough Terrain Crane Rental Dubai | 50–110 Ton Hire UAE',
     description: 'Rent 50 to 110 tonne rough terrain cranes in Dubai and across the UAE for construction, infrastructure, industrial, oil & gas and utility projects. Certified operators and UAE-wide mobilisation.',
@@ -53,11 +58,6 @@ const pages = {
     title: 'Bobcat Rental Services Dubai | Skid Steer Loader Hire UAE',
     description: 'Reliable Bobcat rental in Dubai for construction, landscaping, groundworks, demolition, cleanup and material handling projects across the UAE.',
     keywords: 'Bobcat rental Dubai, Bobcat hire UAE, skid steer loader rental, compact loader hire Dubai, landscaping equipment rental UAE, Bobcat with operator',
-  },
-  '/equipment/skid-steer': {
-    title: 'Skid Steer Loader Rental Dubai | Skid Steer Hire UAE',
-    description: 'Rent compact skid steer loaders in Dubai and across the UAE for construction, landscaping, material handling and site cleanup. Flexible rental periods with operator support available.',
-    keywords: 'skid steer loader rental Dubai, skid steer hire UAE, compact loader rental Dubai, skid steer with operator, skid steer attachments rental, compact equipment hire UAE',
   },
   '/equipment/low-bed-trailers': {
     title: 'Low Bed Trailer Rental Dubai | Heavy Equipment Transport UAE',

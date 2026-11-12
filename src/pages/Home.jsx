@@ -14,10 +14,11 @@ const brands = [
 ]
 
 const equipment = [
-  { name: 'Mobile Crane Rental', image: '/MobileCraneRental/50-ton-truck-mounted.webp', heroImage: '/MobileCraneRental/450-ton-all-terrain.webp', text: 'All-terrain and truck-mounted mobile cranes from 50 to 550 tonnes, available with experienced operators for construction, infrastructure and industrial lifts across the UAE.', link: '/equipment/mobile-cranes' },
-   { name: 'Rough Terrain Cranes', image: '/RoughTerrainCranes/60-ton-rough-terrain.webp', heroImage: '/RoughTerrainCranes/rough-terrain-fleet.webp', text: 'Four-wheel-drive rough terrain cranes from 50 to 110 tonnes for uneven ground, tight access and pick-and-carry lifting across the UAE.', link: '/equipment/rough-terrain-cranes' },
-   { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', heroImage: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', text: 'Top-tier telehandlers facilitating efficient heavy lifting solutions with reliable machinery. Versatility and top performance for efficient operations.', link: '/equipment/telehandler' },
+  { name: 'Mobile Crane Rental', image: '/MobileCraneRental/mobile-crane-6.webp', heroImage: '/MobileCraneRental/mobile-crane-1.webp', text: 'All-terrain and truck-mounted mobile cranes from 50 to 550 tonnes, available with experienced operators for construction, infrastructure and industrial lifts across the UAE.', link: '/equipment/mobile-cranes' },
+   { name: 'Rough Terrain Cranes', image: '/RoughTerrainCranes/New%20image.jpg', heroImage: '/RoughTerrainCranes/New%20image.jpg', text: 'Four-wheel-drive rough terrain cranes from 50 to 110 tonnes for uneven ground, tight access and pick-and-carry lifting across the UAE.', link: '/equipment/rough-terrain-cranes' },
+   { name: 'HIAB Crane Rental In Dubai', image: '/HiabCrane/hiab-crane-construction.webp', heroImage: '/HiabCrane/hiab-crane-city.webp', text: 'HIAB crane truck rental in Dubai for construction, machinery lifting, loading and unloading, and heavy material transport across the UAE.', link: '/equipment/hiab-crane' },
   { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.webp', heroImage: '/Forklift.webp', text: 'Flexible and reliable forklift rental options for any project. Cost-effective solutions ensuring you always have the right forklift for your needs.', link: '/equipment/fork-lift' },
+   { name: 'Telehandler / Boom Loader', image: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', heroImage: '/ChatGPT%20Image%20Sep%2020,%202026,%2001_52_53%20PM.webp', text: 'Top-tier telehandlers facilitating efficient heavy lifting solutions with reliable machinery. Versatility and top performance for efficient operations.', link: '/equipment/telehandler' },
   { name: 'Excavators', image: '/excavator_%20equpment.webp', heroImage: '/excavator-hero.webp', text: 'Dependable excavator rentals suitable for digging and earthmoving projects. Efficiency and durability for demanding construction environments.', link: '/equipment/excavators' },
   { name: 'Backhoe Loaders JCB 3CX', image: '/JCB%203CX%20Equipment.webp', heroImage: '/jcb-hero.webp', text: 'Versatile Backhoe Loaders JCB 3CX machines combining efficiency and durability. A top choice for excavation, loading, roadwork and utility operations.', link: '/equipment/jcb-3cx' },
   { name: 'Shovel', image: '/Shovel%20Loader%20Equipment.webp', heroImage: '/shovel-hero.webp', text: 'Robust shovel rentals perfect for mining, construction and landscaping projects. High-quality equipment offering reliability and performance.', link: '/equipment/shovel' },
@@ -113,9 +114,11 @@ export default function Home() {
               <div className="am-eq-track">
                 {equipment.map((item) => (
                   <Link to={item.link} className="am-eq-card" key={item.name}>
-                    <div className="am-eq-card-img">
-                      <img src={item.image} alt={item.name} />
-                    </div>
+                    {item.image && (
+                      <div className="am-eq-card-img">
+                        <img src={item.image} alt={item.name} />
+                      </div>
+                    )}
                     <div className="am-eq-card-body">
                       <h3>{item.name}</h3>
                       <p>{item.text}</p>
@@ -134,10 +137,12 @@ export default function Home() {
       <section className="am-rental">
         <div className="container">
           {equipment.map((item, i) => (
-            <div className={`am-rental-row ${i % 2 !== 0 ? 'am-rental-reverse' : ''}`} key={item.name + '-r'}>
-              <div className="am-rental-img">
-                <img src={item.heroImage} alt={item.name} />
-              </div>
+            <div className={`am-rental-row ${i % 2 !== 0 ? 'am-rental-reverse' : ''} ${!item.heroImage ? 'am-rental-solo' : ''}`} key={item.name + '-r'}>
+              {item.heroImage && (
+                <div className="am-rental-img">
+                  <img src={item.heroImage} alt={item.name} />
+                </div>
+              )}
               <div className="am-rental-content">
                 <h3>{item.name}</h3>
                 <p>{item.text}</p>

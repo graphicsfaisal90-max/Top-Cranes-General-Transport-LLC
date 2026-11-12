@@ -29,14 +29,16 @@ export default function Footer() {
 
         <div className="footer-links">
           <h4>Services</h4>
-          <Link to="/equipment/crane">Cranes Rental UAE</Link>
           <Link to="/equipment/mobile-cranes">Mobile Crane Rental</Link>
           <Link to="/equipment/rough-terrain-cranes">Rough Terrain Cranes</Link>
+          <Link to="/equipment/hiab-crane">HIAB Crane Rental In Dubai</Link>
           <Link to="/equipment/fork-lift">Forklift Rental</Link>
-          <Link to="/equipment/excavators">Excavator Rental</Link>
           <Link to="/equipment/telehandler">Telehandler / Boom Loader Rental</Link>
-          <Link to="/equipment/low-bed-trailers">Low Bed Trailer Rental</Link>
+          <Link to="/equipment/excavators">Excavator Rental</Link>
+          <Link to="/equipment/jcb-3cx">Backhoe Loaders JCB 3CX</Link>
+          <Link to="/equipment/shovel">Wheel Loader</Link>
           <Link to="/equipment/bobcat">Bobcat Rental</Link>
+          <Link to="/equipment/low-bed-trailers">Low Bed Trailer Rental</Link>
         </div>
 
         <div className="footer-links">

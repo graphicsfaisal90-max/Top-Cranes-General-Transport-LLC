@@ -376,6 +376,9 @@
 
 .mcr-intro-media {
   position: relative;
+  /* Photo removed — placeholder box keeps the layout until a new image is added */
+  min-height: 560px;
+  background: #1a2221;
 }
 
 .mcr-intro-media img {
@@ -955,7 +958,7 @@
 .mcr-cta-bg {
   position: absolute;
   inset: 0;
-  background: url('/MobileCraneRental/ltm-1300-all-terrain.webp') center 44% / cover no-repeat;
+  background: url('/MobileCraneRental/mobile-crane-3.webp') center 44% / cover no-repeat;
   filter: grayscale(.35) saturate(.85);
   opacity: .24;
   transform: scale(1.02);
@@ -1029,6 +1032,10 @@
 
   .mcr-intro-media img {
     height: 500px;
+  }
+
+  .mcr-intro-media {
+    min-height: 500px;
   }
 
   .mcr-faq-grid {
@@ -1108,6 +1115,10 @@
 
   .mcr-intro-media img {
     height: 440px;
+  }
+
+  .mcr-intro-media {
+    min-height: 440px;
   }
 
   .mcr-experience {
@@ -1220,6 +1231,10 @@
 
   .mcr-intro-media img {
     height: 340px;
+  }
+
+  .mcr-intro-media {
+    min-height: 340px;
   }
 
   .mcr-intro-copy h2 {
@@ -1384,6 +1399,10 @@
 
   .mcr-intro-media img {
     height: 270px;
+  }
+
+  .mcr-intro-media {
+    min-height: 270px;
   }
 
   .mcr-experience {

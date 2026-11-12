@@ -70,6 +70,7 @@
 /* --- Rental Rows --- */
 .am-rental { padding: 100px 0; background: #ebe9e3; }
 .am-rental-row { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; align-items: center; margin-bottom: 85px; }
+.am-rental-solo .am-rental-content { grid-column: 1 / -1; }
 .am-rental-row:last-child { margin-bottom: 0; }
 .am-rental-reverse { direction: rtl; }
 .am-rental-reverse > * { direction: ltr; }

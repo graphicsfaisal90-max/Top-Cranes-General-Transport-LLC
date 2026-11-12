@@ -159,13 +159,16 @@ export default function Contact() {
                     <label htmlFor="service">Service Interested In</label>
                     <select id="service" name="service">
                       <option value="">Select a service</option>
-                      <option value="crane">Cranes Rental</option>
-                      <option value="telehandler">Telehandler &amp; Boom Loader</option>
+                      <option value="mobile-cranes">Mobile Crane Rental</option>
+                      <option value="rough-terrain-cranes">Rough Terrain Cranes</option>
+                      <option value="hiab-crane">HIAB Crane Rental In Dubai</option>
                       <option value="forklift">Forklift Rental</option>
+                      <option value="telehandler">Telehandler &amp; Boom Loader</option>
                       <option value="excavator">Excavator Rental</option>
                       <option value="jcb-3cx">Backhoe Loaders JCB 3CX</option>
                       <option value="wheel-loader">Wheel Loader</option>
                       <option value="bobcat">Bobcat Rental</option>
+                      <option value="low-bed-trailers">Low Bed Trailer Rental</option>
                     </select>
                   </div>
                   <div className="form-group">
