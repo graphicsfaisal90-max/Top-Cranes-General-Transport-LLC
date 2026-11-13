@@ -30,9 +30,12 @@ export default function App() {
         <Route path="equipment/bobcat" element={<Bobcat />} />
         <Route path="equipment/low-bed-trailers" element={<LowBedTrailers />} />
         <Route path="equipment/crane" element={<Crane />} />
-        <Route path="equipment/mobile-cranes-rentals-in-dubai" element={<MobileCraneRental />} />
-        <Route path="equipment/mobile-cranes" element={<Navigate to="/equipment/mobile-cranes-rentals-in-dubai" replace />} />
+        <Route path="mobile-cranes-rental-in-dubai" element={<MobileCraneRental />} />
+        <Route path="equipment/mobile-cranes-rentals-in-dubai" element={<Navigate to="/mobile-cranes-rental-in-dubai" replace />} />
+        <Route path="equipment/mobile-cranes-rental-in-dubai" element={<Navigate to="/mobile-cranes-rental-in-dubai" replace />} />
+        <Route path="equipment/mobile-cranes" element={<Navigate to="/mobile-cranes-rental-in-dubai" replace />} />
         <Route path="equipment/hiab-crane" element={<HiabCrane />} />
+        <Route path="equipment/hiab-cranes" element={<Navigate to="/equipment/hiab-crane" replace />} />
         <Route path="equipment/rough-terrain-cranes" element={<RoughTerrainCranes />} />
         <Route path="equipment/shovel" element={<Shovel />} />
         <Route path="about" element={<About />} />

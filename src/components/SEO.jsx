@@ -19,10 +19,10 @@ const pages = {
     description: 'Top Cranes provides mobile cranes rental, tower cranes, crawler cranes and rough terrain cranes hire for construction and heavy lifting projects across Dubai and the UAE.',
     keywords: 'cranes rental Dubai, mobile cranes rental UAE, tower cranes hire Dubai, crawler cranes rental UAE, rough terrain cranes rental, heavy lifting services Dubai',
   },
-  '/equipment/mobile-cranes-rentals-in-dubai': {
-    title: 'Mobile Cranes Rentals in Dubai | 50–550 Ton Crane Hire UAE',
-    description: 'Mobile cranes rentals in Dubai from 50 to 550 tonnes. All-terrain and truck-mounted crane hire across the UAE with experienced operators, lift planning and mobilisation.',
-    keywords: 'mobile cranes rentals in Dubai, mobile crane rental Dubai, mobile crane hire UAE, all terrain crane rental Dubai, truck mounted crane rental UAE, 50 ton crane hire Dubai, 500 ton crane rental UAE, heavy lifting services Dubai',
+  '/mobile-cranes-rental-in-dubai': {
+    title: 'Mobile Crane Rental in Dubai | Top Cranes Transport',
+    description: 'Need mobile crane rental in Dubai? Top Cranes Transport offers reliable cranes for construction, industrial lifting and heavy equipment projects. Get a quote.',
+    keywords: 'mobile crane rental in Dubai, mobile crane rental Dubai, crane rental company in Dubai, mobile crane rental, crane rental service, crane truck rental, heavy crane rental, crane lift rental',
   },
   '/equipment/hiab-crane': {
     title: '1 to 12 Ton HIAB Crane Rental Dubai | Top Cranes',
@@ -141,17 +141,55 @@ export default function SEO() {
       schema.type = 'application/ld+json'
       document.head.appendChild(schema)
     }
-    schema.textContent = JSON.stringify({
-      '@context': 'https://schema.org',
+
+    const business = {
       '@type': 'LocalBusiness',
+      '@id': `${siteUrl}/#organization`,
       name: 'Top Cranes General Transport LLC',
       url: siteUrl,
       logo: `${siteUrl}/Top%20Cranes%20logo.svg`,
       description: page.description,
       telephone: ['+971506749200', '+971509191004'],
       email: 'sales@topcranestransport.com',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '3F-15, Al Rajhi Bldg, Hor Al Anz',
+        addressLocality: 'Dubai',
+        addressCountry: 'AE',
+      },
       areaServed: ['Dubai', 'Sharjah', 'Abu Dhabi', 'United Arab Emirates'],
       serviceType: ['Cranes rental', 'Heavy equipment rental', 'General transport'],
+    }
+
+    const graph = [business]
+
+    if (pathname === '/mobile-cranes-rental-in-dubai') {
+      graph.push(
+        {
+          '@type': 'Service',
+          '@id': `${canonicalUrl}#service`,
+          name: 'Mobile Crane Rental in Dubai',
+          serviceType: 'Mobile crane rental',
+          description: page.description,
+          url: canonicalUrl,
+          provider: { '@id': `${siteUrl}/#organization` },
+          areaServed: ['Dubai', 'Abu Dhabi', 'Sharjah', 'Ajman', 'Ras Al Khaimah', 'Fujairah', 'Umm Al Quwain'],
+        },
+        {
+          '@type': 'BreadcrumbList',
+          '@id': `${canonicalUrl}#breadcrumb`,
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+            { '@type': 'ListItem', position: 2, name: 'Equipment', item: `${siteUrl}/equipment` },
+            { '@type': 'ListItem', position: 3, name: 'Mobile Crane Rental in Dubai', item: canonicalUrl },
+          ],
+        },
+      )
+    }
+
+    schema.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': graph,
     })
   }, [pathname])
 

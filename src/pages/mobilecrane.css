@@ -744,26 +744,31 @@
 }
 
 .mcr-coverage {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 60px;
+  align-items: start;
   margin-top: 42px;
-  padding-top: 26px;
+  padding-top: 32px;
   border-top: 1px solid rgba(255, 255, 255, .14);
 }
 
-.mcr-coverage h4 {
-  flex-shrink: 0;
-  color: var(--primary);
-  font-size: .58rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.mcr-coverage h2 {
+  margin-top: 14px;
+  font-size: clamp(1.9rem, 3.2vw, 2.7rem);
+  line-height: 1.05;
+  letter-spacing: -1.8px;
 }
 
 .mcr-coverage p {
+  margin-bottom: 10px;
   color: rgba(255, 255, 255, .58);
   font-size: .82rem;
-  line-height: 1.7;
+  line-height: 1.75;
+}
+
+.mcr-coverage p:last-child {
+  margin-bottom: 0;
 }
 
 /* --- Process --- */
@@ -1157,11 +1162,12 @@
   }
 
   .mcr-coverage {
-    display: block;
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
-  .mcr-coverage p {
-    margin-top: 10px;
+  .mcr-coverage-body {
+    margin-top: 8px;
   }
 }
 
@@ -1518,5 +1524,294 @@
   .mcr-hero h1 {
     font-size: clamp(2.3rem, 11vw, 3.1rem);
     letter-spacing: -1.6px;
+  }
+}
+
+/* --- Intro content links --- */
+.mcr-text-link,
+.mcr-internal-links a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.mcr-text-link:hover,
+.mcr-internal-links a:hover {
+  color: var(--text);
+}
+
+.mcr-internal-links {
+  margin-top: 6px;
+  color: var(--text-light);
+  font-size: .8rem;
+  line-height: 1.8;
+}
+
+.mcr-intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.mcr-btn-outline-dark {
+  border-color: rgba(23, 32, 31, .28);
+  color: var(--text);
+}
+
+.mcr-btn-outline-dark:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* --- Professional services --- */
+.mcr-services {
+  padding: 96px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.mcr-services-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.mcr-services-copy h2 {
+  margin: 18px 0 20px;
+  font-size: clamp(2.2rem, 4vw, 3.35rem);
+  line-height: 1.04;
+  letter-spacing: -2.4px;
+}
+
+.mcr-services-copy p {
+  margin-bottom: 14px;
+  color: var(--text-light);
+  font-size: .9rem;
+  line-height: 1.85;
+}
+
+.mcr-services-list {
+  display: grid;
+  gap: 16px;
+  padding: 34px 36px;
+  border-left: 3px solid var(--primary);
+  background: var(--accent);
+  color: #fff;
+}
+
+.mcr-services-list li {
+  position: relative;
+  padding-left: 28px;
+  font-size: .84rem;
+  line-height: 1.55;
+}
+
+.mcr-services-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* --- Fleet type summaries --- */
+.mcr-fleet-types {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.mcr-fleet-type {
+  padding: 30px 32px 32px;
+  border-top: 2px solid var(--primary);
+  background: #f7f5f0;
+}
+
+.mcr-fleet-type-cap {
+  color: var(--primary);
+  font-size: .58rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.mcr-fleet-type h3 {
+  margin: 12px 0;
+  font-size: 1.4rem;
+  letter-spacing: -.6px;
+}
+
+.mcr-fleet-type p {
+  margin-bottom: 10px;
+  color: var(--text-light);
+  font-size: .82rem;
+  line-height: 1.8;
+}
+
+.mcr-fleet-type p:last-child {
+  margin-bottom: 0;
+}
+
+.mcr-fleet-type-models strong {
+  color: var(--text);
+}
+
+/* --- Why choose --- */
+.mcr-process-lead {
+  max-width: 580px;
+  margin-top: 18px;
+  color: var(--text-light);
+  font-size: .9rem;
+  line-height: 1.85;
+}
+
+.mcr-reasons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 34px;
+}
+
+.mcr-reason {
+  padding: 28px 0 30px;
+  border-top: 1px solid var(--border);
+}
+
+.mcr-reason h3 {
+  margin: 22px 0 10px;
+  font-size: 1.15rem;
+  letter-spacing: -.4px;
+}
+
+.mcr-reason p {
+  color: var(--text-light);
+  font-size: .84rem;
+  line-height: 1.8;
+}
+
+/* --- Rental cost --- */
+.mcr-cost {
+  padding: 88px 0;
+  border-top: 1px solid rgba(23, 32, 31, .1);
+  background: #f7f5f0;
+}
+
+.mcr-cost-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.mcr-cost h2 {
+  margin-top: 18px;
+  font-size: clamp(2.1rem, 3.8vw, 3.2rem);
+  line-height: 1;
+  letter-spacing: -2.4px;
+}
+
+.mcr-cost-copy p {
+  margin-bottom: 14px;
+  color: var(--text-light);
+  font-size: .88rem;
+  line-height: 1.85;
+}
+
+.mcr-cost-copy .mcr-btn {
+  margin-top: 10px;
+}
+
+/* --- Closing CTA email --- */
+.mcr-cta-email {
+  display: inline-block;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, .7);
+  font-size: .8rem;
+  letter-spacing: .3px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.mcr-cta-email:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 1100px) {
+  .mcr-services-grid,
+  .mcr-cost-grid {
+    gap: 45px;
+  }
+
+  .mcr-reasons {
+    gap: 0 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .mcr-services-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .mcr-services-copy {
+    max-width: 660px;
+  }
+
+  .mcr-reasons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mcr-cost-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mcr-services,
+  .mcr-cost {
+    padding: 72px 0;
+  }
+
+  .mcr-fleet-types {
+    grid-template-columns: 1fr;
+  }
+
+  .mcr-reasons {
+    grid-template-columns: 1fr;
+  }
+
+  .mcr-reason {
+    padding: 24px 0 26px;
+  }
+
+  .mcr-intro-actions .mcr-btn {
+    flex: 1 1 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mcr-intro-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .mcr-intro-actions .mcr-btn,
+  .mcr-cost-copy .mcr-btn {
+    width: 100%;
+  }
+
+  .mcr-services-list {
+    padding: 26px 24px;
+  }
+
+  .mcr-fleet-type {
+    padding: 24px 22px 26px;
   }
 }

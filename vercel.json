@@ -1,6 +1,9 @@
 {
   "redirects": [
-    { "source": "/equipment/mobile-cranes", "destination": "/equipment/mobile-cranes-rentals-in-dubai", "permanent": true }
+    { "source": "/equipment/mobile-cranes-rentals-in-dubai", "destination": "/mobile-cranes-rental-in-dubai", "permanent": true },
+    { "source": "/equipment/mobile-cranes-rental-in-dubai", "destination": "/mobile-cranes-rental-in-dubai", "permanent": true },
+    { "source": "/equipment/mobile-cranes", "destination": "/mobile-cranes-rental-in-dubai", "permanent": true },
+    { "source": "/equipment/hiab-cranes", "destination": "/equipment/hiab-crane", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }

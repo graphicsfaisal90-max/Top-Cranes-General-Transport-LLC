@@ -31,7 +31,7 @@ export default function Footer() {
 
         <div className="footer-links footer-services">
           <h4>Services</h4>
-          <Link to="/equipment/mobile-cranes-rentals-in-dubai">Mobile Crane Rental</Link>
+          <Link to="/mobile-cranes-rental-in-dubai">Mobile Crane Rental</Link>
           <Link to="/equipment/rough-terrain-cranes">Rough Terrain Cranes</Link>
           <Link to="/equipment/hiab-crane">HIAB Crane Rental In Dubai</Link>
           <Link to="/equipment/fork-lift">Forklift Rental</Link>

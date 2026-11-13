@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './Pages.css'
 
 const fleet = [
-  { id: 'mobile-cranes', name: 'Mobile Crane Rental', eyebrow: '50–550 t / all terrain / truck mounted', image: '/MobileCraneRental/mobile-crane-2.webp', path: '/equipment/mobile-cranes-rentals-in-dubai', text: 'All-terrain and truck-mounted cranes from 50 to 550 tonnes for construction, infrastructure and industrial lifts across the UAE.' },
+  { id: 'mobile-cranes', name: 'Mobile Crane Rental', eyebrow: '50–550 t / all terrain / truck mounted', image: '/MobileCraneRental/mobile-crane-2.webp', path: '/mobile-cranes-rental-in-dubai', text: 'All-terrain and truck-mounted cranes from 50 to 550 tonnes for construction, infrastructure and industrial lifts across the UAE.' },
   { id: 'rough-terrain-cranes', name: 'Rough Terrain Cranes', eyebrow: '50–110 t / off-road / pick & carry', image: '/RoughTerrainCranes/60-ton-rough-terrain.webp', path: '/equipment/rough-terrain-cranes', text: 'Four-wheel-drive rough terrain cranes from 50 to 110 tonnes for uneven ground, tight access and pick-and-carry work across the UAE.' },
   { id: 'hiab-crane', name: 'HIAB Crane Rental In Dubai', eyebrow: '1–12 t / truck mounted / loading & lifting', image: '/HiabCrane/hiab-crane-construction.webp', path: '/equipment/hiab-crane', text: 'HIAB crane truck rental in Dubai for construction, machinery lifting, loading and unloading, and heavy material transport across the UAE.' },
   { id: 'fork-lift', name: 'Forklift Rental', eyebrow: 'Load / unload / move', image: '/Forklift.webp', path: '/equipment/fork-lift', text: 'Reliable forklifts for warehouses, logistics yards, factories, cargo handling and construction sites.' },

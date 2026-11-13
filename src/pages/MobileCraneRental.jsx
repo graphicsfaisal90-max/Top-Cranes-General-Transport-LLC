@@ -27,64 +27,81 @@ const filters = [
   { id: 'truck-mounted', label: 'Truck Mounted' },
 ]
 
+const services = [
+  '50–550 tonne lifting capacity',
+  'All-terrain and truck-mounted mobile cranes',
+  'Experienced crane operators and rigging crews',
+  'Site surveys, lift planning and permit coordination',
+  'Daily, weekly, monthly and project-based crane rental',
+  '24/7 operational support',
+]
+
 const applications = [
   {
-    title: 'Construction & High-Rise',
-    text: 'Steel, precast panels, MEP modules and materials lifted safely on active construction sites.',
+    title: 'Construction and High-Rise Projects',
+    text: 'Lifting steel structures, precast concrete panels, construction materials and mechanical equipment for residential and commercial developments.',
   },
   {
-    title: 'Infrastructure & Utilities',
-    text: 'Bridges, roads, drainage, utilities and heavy precast installed with precision.',
+    title: 'Infrastructure and Utilities',
+    text: 'Supporting bridge construction, road development, drainage installations, utilities and heavy precast placement.',
   },
   {
-    title: 'Industrial & Plant',
-    text: 'Maintenance, shutdowns, equipment installation and heavy components moved in live facilities.',
+    title: 'Industrial and Plant Operations',
+    text: 'Handling machinery installation, industrial maintenance, plant shutdowns and heavy equipment positioning.',
   },
   {
-    title: 'Logistics & Project Cargo',
-    text: 'Loading, unloading and positioning of machinery and project cargo at yards and ports.',
+    title: 'Logistics and Project Cargo',
+    text: 'Loading, unloading and positioning industrial machinery, heavy components and project cargo at warehouses, yards and ports.',
   },
 ]
 
-const steps = [
+const reasons = [
   {
-    title: 'Share the lift',
-    text: 'Send us the load weight, lifting radius, height and site location.',
+    title: '15 crane models',
+    text: 'Mobile crane options from 50 to 550 tonnes.',
   },
   {
-    title: 'We plan the move',
-    text: 'We select the right crane, prepare the lift plan and coordinate access, permits and mobilisation.',
+    title: 'Experienced operators',
+    text: 'Skilled personnel supporting lifting operations.',
   },
   {
-    title: 'Lift with confidence',
-    text: 'An experienced operator and rigging crew execute the lift safely and efficiently.',
+    title: 'Flexible rental plans',
+    text: 'Daily, weekly, monthly and project-based hire.',
+  },
+  {
+    title: 'Lift planning support',
+    text: 'Site assessments, crane selection and permit coordination.',
+  },
+  {
+    title: 'UAE-wide coverage',
+    text: 'Equipment mobilisation across all seven Emirates.',
+  },
+  {
+    title: '24/7 assistance',
+    text: 'Operational support for planned and urgent lifting requirements.',
   },
 ]
 
 const faqs = [
   {
     q: 'What mobile crane capacities are available?',
-    a: 'Our mobile crane fleet ranges from 50 to 550 tonnes and includes all-terrain and truck-mounted cranes. Availability depends on the lift requirements and project dates, so share the details and we will confirm the right option.',
+    a: 'Our fleet includes all-terrain and truck-mounted mobile cranes ranging from 50 to 550 tonnes, subject to availability.',
   },
   {
-    q: 'Do your cranes come with an operator?',
-    a: 'Yes. Every mobile crane is supplied with an experienced operator. Rigging crews and lift supervisors can be arranged on request.',
+    q: 'Do mobile crane rentals include operators?',
+    a: 'Yes, our mobile cranes are offered with experienced operators. Rigging support can also be discussed according to project requirements.',
   },
   {
-    q: 'How do I choose the right crane for my lift?',
-    a: 'Tell us the load weight, lifting radius, height, site access and ground conditions. Our team will recommend the crane capacity and configuration that matches the job.',
+    q: 'How much does mobile crane rental cost per day in Dubai?',
+    a: 'Daily rental costs vary depending on crane capacity, lifting requirements, project duration and mobilisation. Contact our team for a quotation.',
   },
   {
-    q: 'Do you provide lift plans and permits?',
-    a: 'We support site surveys, lift planning and permit coordination for crane operations and oversized moves. Requirements vary by site and emirate, so early planning gives the smoothest result.',
+    q: 'Do you provide crane lift planning and permits?',
+    a: 'Yes, our team supports site surveys, lift planning and permit coordination based on project requirements.',
   },
   {
     q: 'Which areas do you cover?',
-    a: 'We provide mobile crane rental across the UAE, including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah and Umm Al Quwain.',
-  },
-  {
-    q: 'How early should I book a mobile crane?',
-    a: 'We recommend booking 24 to 48 hours in advance for standard lifts. Urgent requirements can often be accommodated subject to fleet availability — call us directly.',
+    a: 'We serve Dubai and all seven Emirates, subject to crane availability and project requirements.',
   },
 ]
 
@@ -106,24 +123,24 @@ export default function MobileCraneRental() {
         <div className="mcr-hero-pattern" aria-hidden="true" />
         <div className="container mcr-hero-grid">
           <div className="mcr-hero-copy">
-            <span className="mcr-badge">Mobile Cranes Rentals · Dubai, UAE</span>
-            <h1>Mobile Cranes Rentals<br /><em>in Dubai</em></h1>
+            <span className="mcr-badge">Mobile Crane Rental · Dubai, UAE</span>
+            <h1>Mobile Crane Rental<br /><em>in Dubai</em></h1>
             <p className="mcr-hero-lead">
-              All-terrain and truck-mounted cranes from 50 to 550 tonnes. The lifting capacity,
-              reach and reliability your project needs, anywhere in the UAE.
+              All-terrain and truck-mounted cranes from 50 to 550 tonnes, with experienced
+              operators and 24/7 support across Dubai and the UAE.
             </p>
             <div className="mcr-hero-actions">
               <Link to="/contact" className="mcr-btn mcr-btn-primary">Request a Quote <span>↗</span></Link>
               <a href="#fleet" className="mcr-btn mcr-btn-outline">Explore the Fleet</a>
             </div>
-            <p className="mcr-hero-note">Experienced operators · UAE-wide mobilisation · 24/7 support</p>
+            <p className="mcr-hero-note">Experienced operators · Lift planning · 24/7 support</p>
           </div>
 
           <div className="mcr-hero-media">
             <div className="mcr-hero-frame">
               <img
                 src="/MobileCraneRental/mobile-crane-1.webp"
-                alt="All terrain mobile crane ready for a heavy lift"
+                alt="Mobile crane rental in Dubai for construction projects"
               />
             </div>
             <div className="mcr-hero-plate">
@@ -159,31 +176,34 @@ export default function MobileCraneRental() {
       <section className="mcr-intro">
         <div className="container mcr-intro-grid">
           <div className="mcr-intro-copy">
-            <span className="mcr-eyebrow">The right crane for the lift</span>
-            <h2>One fleet. Every lifting requirement.</h2>
+            <span className="mcr-eyebrow">Mobile crane rental in Dubai</span>
+            <h2>Mobile Crane Rental in Dubai – 50 to 550 Ton Cranes</h2>
             <p>
-              From a 50-tonne truck-mounted crane for a tight urban lift to a 550-tonne all-terrain
-              crane for heavy infrastructure, Top Cranes General Transport LLC supplies mobile crane
-              rental across Dubai and the UAE.
+              <Link to="/" className="mcr-text-link">Top Cranes General Transport LLC</Link> provides
+              professional mobile crane rental in Dubai for construction, infrastructure, industrial
+              and heavy lifting projects. Our fleet includes 50 to 550-tonne all-terrain and
+              truck-mounted cranes, supported by experienced operators, lift planning and 24/7
+              operational assistance.
             </p>
             <p>
-              Every crane is matched to the load, radius and site, then supported by experienced
-              operators, lift planning and responsive mobilisation.
+              Whether you need short-term crane hire or long-term lifting support, we help you select
+              suitable equipment for your project.
             </p>
-            <ul className="mcr-checks">
-              <li>50 to 550 tonne lifting capacity</li>
-              <li>All-terrain and truck-mounted cranes</li>
-              <li>Experienced operators and rigging crews</li>
-              <li>Site surveys, lift plans and permit coordination</li>
-              <li>Daily, weekly, monthly and project-based hire</li>
-            </ul>
-            <Link to="/contact" className="mcr-btn mcr-btn-dark">Plan Your Lift <span>↗</span></Link>
+            <p className="mcr-internal-links">
+              Explore our <Link to="/">homepage</Link>,{' '}
+              <Link to="/equipment/crane">crane truck rental services</Link>, or{' '}
+              <Link to="/equipment">heavy equipment rental in Dubai</Link>.
+            </p>
+            <div className="mcr-intro-actions">
+              <Link to="/contact" className="mcr-btn mcr-btn-dark">Request a Quote <span>↗</span></Link>
+              <a href="#fleet" className="mcr-btn mcr-btn-outline-dark">Explore Our Crane Fleet</a>
+            </div>
           </div>
 
           <div className="mcr-intro-media">
             <img
               src="/MobileCraneRental/mobile-crane-2.webp"
-              alt="Liebherr all terrain mobile crane on the road"
+              alt="All terrain mobile crane available for rental in Dubai"
             />
             <div className="mcr-experience">
               <strong>15+</strong>
@@ -193,16 +213,38 @@ export default function MobileCraneRental() {
         </div>
       </section>
 
+      <section className="mcr-services">
+        <div className="container mcr-services-grid">
+          <div className="mcr-services-copy">
+            <span className="mcr-eyebrow">Professional crane hire</span>
+            <h2>Professional Mobile Crane Rental Services in Dubai</h2>
+            <p>
+              Looking for a reliable crane rental company in Dubai? Top Cranes supplies mobile
+              lifting equipment for projects requiring flexibility, lifting capacity and efficient
+              mobilisation.
+            </p>
+            <p>
+              Our mobile crane rental solutions are selected according to load weight, lifting
+              radius, site accessibility and project requirements.
+            </p>
+          </div>
+
+          <ul className="mcr-services-list">
+            {services.map((item) => <li key={item}>{item}</li>)}
+          </ul>
+        </div>
+      </section>
+
       <section className="mcr-fleet" id="fleet">
         <div className="container">
           <div className="mcr-fleet-head">
             <div>
-              <span className="mcr-eyebrow">Our mobile crane fleet</span>
-              <h2>Explore the full range.</h2>
+              <span className="mcr-eyebrow">Our mobile crane rental fleet</span>
+              <h2>Our Mobile Crane Rental Fleet</h2>
             </div>
             <p>
-              Filter by crane type, or tell us the lift and we will recommend the right capacity.
-              Every crane is available with an experienced operator.
+              Explore our range of mobile cranes for construction, industrial and infrastructure
+              lifting operations.
             </p>
           </div>
 
@@ -252,9 +294,39 @@ export default function MobileCraneRental() {
             ))}
           </div>
 
+          <div className="mcr-fleet-types">
+            <article className="mcr-fleet-type">
+              <span className="mcr-fleet-type-cap">160–550 tonnes + LTM 1300</span>
+              <h3>All-Terrain Crane Rental</h3>
+              <p>
+                Our all-terrain cranes range from 160 to 550 tonnes, with an additional LTM 1300
+                model. These cranes are suitable for demanding lifting operations, infrastructure
+                construction and heavy equipment installation.
+              </p>
+              <p className="mcr-fleet-type-models">
+                <strong>Available models:</strong> 160, 220, 250, 350, 400, 450, 500 and 550-tonne
+                cranes, plus LTM 1300.
+              </p>
+            </article>
+
+            <article className="mcr-fleet-type">
+              <span className="mcr-fleet-type-cap">50–200 tonnes</span>
+              <h3>Truck-Mounted Crane Rental</h3>
+              <p>
+                Our truck-mounted crane rental solutions offer mobility and efficient deployment
+                for construction sites, machinery handling and equipment installation.
+              </p>
+              <p className="mcr-fleet-type-models">
+                <strong>Available capacities:</strong> 50, 80, 100, 110, 130 and 200 tonnes.
+                Our team can recommend suitable equipment based on lifting requirements, working
+                radius and site conditions.
+              </p>
+            </article>
+          </div>
+
           <div className="mcr-fleet-note">
             <span>Availability depends on project dates, lift requirements and site conditions.</span>
-            <Link to="/contact">Talk to our crane team <i>↗</i></Link>
+            <Link to="/contact">Get Crane Rental Quote <i>↗</i></Link>
           </div>
         </div>
       </section>
@@ -264,11 +336,11 @@ export default function MobileCraneRental() {
           <div className="mcr-apps-head">
             <div>
               <span className="mcr-eyebrow light">Where we lift</span>
-              <h2>Built for every<br /><em>stage of the build.</em></h2>
+              <h2>Mobile Crane Applications<br /><em>and Heavy Lifting Solutions</em></h2>
             </div>
             <p>
-              From the first steel column to the final plant installation, our mobile cranes support
-              the work that keeps UAE projects moving.
+              Our crane rental services in Dubai support multiple industries and lifting
+              applications.
             </p>
           </div>
 
@@ -283,8 +355,21 @@ export default function MobileCraneRental() {
           </div>
 
           <div className="mcr-coverage">
-            <h4>United Arab Emirates</h4>
-            <p>Dubai · Abu Dhabi · Sharjah · Ajman · Ras Al Khaimah · Fujairah · Umm Al Quwain</p>
+            <div className="mcr-coverage-head">
+              <span className="mcr-eyebrow light">Coverage</span>
+              <h2>Mobile Crane Rental Across Dubai and the UAE</h2>
+            </div>
+            <div className="mcr-coverage-body">
+              <p>
+                Top Cranes provides mobile crane rental services throughout Dubai, including Jebel
+                Ali, Al Quoz, Dubai Industrial City, Dubai Investment Park, Dubai South and Dubai
+                Silicon Oasis.
+              </p>
+              <p>
+                We also support projects in Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah and
+                Umm Al Quwain.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -292,17 +377,47 @@ export default function MobileCraneRental() {
       <section className="mcr-process">
         <div className="container">
           <div className="mcr-process-head">
-            <span className="mcr-eyebrow">How it works</span>
-            <h2>A safer lift starts with a plan.</h2>
+            <span className="mcr-eyebrow">Why Top Cranes</span>
+            <h2>Why Choose Top Cranes General Transport LLC?</h2>
+            <p className="mcr-process-lead">
+              With over 15 years of lifting experience across the UAE, Top Cranes provides dependable
+              heavy crane rental solutions for projects of different sizes.
+            </p>
           </div>
-          <div className="mcr-steps">
-            {steps.map((step, index) => (
-              <article className="mcr-step" key={step.title}>
+          <div className="mcr-reasons">
+            {reasons.map((reason, index) => (
+              <article className="mcr-reason" key={reason.title}>
                 <span className="mcr-step-num">{String(index + 1).padStart(2, '0')}</span>
-                <h3>{step.title}</h3>
-                <p>{step.text}</p>
+                <h3>{reason.title}</h3>
+                <p>{reason.text}</p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mcr-cost">
+        <div className="container mcr-cost-grid">
+          <div className="mcr-cost-head">
+            <span className="mcr-eyebrow">Rental pricing</span>
+            <h2>Mobile Crane Rental Cost in Dubai</h2>
+          </div>
+          <div className="mcr-cost-copy">
+            <p>
+              The cost of mobile crane rental in Dubai depends on crane capacity, rental duration,
+              lifting radius, site conditions and transportation requirements.
+            </p>
+            <p>
+              We offer flexible rental arrangements for daily, weekly, monthly and project-based
+              lifting operations.
+            </p>
+            <p>
+              For accurate crane rental per day pricing, share your load weight, required lifting
+              height, project location and rental dates.
+            </p>
+            <Link to="/contact" className="mcr-btn mcr-btn-dark">
+              Request a Competitive Crane Rental Quote <span>↗</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -341,10 +456,10 @@ export default function MobileCraneRental() {
 
           <div className="mcr-faq-intro">
             <span className="mcr-eyebrow">Good to know</span>
-            <h2>Mobile crane questions, answered.</h2>
+            <h2>Frequently Asked Questions</h2>
             <p>
-              Not sure which crane fits the lift? Send us the load details and our team will guide
-              you through capacity, access and mobilisation.
+              Find answers about mobile crane capacities, operators, daily rental costs, lift
+              planning and coverage across Dubai and the UAE.
             </p>
             <div className="mcr-faq-card">
               <span>Talk to the crane team</span>
@@ -358,16 +473,20 @@ export default function MobileCraneRental() {
       <section className="mcr-cta">
         <div className="mcr-cta-bg" aria-hidden="true" />
         <div className="container mcr-cta-inner">
-          <span className="mcr-eyebrow light">Ready to lift</span>
-          <h2>Tell us about<br />your <em>lift.</em></h2>
+          <span className="mcr-eyebrow light">Get a quote</span>
+          <h2>Get a Quote for Mobile<br />Crane Rental <em>in Dubai</em></h2>
           <p>
-            Share the load details and our team will come back with the right crane, availability
-            and a clear quote.
+            Need reliable mobile crane rental in Dubai? Top Cranes General Transport LLC provides
+            suitable lifting equipment, experienced operators and flexible rental solutions for
+            your next project.
           </p>
           <div className="mcr-cta-actions">
-            <Link to="/contact" className="mcr-btn mcr-btn-primary">Request a Quote <span>↗</span></Link>
+            <Link to="/contact" className="mcr-btn mcr-btn-primary">Request a Quote Today <span>↗</span></Link>
             <a href="tel:+971506749200" className="mcr-btn mcr-btn-outline">Call +971 50 674 9200</a>
           </div>
+          <a href="mailto:sales@topcranestransport.com" className="mcr-cta-email">
+            sales@topcranestransport.com
+          </a>
           <small className="mcr-cta-note">Mobile crane rental across Dubai, Abu Dhabi, Sharjah and the wider UAE.</small>
         </div>
       </section>

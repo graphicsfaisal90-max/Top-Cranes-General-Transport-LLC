@@ -14,7 +14,7 @@ const brands = [
 ]
 
 const equipment = [
-  { name: 'Mobile Crane Rental', image: '/MobileCraneRental/mobile-crane-6.webp', heroImage: '/MobileCraneRental/mobile-crane-1.webp', text: 'All-terrain and truck-mounted mobile cranes from 50 to 550 tonnes, available with experienced operators for construction, infrastructure and industrial lifts across the UAE.', link: '/equipment/mobile-cranes-rentals-in-dubai' },
+  { name: 'Mobile Crane Rental', image: '/MobileCraneRental/mobile-crane-6.webp', heroImage: '/MobileCraneRental/mobile-crane-1.webp', text: 'All-terrain and truck-mounted mobile cranes from 50 to 550 tonnes, available with experienced operators for construction, infrastructure and industrial lifts across the UAE.', link: '/mobile-cranes-rental-in-dubai' },
    { name: 'Rough Terrain Cranes', image: '/RoughTerrainCranes/New%20image.jpg', heroImage: '/RoughTerrainCranes/New%20image.jpg', text: 'Four-wheel-drive rough terrain cranes from 50 to 110 tonnes for uneven ground, tight access and pick-and-carry lifting across the UAE.', link: '/equipment/rough-terrain-cranes' },
    { name: 'HIAB Crane Rental In Dubai', image: '/HiabCrane/hiab-crane-construction.webp', heroImage: '/HiabCrane/hiab-crane-city.webp', text: 'HIAB crane truck rental in Dubai for construction, machinery lifting, loading and unloading, and heavy material transport across the UAE.', link: '/equipment/hiab-crane' },
   { name: 'Fork Lift', image: '/Fork%20Lifter%20Equipment.webp', heroImage: '/Forklift.webp', text: 'Flexible and reliable forklift rental options for any project. Cost-effective solutions ensuring you always have the right forklift for your needs.', link: '/equipment/fork-lift' },
