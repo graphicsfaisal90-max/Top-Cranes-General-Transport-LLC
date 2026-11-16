@@ -376,13 +376,6 @@
   display: block;
 }
 
-.footer-wordmark {
-  width: 100%;
-  max-width: 170px;
-  height: auto;
-  display: block;
-}
-
 .footer-brand p {
   max-width: 370px;
   margin-top: 20px;
@@ -506,10 +499,6 @@
 
   .footer-logo {
     height: 86px;
-  }
-
-  .footer-wordmark {
-    max-width: 150px;
   }
 }
 
@@ -850,11 +839,7 @@
   }
 
   .footer-logo {
-    height: 95px;
-  }
-
-  .footer-wordmark {
-    max-width: 130px;
+    height: 122px;
   }
 
   .footer-brand {

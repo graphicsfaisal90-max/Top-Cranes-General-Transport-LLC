@@ -45,7 +45,6 @@ export default function Header() {
               <Link to="/equipment/excavators" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Excavator Rental</Link>
               <Link to="/equipment/jcb-3cx" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Backhoe Loaders JCB 3CX</Link>
               <Link to="/equipment/shovel" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Wheel Loader</Link>
-              <Link to="/equipment/bobcat" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Bobcat Rental</Link>
               <Link to="/equipment/low-bed-trailers" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>Low Bed Trailer Rental</Link>
             </div>
           </div>

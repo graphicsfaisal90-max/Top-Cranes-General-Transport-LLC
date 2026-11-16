@@ -167,7 +167,6 @@ export default function Contact() {
                       <option value="excavator">Excavator Rental</option>
                       <option value="jcb-3cx">Backhoe Loaders JCB 3CX</option>
                       <option value="wheel-loader">Wheel Loader</option>
-                      <option value="bobcat">Bobcat Rental</option>
                       <option value="low-bed-trailers">Low Bed Trailer Rental</option>
                     </select>
                   </div>

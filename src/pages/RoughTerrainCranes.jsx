@@ -130,8 +130,8 @@ export default function RoughTerrainCranes() {
       <section className="rtc-hero">
         <img
           className="rtc-hero-bg"
-          src="/RoughTerrainCranes/rough-terrain-fleet.webp"
-          alt="Rough terrain crane operating on a construction site in the UAE"
+          src="/RoughTerrainCranes/rough-terrain-hero.webp"
+          alt="Grove rough terrain crane available for rental in the UAE"
           fetchPriority="high"
         />
         <div className="rtc-hero-overlay" aria-hidden="true" />
@@ -185,13 +185,13 @@ export default function RoughTerrainCranes() {
           <div className="rtc-intro-media">
             <div className="rtc-intro-frame">
               <img
-                src="/RoughTerrainCranes/60-ton-rough-terrain.webp"
-                alt="60 tonne rough terrain crane ready for an off-road lift"
+                src="/RoughTerrainCranes/rough-terrain-intro.webp"
+                alt="90 tonne Grove rough terrain crane ready for an off-road lift"
                 loading="lazy"
               />
             </div>
             <div className="rtc-intro-plate">
-              <strong>60<span>t</span></strong>
+              <strong>90<span>t</span></strong>
               <small>Rough terrain<br />crane class</small>
             </div>
             <span className="rtc-intro-caption">Off-road ready · UAE fleet</span>

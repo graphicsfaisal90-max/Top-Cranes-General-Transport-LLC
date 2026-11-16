@@ -6,7 +6,6 @@ import ForkLift from './pages/ForkLift'
 import Telehandler from './pages/Telehandler'
 import Excavators from './pages/Excavators'
 import JCB3CX from './pages/JCB3CX'
-import Bobcat from './pages/Bobcat'
 import LowBedTrailers from './pages/LowBedTrailers'
 import MobileCraneRental from './pages/MobileCraneRental'
 import HiabCrane from './pages/HiabCrane'
@@ -27,7 +26,7 @@ export default function App() {
         <Route path="equipment/telehandler" element={<Telehandler />} />
         <Route path="equipment/excavators" element={<Excavators />} />
         <Route path="equipment/jcb-3cx" element={<JCB3CX />} />
-        <Route path="equipment/bobcat" element={<Bobcat />} />
+        <Route path="equipment/bobcat" element={<Navigate to="/equipment" replace />} />
         <Route path="equipment/low-bed-trailers" element={<LowBedTrailers />} />
         <Route path="equipment/crane" element={<Crane />} />
         <Route path="mobile-cranes-rental-in-dubai" element={<MobileCraneRental />} />

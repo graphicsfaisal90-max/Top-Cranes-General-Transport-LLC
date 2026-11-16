@@ -10,7 +10,6 @@ const fleet = [
   { id: 'excavators', name: 'Excavator Rental', eyebrow: 'Dig / clear / develop', image: '/excavator-hero.webp', path: '/equipment/excavators', text: 'Powerful excavators for earthmoving, trenching, demolition, land clearing and site development.' },
   { id: 'jcb-3cx', name: 'Backhoe Loaders JCB 3CX', eyebrow: 'Dig / load / prepare', image: '/jcb-hero.webp', path: '/equipment/jcb-3cx', text: 'Versatile backhoe loaders for utilities, roadwork, excavation and everyday construction support.' },
   { id: 'shovel', name: 'Wheel Loader', eyebrow: 'Bulk handling / stockpiles', image: '/shovel-hero.webp', path: '/equipment/shovel', text: 'Heavy-duty wheel loaders for aggregate, earth, stockpile and bulk material handling.' },
-  { id: 'bobcat', name: 'Bobcat Rental', eyebrow: 'Compact / agile / precise', image: '/bobcat-hero.webp', path: '/equipment/bobcat', text: 'Compact machines for landscaping, cleanup, demolition and tight-access construction work.' },
   { id: 'low-bed-trailers', name: 'Low Bed Trailers', eyebrow: 'Haul / secure / deliver', image: '/LowBedTrailers/lowbed-title.webp', path: '/equipment/low-bed-trailers', text: 'Heavy-duty low bed trailers for moving cranes, excavators, loaders and oversized machinery across the UAE.' },
 ]
 

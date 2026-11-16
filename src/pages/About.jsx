@@ -10,10 +10,9 @@ const equipmentList = [
   { sr: 4, desc: 'Excavator 320, 330 with Bucket and Jackhammer' },
   { sr: 5, desc: 'Mini Excavators' },
   { sr: 6, desc: 'JCB: 3CX with Bucket and Jack Hammer' },
-  { sr: 7, desc: 'Bob Cat' },
-  { sr: 8, desc: 'Shovel: 950 & 966' },
-  { sr: 9, desc: 'Flat Bed: 12 & 15 Meter' },
-  { sr: 10, desc: 'Low Bed: 12, 15, 18 up to 35 Meter' },
+  { sr: 7, desc: 'Shovel: 950 & 966' },
+  { sr: 8, desc: 'Flat Bed: 12 & 15 Meter' },
+  { sr: 9, desc: 'Low Bed: 12, 15, 18 up to 35 Meter' },
 ]
 
 const milestones = [

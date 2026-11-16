@@ -7,11 +7,6 @@ export default function Footer() {
         <div className="footer-brand">
           <div className="footer-brand-logos">
             <img src="/Top%20Cranes%20logo.svg" alt="Top Cranes General Transport logo" className="footer-logo" />
-            <img
-              src="/top-cranes-wordmark.webp"
-              alt="Top Cranes General Transport L.L.C"
-              className="footer-wordmark"
-            />
           </div>
           <p>
             UAE heavy equipment rental and general transport for construction,
@@ -39,7 +34,6 @@ export default function Footer() {
           <Link to="/equipment/excavators">Excavator Rental</Link>
           <Link to="/equipment/jcb-3cx">Backhoe Loaders JCB 3CX</Link>
           <Link to="/equipment/shovel">Wheel Loader</Link>
-          <Link to="/equipment/bobcat">Bobcat Rental</Link>
           <Link to="/equipment/low-bed-trailers">Low Bed Trailer Rental</Link>
         </div>
 
@@ -70,7 +64,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Top Cranes General Transport. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Top Cranes General Transport LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>

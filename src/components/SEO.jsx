@@ -11,7 +11,7 @@ const pages = {
   },
   '/equipment': {
     title: 'Heavy Equipment Rental Dubai | Construction Equipment UAE',
-    description: 'Explore reliable heavy equipment for rent in Dubai and across the UAE, including cranes, forklifts, excavators, telehandlers, Backhoe Loaders JCB 3CX, Bobcat and loaders.',
+    description: 'Explore reliable heavy equipment for rent in Dubai and across the UAE, including cranes, forklifts, excavators, telehandlers, Backhoe Loaders JCB 3CX and loaders.',
     keywords: 'heavy equipment rental Dubai, construction equipment rental UAE, machinery rental Dubai, equipment hire UAE, lifting equipment rental',
   },
   '/equipment/crane': {
@@ -54,11 +54,6 @@ const pages = {
     description: 'Top Cranes offers Backhoe Loaders JCB 3CX rental in Dubai for excavation, trenching, material loading, site preparation, roadwork and infrastructure projects.',
     keywords: 'Backhoe Loaders JCB 3CX rental Dubai, backhoe loader rental UAE, JCB hire Dubai, Backhoe Loaders JCB 3CX with operator, excavation equipment rental, site preparation equipment UAE',
   },
-  '/equipment/bobcat': {
-    title: 'Bobcat Rental Services Dubai | Skid Steer Loader Hire UAE',
-    description: 'Reliable Bobcat rental in Dubai for construction, landscaping, groundworks, demolition, cleanup and material handling projects across the UAE.',
-    keywords: 'Bobcat rental Dubai, Bobcat hire UAE, skid steer loader rental, compact loader hire Dubai, landscaping equipment rental UAE, Bobcat with operator',
-  },
   '/equipment/low-bed-trailers': {
     title: 'Low Bed Trailer Rental Dubai | Heavy Equipment Transport UAE',
     description: 'Rent low bed trailers in Dubai for moving cranes, excavators, loaders and oversized machinery. Experienced drivers, route planning and UAE-wide heavy equipment transport.',
@@ -76,7 +71,7 @@ const pages = {
   },
   '/contact': {
     title: 'Contact Top Cranes | Equipment Rental Quote Dubai UAE',
-    description: 'Contact Top Cranes General Transport for cranes rental, forklift rental, excavator hire, telehandler, JCB, Bobcat and heavy equipment rental quotes across the UAE.',
+    description: 'Contact Top Cranes General Transport for cranes rental, forklift rental, excavator hire, telehandler, JCB and heavy equipment rental quotes across the UAE.',
     keywords: 'equipment rental quote Dubai, cranes rental contact UAE, heavy machinery rental enquiry, Top Cranes phone number, construction equipment hire UAE',
   },
   '/faq': {

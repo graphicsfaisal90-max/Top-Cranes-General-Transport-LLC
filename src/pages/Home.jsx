@@ -22,7 +22,6 @@ const equipment = [
   { name: 'Excavators', image: '/excavator_%20equpment.webp', heroImage: '/excavator-hero.webp', text: 'Dependable excavator rentals suitable for digging and earthmoving projects. Efficiency and durability for demanding construction environments.', link: '/equipment/excavators' },
   { name: 'Backhoe Loaders JCB 3CX', image: '/JCB%203CX%20Equipment.webp', heroImage: '/jcb-hero.webp', text: 'Versatile Backhoe Loaders JCB 3CX machines combining efficiency and durability. A top choice for excavation, loading, roadwork and utility operations.', link: '/equipment/jcb-3cx' },
   { name: 'Shovel', image: '/Shovel%20Loader%20Equipment.webp', heroImage: '/shovel-hero.webp', text: 'Robust shovel rentals perfect for mining, construction and landscaping projects. High-quality equipment offering reliability and performance.', link: '/equipment/shovel' },
-  { name: 'Bobcat', image: '/Bobcat%20Equipment.webp', heroImage: '/bobcat-hero.webp', text: 'Versatile Bobcat machinery rentals ideal for construction, landscaping and agricultural tasks. Renowned for durability and ease of operation.', link: '/equipment/bobcat' },
   { name: 'Low Bed Trailers', image: '/LowBedTrailers/lowbed-trailer.webp', heroImage: '/LowBedTrailers/lowbed-title.webp', text: 'Heavy-duty low bed trailers for moving cranes, excavators, loaders and oversized machinery safely across the UAE.', link: '/equipment/low-bed-trailers' },
 ]
 
@@ -48,7 +47,7 @@ const whyPoints = [
 const homeFaqs = [
   {
     q: 'What types of heavy equipment do you rent?',
-    a: 'We rent mobile cranes, rough terrain cranes, HIAB crane trucks, forklifts, telehandlers, excavators, JCB 3CX backhoe loaders, wheel loaders, Bobcats and low bed trailers across the UAE.',
+    a: 'We rent mobile cranes, rough terrain cranes, HIAB crane trucks, forklifts, telehandlers, excavators, JCB 3CX backhoe loaders, wheel loaders and low bed trailers across the UAE.',
   },
   {
     q: 'Do you provide operators with the equipment?',
